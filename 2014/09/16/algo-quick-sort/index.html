@@ -1,0 +1,624 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>Complete quicksort analysis | BN Stack</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="juniway">
+    
+
+    
+    <meta name="description" content="Algorithm Description Time Complexity Implementation   Partition 选取枢纽元 固定位置 随机选取 三数取中   分割 单向扫描 双向扫描 Hoare的双向扫描 改进的双向扫描 双向扫描的其他问题   分治 尾递归      一、算法描述（Algorithm Description）快速排序由C.A.R.Hoare于1962年提出，算">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Complete quicksort analysis">
+<meta property="og:url" content="http://juniway.github.io/2014/09/16/algo-quick-sort/index.html">
+<meta property="og:site_name" content="BN Stack">
+<meta property="og:description" content="Algorithm Description Time Complexity Implementation   Partition 选取枢纽元 固定位置 随机选取 三数取中   分割 单向扫描 双向扫描 Hoare的双向扫描 改进的双向扫描 双向扫描的其他问题   分治 尾递归      一、算法描述（Algorithm Description）快速排序由C.A.R.Hoare于1962年提出，算">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://users.cs.duke.edu/~ola/patterns/plopd/partition.gif">
+<meta property="og:updated_time" content="2018-02-13T13:55:04.097Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Complete quicksort analysis">
+<meta name="twitter:description" content="Algorithm Description Time Complexity Implementation   Partition 选取枢纽元 固定位置 随机选取 三数取中   分割 单向扫描 双向扫描 Hoare的双向扫描 改进的双向扫描 双向扫描的其他问题   分治 尾递归      一、算法描述（Algorithm Description）快速排序由C.A.R.Hoare于1962年提出，算">
+<meta name="twitter:image" content="https://users.cs.duke.edu/~ola/patterns/plopd/partition.gif">
+
+    
+    <link rel="alternative" href="/atom.xml" title="BN Stack" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/author.jpg">
+    
+    
+    <link rel="apple-touch-icon" href="/img/author.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/author.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/cloud.png" alt="BN Stack" title="BN Stack"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="BN Stack">BN Stack</a></h1>
+				<h2 class="blog-motto"></h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+						<li><a href="/about">About</a></li>
+					
+					<li>
+ 					
+						<form class="search"  accept-charset="utf-8">
+							<label>Search</label>
+						<input type="text" class="st-default-search-input" maxlength="20" placeholder="Search">
+						</form>
+					
+					</li>
+				</ul>
+			</nav>
+</div>
+
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2014/09/16/algo-quick-sort/" title="Complete quicksort analysis" itemprop="url">Complete quicksort analysis</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="juniway" target="_blank" itemprop="author">juniway</a>
+		
+
+  <p class="article-time">
+  <time datetime="2014-09-16T03:30:33.000Z" itemprop="datePublished"> Published 2014-09-16</time>
+  </p>
+</header>
+
+	<div class="article-content">
+		
+		<ol>
+<li>Algorithm Description</li>
+<li>Time Complexity</li>
+<li>Implementation</li>
+</ol>
+<ul>
+<li>Partition<ul>
+<li>选取枢纽元<ul>
+<li>固定位置</li>
+<li>随机选取</li>
+<li>三数取中</li>
+</ul>
+</li>
+<li>分割<ul>
+<li>单向扫描</li>
+<li>双向扫描</li>
+<li>Hoare的双向扫描</li>
+<li>改进的双向扫描</li>
+<li>双向扫描的其他问题</li>
+</ul>
+</li>
+<li>分治<ul>
+<li>尾递归</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="一、算法描述（Algorithm-Description）"><a href="#一、算法描述（Algorithm-Description）" class="headerlink" title="一、算法描述（Algorithm Description）"></a>一、算法描述（Algorithm Description）</h2><p>快速排序由C.A.R.Hoare于1962年提出，算法相当简单精炼，基本策略是随机分治。<br>首先选取一个枢纽元（pivot），然后将数据划分成左右两部分，左边的大于（或等于）枢纽元，右边的小于(或等于枢纽元)，最后递归处理左右两部分。<br>分治算法一般分成三个部分：分解、解决以及合并。快排是就地排序，所以就不需要合并了。只需要划分（partition）和解决（递归）两个步骤。因为划分的结果决定递归的位置，所以Partition是整个算法的核心。</p>
+<p>对数组S排序的形式化的描述如下（REF[1]）:</p>
+<ul>
+<li>如果S中的元素个数是0或1，则直接返回</li>
+<li>否则，取 S 中任意一元素 v，将其作为枢纽元</li>
+<li>将 S-{v}（S中其余元素），划分成两个不相交的集合：S1={x∈S-{v}|x&lt;=v} 和 S2={x∈S-{v}|x&gt;=v}</li>
+<li>返回 {quicksort(S1) , v , quicksort(S2)}</li>
+</ul>
+<h2 id="二、时间复杂度分析（Time-Complexity）"><a href="#二、时间复杂度分析（Time-Complexity）" class="headerlink" title="二、时间复杂度分析（Time Complexity）"></a>二、时间复杂度分析（Time Complexity）</h2><p>快速排序最佳运行时间 O(nlogn)，最坏运行时间Ｏ(N^2)，随机化以后期望运行时间 O(nlogn)，关于这些任何一本算法数据结构书上都有证明，就不写在这了，一下两点很重要：</p>
+<ul>
+<li>选取枢纽元的不同, 决定了快排算法时间复杂度的数量级；</li>
+<li>划分方法的时间开销总是 O(n), 所以其具体实现的不同只影响算法时间复杂度的系数。<br>所有关于时间复杂度的分析都是围绕枢纽元的位置展开讨论的。</li>
+</ul>
+<h2 id="三、具体实现细节（Details-of-Implementaion）"><a href="#三、具体实现细节（Details-of-Implementaion）" class="headerlink" title="三、具体实现细节（Details of Implementaion）"></a>三、具体实现细节（Details of Implementaion）</h2><p>1、划分(Partirion)<br>为了方便阐述，将 Partition 从 QuickSort 函数里提出来，就像算法导论里一样。实际实现时可以考虑合并在一起，就一个函数，减少了函数调用次数。（REF[2]）</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">QuickSort</span><span class="params">(T A[], <span class="keyword">int</span> p, <span class="keyword">int</span> q)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (p &lt; q) &#123;</span><br><span class="line">        <span class="keyword">int</span> q = Partition(A, p, q);</span><br><span class="line">        QuickSort(A, p, q<span class="number">-1</span>);</span><br><span class="line">        QuickSort(A, q+<span class="number">1</span>, r);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Parition 又分成两个步骤：</p>
+<ul>
+<li>选取枢纽元</li>
+<li>按枢纽元将数组分成左右两部分</li>
+</ul>
+<h4 id="选取枢纽元-Pivot-Selection"><a href="#选取枢纽元-Pivot-Selection" class="headerlink" title=" 选取枢纽元 (Pivot Selection)"></a><1> 选取枢纽元 (Pivot Selection)</1></h4><p><strong>1. 固定位置</strong><br>同样是为了方便，将选取枢纽元单独提出来成一个函数：select_pivot(T A[], int p, int q)，该函数从A[p…q]中选取一个枢纽元并返回，且枢纽元放置在左端（A[p]的位置）。<br>对于完全随机的数据，枢纽元的选取不是很重要，往往直接取左端的元素作为枢纽元。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">select_pivot</span><span class="params">(T A[], <span class="keyword">int</span> p, <span class="keyword">int</span> q)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> A[p];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>但是实际应用中，数据往往是部分有序的，如果仍用两端的元素最为枢纽元，则可能会产生很不好的划分，使算法退化成 O(n^2)。所以要采用一些手段避免这种情况，主要有两种办法：“随机选取法”和“三数取中法”。</p>
+<p><strong>2. 随机选取</strong><br>顾名思义就是从 A[p…q] 中随机选择一个枢纽元，这个用库函数可以很容易实现</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">select_pivot_random</span><span class="params">(T A[], <span class="keyword">int</span> p, <span class="keyword">int</span> q)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i = randInt(p, q);</span><br><span class="line">    swap(A[p], A[i]);</span><br><span class="line">    <span class="keyword">return</span> A[p];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>其中 randInt(p, q) 随机返回 [p, q] 中的一个数，C/C++ 里可由 stdlib.h 中的 rand 函数模拟。</p>
+<p><strong>3. 三数取中</strong><br>即取三个元素的中间数作为枢纽元，一般是取左端、右端和中间三个数，也可以随机选取。（REF[1]）</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">select_pivot_median3</span><span class="params">(T A[], <span class="keyword">int</span> p, <span class="keyword">int</span> q)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> m = (p + q)/<span class="number">2</span>;</span><br><span class="line">    <span class="comment">/* swap to ensure A[m] &lt;= A[p] &lt;= A[q] */</span></span><br><span class="line">    <span class="keyword">if</span> (A[p] &lt; A[m]) swap(A[p], A[m]);</span><br><span class="line">    <span class="keyword">if</span> (A[q] &lt; A[m]) swap(A[q], A[m]);</span><br><span class="line">    <span class="keyword">if</span> (A[q] &lt; A[p]) swap(A[q], A[p]);</span><br><span class="line">    <span class="keyword">return</span> A[p];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong><2> 按枢纽元将数组分成左右两部分</2></strong></p>
+<p>虽然说 Partition 方法只影响算法时间复杂度的系数，但是一个好系数也是比较重要的。这也就是为什么实际应用中宁愿选择可能退化成 O(n^2)的快速排序，也不用稳定的堆排序（堆排序交换次数太多，导致系数很大）。</p>
+<p>常见的分割方法有三种：</p>
+<p><strong>单向扫描</strong></p>
+<p>单向扫描代码非常简单，只有短短的几行，思路也比较清晰。该算法由N.Lomuto提出，算法导论上也采用了这种算法。对于数组A[p…q]，该算法用一个循环扫描整个区间，并维护一个标志m，使得循环不变量（loop invariant）A[p＋1…m] &lt; A[p] &amp;&amp; A[m+1, i-1] &gt;= x[l]始终成立。（REF[2],REF[3]）</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// precondition:  left &lt;= right</span></span><br><span class="line"><span class="comment">// postcondition: rearranges entries in vector a</span></span><br><span class="line"><span class="comment">//                returns pivot such that</span></span><br><span class="line"><span class="comment">//                for all k, left &lt;= k &lt;= pivot, a[k] &lt;= a[pivot] and</span></span><br><span class="line"><span class="comment">//                for all k, pivot &lt; k &lt;= right, a[pivot] &lt; a[k]</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">partition</span><span class="params">(T A[], <span class="keyword">int</span> p, <span class="keyword">int</span> q)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> center = select_pivot(A, p, q);</span><br><span class="line">    <span class="keyword">int</span> pivot = p;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> k = p+<span class="number">1</span>; k &lt;= q; ++k)</span><br><span class="line">        <span class="keyword">if</span> (A[k] &lt;= center)</span><br><span class="line">            swap(A[++pivot], A[k])</span><br><span class="line">    swap(A[p], A[pivot]);</span><br><span class="line">    <span class="keyword">return</span> pivot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://users.cs.duke.edu/~ola/patterns/plopd/partition.gif" alt=""></p>
+<p>顺便废话几句，在看国外的书的时候，发现老外在分析和测试算法尤其是循环时，非常重视不变量（invariant）的使用。确立一个不变量，在循环开始之前和结束之后检查这个不变量，是一个很好的保持算法正确性的手段。</p>
+<p>事实上第一种算法需要的交换次数比较多，而且如果采用选取左端元素作为枢纽元的方法，该算法在输入数组中元素全部相同时退化成O(n^2)。第二种方法可以避免这个问题。</p>
+<p><strong>双向扫描</strong></p>
+<p>双向扫描用两个标志i、j，分别初始化成数组的两端。主循环里嵌套两个内循环：第一个内循环i从左向右移过小于枢纽元的元素，遇到大元素时停止；第二个循环j从右向左移过大于枢纽元的元素，遇到小元素时停止。然后主循环检查i、j是否相交并交换A[i]、A[j]。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">partition</span><span class="params">(T A[], <span class="keyword">int</span> p, <span class="keyword">int</span> q)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> x = select_pivot(A, p, q);</span><br><span class="line">    <span class="keyword">int</span> i = p, j = q + <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> ( ; ; ) &#123;</span><br><span class="line">        <span class="keyword">do</span> ++i; <span class="keyword">while</span> (i &lt;= q &amp;&amp; A[i] &lt; x);</span><br><span class="line">        <span class="keyword">do</span> --j; <span class="keyword">while</span> (A[j] &gt; x);</span><br><span class="line">        <span class="keyword">if</span> (i &gt; j) <span class="keyword">break</span>;</span><br><span class="line">        swap(A[i], A[j]);</span><br><span class="line">    &#125;</span><br><span class="line">    swap(A[p], A[j]);</span><br><span class="line">    <span class="keyword">return</span> j;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>双向扫描可以正常处理所有元素相同的情况，而且交换次数比单向扫描要少。</p>
+<p><strong>Hoare的双向扫描</strong></p>
+<p>这种方法是Hoare在62年最初提出快速排序采用的方法，与前面的双向扫描基本相同，但是更难理解，手算了几组数据才搞明白：（REF[2]）</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">partition</span><span class="params">(T A[], <span class="keyword">int</span> p, <span class="keyword">int</span> q)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> x = select_pivot(A, p, q);</span><br><span class="line">    <span class="keyword">int</span> i = p - <span class="number">1</span>, j = q + <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> ( ; ; ) &#123;</span><br><span class="line">        <span class="keyword">do</span> --j; <span class="keyword">while</span> (A[j] &gt; x);</span><br><span class="line">        <span class="keyword">do</span> ++i; <span class="keyword">while</span> (A[i] &lt; x);</span><br><span class="line">        <span class="keyword">if</span> (i &lt; j) swap(A[i], A[j])</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">return</span> j;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>需要注意的是，返回值j并不是枢纽元的位置，但是仍然保证了A[p..j] &lt;= A[j+1…q]。这种方法在效率上于双向扫描差别甚微，只是代码相对更为紧凑，并且用A[p]做哨兵元素减少了内层循环的一个if测试。</p>
+<p><a href="http://www.see2say.com/channel/music/player.aspx?v_album_id=9804" target="_blank" rel="noopener">http://www.see2say.com/channel/music/player.aspx?v_album_id=9804</a></p>
+<p><strong>改进的双向扫描</strong></p>
+<p>枢纽元保存在一个临时变量中，这样左端的位置可视为空闲。j从右向左扫描，直到A[j]小于等于枢纽元,检查i、j是否相交并将A[j]赋给空闲位置A[i],这时A[j]变成空闲位置；i从左向右扫描，直到A[i]大于等于枢纽元,检查i、j是否相交并将A[i]赋给空闲位置A[j]，然后A[i]变成空闲位置。重复上述过程，最后直到i、j相交跳出循环。最后把枢纽元放到空闲位置上。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">partition</span><span class="params">(T A[], <span class="keyword">int</span> p, <span class="keyword">int</span> q)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> x = select_pivot(A, p, q);</span><br><span class="line">    <span class="keyword">int</span> i = p, j = q;</span><br><span class="line">    <span class="keyword">for</span> ( ; ; ) &#123;</span><br><span class="line">        <span class="keyword">while</span> (i &lt; j &amp;&amp; A[j] &gt; x) --j;</span><br><span class="line">        A[i] = A[j];</span><br><span class="line">        <span class="keyword">while</span> (i &lt; j &amp;&amp; A[i] &lt; x) ++i;</span><br><span class="line">        A[j] = A[i];</span><br><span class="line">    &#125;</span><br><span class="line">    A[i] = x;  <span class="comment">// i == j</span></span><br><span class="line">    <span class="keyword">return</span> i;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这种类似迭代的方法，每次只需一次赋值，减少了内存读写次数，而前面几种的方法一次交换需要三次赋值操作。由于没有哨兵元素，不得不在内层循环里判断i、j是否相交，实际上反而增加了很多内存读取操作。但是由于循环计数器往往被放在寄存器了，而如果待排数组很大，访问其元素会频繁的cache miss，所以用计数器的访问次数换取待排数组的访存是值得的。</p>
+<p><strong>关于双向扫描的几个问题</strong></p>
+<p>1.内层循环中的while测试是用“严格大于/小于”还是”大于等于/小于等于”。</p>
+<p>一般的想法是用大于等于/小于等于，忽略与枢纽元相同的元素，这样可以减少不必要的交换，因为这些元素无论放在哪一边都是一样的。但是如果遇到所有元素都一样的情况，这种方法每次都会产生最坏的划分，也就是一边1个元素，令一边n－1个元素，使得时间复杂度变成O(N^2)。而如果用严格大于/小于，虽然两边指针每此只挪动1位，但是它们会在正中间相遇，产生一个最好的划分，时间复杂度为log(2,n)。</p>
+<p>另一个因素是，如果将枢纽元放在数组两端，用严格大于/小于就可以将枢纽元作为一个哨兵元素，从而减少内层循环的一个测试。<br>由以上两点，内层循环中的while测试一般用“严格大于/小于”。</p>
+<p>2.对于小数组特殊处理</p>
+<p>按照上面的方法，递归会持续到分区只有一个元素。而事实上，当分割到一定大小后，继续分割的效率比插入排序要差。由统计方法得到的数值是50左右(REF[3])，也有采用20的（REF[1]）, 这样原先的QuickSort就可以写成这样</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">QuickSort</span><span class="params">(T A[], <span class="keyword">int</span> p, <span class="keyword">int</span> q)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (q - p &gt; cutoff) &#123; <span class="comment">//cutoff is constant</span></span><br><span class="line">        <span class="keyword">int</span> q = Partition(A, p, q);</span><br><span class="line">        QuickSort(A, p, q<span class="number">-1</span>);</span><br><span class="line">        QuickSort(A, q+<span class="number">1</span>, r);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        InsertionSort(T A[], p, q); <span class="comment">//user insertion sort for small arrays</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>二、分治</strong><br>分治这里看起来没什么可说的，就是一枢纽元为中心，左右递归，实际上也有一些技巧。</p>
+<p>1.尾递归（Tail recursion）<br>快排算法和大多数分治排序算法一样，都有两次递归调用。但是快排与归并排序不同，归并的递归则在函数一开始， 快排的递归在函数尾部，这就使得快排代码可以实施尾递归优化。第一次递归以后，变量p就没有用处了， 也就是说第二次递归可以用迭代控制结构代替。虽然这种优化一般是有编译器实施，但是也可以人为的模拟：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">QuickSort</span><span class="params">(T A[], <span class="keyword">int</span> p, <span class="keyword">int</span> q)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">while</span> (p &lt; q) &#123;</span><br><span class="line">        <span class="keyword">int</span> m = Partition(A, p, q);</span><br><span class="line">        QuickSort(A, p, m<span class="number">-1</span>);</span><br><span class="line">        p = m + <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>采用这种方法可以缩减堆栈深度，由原来的O(n)缩减为O(logn)。</p>
+<p><strong>Reference</strong><br>[1]Mark Allen Weiss. Data Structures and Algorithms Analysis in C++. Pearson Education, Third Edition, 2006.<br>[2]Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein. Introduction to Algorithms. MIT Press, 2001, Second Edtion, 2001.<br>[3]Jon Bently. Programming Pearls. Addison Wesley, Second Edition, 2000.</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/Algo/">Algo</a>
+</div>
+
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://juniway.github.io/2014/09/16/algo-quick-sort/" data-title="Complete quicksort analysis | BN Stack" data-tsina="1324264260" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2014/09/16/network-programming-encryption-basics/" title="Encryption terminology">
+  <strong>Prev：</strong><br/>
+  <span>
+  Encryption terminology</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2014/08/16/cpp-extern-c/"  title="Call C functions in C++">
+ <strong>Next：</strong><br/>
+ <span>Call C functions in C++
+</span>
+</a>
+</div>
+
+</nav>
+
+
+	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2014/09/16/algo-quick-sort/" data-title="Complete quicksort analysis" data-url="http://juniway.github.io/2014/09/16/algo-quick-sort/"></div>
+</section>
+
+
+<section id="comments" class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+
+  
+
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">Categories</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/Algo/" title="Algo">Algo<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Cpp/" title="Cpp">Cpp<sup>4</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Database/" title="Database">Database<sup>2</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Distributed-System/" title="Distributed System">Distributed System<sup>9</sup></a></li>
+		  
+		
+		  
+		
+		  
+			<li><a href="/categories/Git/" title="Git">Git<sup>9</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Go/" title="Go">Go<sup>23</sup></a></li>
+		  
+		
+		  
+		
+		  
+			<li><a href="/categories/Life/" title="Life">Life<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Linux/" title="Linux">Linux<sup>24</sup></a></li>
+		  
+		
+		  
+		
+		  
+			<li><a href="/categories/Network-Programming/" title="Network Programming">Network Programming<sup>14</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/OS/" title="OS">OS<sup>5</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Other/" title="Other">Other<sup>8</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/System-Build/" title="System Build">System Build<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Tools/" title="Tools">Tools<sup>11</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Vim/" title="Vim">Vim<sup>4</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/VirtualBox/" title="VirtualBox">VirtualBox<sup>13</sup></a></li>
+		  
+		
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="archiveslist">
+    <p class="asidetitle"><a href="/archives">Archives</a></p>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">二月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">一月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">一月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">十一月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">九月 2016</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a><span class="archive-list-count">15</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">十月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">九月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/09/">九月 2013</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">八月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/07/">七月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/06/">六月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/03/">三月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/02/">二月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/01/">一月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/10/">十月 2012</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/09/">九月 2012</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/06/">六月 2012</a><span class="archive-list-count">1</span></li></ul>
+  </div>
+
+
+  
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Welcome to juniway&#39;s blog! <br/>
+			Let&#39;s do something technically.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1324264260" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a>
+		
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<span id="busuanzi_container_site_pv" style='display:none'>
+</br>total: <span id="busuanzi_value_site_pv"></span>, current: <span id="busuanzi_value_page_pv"></span>
+</span>
+
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"juniway"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'juniway';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?c2318a1b515efe9b35d9b636c112b180";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1259471060'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/z_stat.php%3Fid%3D1259471060' type='text/javascript'%3E%3C/script%3E"));</script>
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>

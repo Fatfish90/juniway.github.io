@@ -1,0 +1,745 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>Python Coding Style Guide | BN Stack</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="juniway">
+    
+
+    
+    <meta name="description" content="遵循良好的编码风格，可以有效的提高代码的可读性，降低出错几率和维护难度。在团队开发中，使用（尽量）统一的编码风格，还可以降低沟通成本。网上有很多版本的编码规范，基本上都是遵循 PEP8 的规范：  PEP 0008 – Style Guide for Python Code Google 的 Python 风格指南 Python Guide - Code Style Pocoo Styleguid">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python Coding Style Guide">
+<meta property="og:url" content="http://juniway.github.io/2015/11/13/python-coding-standards/index.html">
+<meta property="og:site_name" content="BN Stack">
+<meta property="og:description" content="遵循良好的编码风格，可以有效的提高代码的可读性，降低出错几率和维护难度。在团队开发中，使用（尽量）统一的编码风格，还可以降低沟通成本。网上有很多版本的编码规范，基本上都是遵循 PEP8 的规范：  PEP 0008 – Style Guide for Python Code Google 的 Python 风格指南 Python Guide - Code Style Pocoo Styleguid">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-02-13T13:55:04.117Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Python Coding Style Guide">
+<meta name="twitter:description" content="遵循良好的编码风格，可以有效的提高代码的可读性，降低出错几率和维护难度。在团队开发中，使用（尽量）统一的编码风格，还可以降低沟通成本。网上有很多版本的编码规范，基本上都是遵循 PEP8 的规范：  PEP 0008 – Style Guide for Python Code Google 的 Python 风格指南 Python Guide - Code Style Pocoo Styleguid">
+
+    
+    <link rel="alternative" href="/atom.xml" title="BN Stack" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/author.jpg">
+    
+    
+    <link rel="apple-touch-icon" href="/img/author.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/author.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/cloud.png" alt="BN Stack" title="BN Stack"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="BN Stack">BN Stack</a></h1>
+				<h2 class="blog-motto"></h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+						<li><a href="/about">About</a></li>
+					
+					<li>
+ 					
+						<form class="search"  accept-charset="utf-8">
+							<label>Search</label>
+						<input type="text" class="st-default-search-input" maxlength="20" placeholder="Search">
+						</form>
+					
+					</li>
+				</ul>
+			</nav>
+</div>
+
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/11/13/python-coding-standards/" title="Python Coding Style Guide" itemprop="url">Python Coding Style Guide</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="juniway" target="_blank" itemprop="author">juniway</a>
+		
+
+  <p class="article-time">
+  <time datetime="2015-11-13T03:30:33.000Z" itemprop="datePublished"> Published 2015-11-13</time>
+  </p>
+</header>
+
+	<div class="article-content">
+		
+		<p>遵循良好的编码风格，可以有效的提高代码的可读性，降低出错几率和维护难度。在团队开发中，使用（尽量）统一的编码风格，还可以降低沟通成本。<br>网上有很多版本的编码规范，基本上都是遵循 PEP8 的规范：</p>
+<ul>
+<li><a href="https://www.python.org/dev/peps/pep-0008/" target="_blank" rel="noopener">PEP 0008 – Style Guide for Python Code</a></li>
+<li><a href="http://zh-google-styleguide.readthedocs.org/en/latest/google-python-styleguide/contents/" target="_blank" rel="noopener">Google 的 Python 风格指南</a></li>
+<li><a href="http://docs.python-guide.org/en/latest/writing/style/" target="_blank" rel="noopener">Python Guide - Code Style</a></li>
+<li><a href="http://flask.pocoo.org/docs/0.10/styleguide/" target="_blank" rel="noopener">Pocoo Styleguide</a></li>
+</ul>
+<p>除了在编码时主动遵循规范，还有很多有用的工具：</p>
+<ul>
+<li>IntelliJ IDEA 和 PyCharm 的格式化代码功能</li>
+<li>Google 开源的 Python 文件格式化工具：<a href="https://github.com/google/yapf" target="_blank" rel="noopener">yapf</a></li>
+<li>pyflakes, pylint 等工具及各种编辑器的插件</li>
+</ul>
+<p>本文的内容主要摘自互联网上的内容，总结整理了一份相对合理的编码规范。</p>
+<p><br></p>
+<h4 id="缩进"><a href="#缩进" class="headerlink" title="缩进"></a>缩进</h4><hr>
+<ul>
+<li>不要使用 tab 缩进</li>
+<li>使用任何编辑器写 Python，请把一个 tab 展开为 4 个空格</li>
+<li>绝对不要混用 tab 和空格，否则容易出现 IndentationError</li>
+</ul>
+<p><br></p>
+<h4 id="空格"><a href="#空格" class="headerlink" title="空格"></a>空格</h4><hr>
+<ul>
+<li>在 list, dict, tuple, set, 参数列表的 , 后面加一个空格</li>
+<li>在 dict 的 : 后面加一个空格</li>
+<li>在注释符号 # 后面加一个空格，但是 #!/usr/bin/python 的 # 后不能有空格</li>
+<li>操作符两端加一个空格，如 +, -, *, /, |, &amp;, =</li>
+<li>接上一条，在参数列表里的 = 两端不需要空格</li>
+<li>括号（(), {}, []）内的两端不需要空格</li>
+</ul>
+<p><br></p>
+<h4 id="空行"><a href="#空行" class="headerlink" title="空行"></a>空行</h4><hr>
+<ul>
+<li>function 和 class 顶上两个空行</li>
+<li>class 的 method 之间一个空行</li>
+<li>函数内逻辑无关的段落之间空一行，不要过度使用空行</li>
+<li>不要把多个语句写在一行，然后用 ; 隔开</li>
+<li>if/for/while 语句中，即使执行语句只有一句，也要另起一行</li>
+</ul>
+<p><br></p>
+<h4 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行</h4><ul>
+<li>每一行代码控制在 80 字符以内</li>
+<li>使用 \ 或 () 控制换行，举例：<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">def foo(first, second, third, fourth, fifth,</span><br><span class="line">        sixth, and_some_other_very_long_param):</span><br><span class="line">    user = User.objects.filter_by(first=first, second=second, third=third) \</span><br><span class="line">        .skip(<span class="number">100</span>).limit(<span class="number">100</span>) \</span><br><span class="line">        .all()</span><br><span class="line"></span><br><span class="line">text = (<span class="string">'Long strings can be made up '</span></span><br><span class="line">        <span class="string">'of several shorter strings.'</span>)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><br></p>
+<h4 id="命名"><a href="#命名" class="headerlink" title="命名"></a>命名</h4><hr>
+<ul>
+<li>使用有意义的，英文单词或词组，绝对不要使用汉语拼音</li>
+<li>package/module 名中不要出现 -</li>
+<li>各种类型的命名规范：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Public</th>
+<th>Internal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Modules</td>
+<td>lower_with_under</td>
+<td>_lower_with_under</td>
+</tr>
+<tr>
+<td>Packages</td>
+<td>lower_with_under</td>
+<td></td>
+</tr>
+<tr>
+<td>Classes</td>
+<td>CapWords</td>
+<td>_CapWords</td>
+</tr>
+<tr>
+<td>Exceptions</td>
+<td>CapWords</td>
+<td></td>
+</tr>
+<tr>
+<td>Functions</td>
+<td>lower_with_under()</td>
+<td>_lower_with_under()</td>
+</tr>
+<tr>
+<td>Global/Class Constants</td>
+<td>CAPS_WITH_UNDER</td>
+<td>_CAPS_WITH_UNDER </td>
+</tr>
+<tr>
+<td>Global/Class Variables</td>
+<td>lower_with_under</td>
+<td>_lower_with_under</td>
+</tr>
+<tr>
+<td>Instance Variables</td>
+<td>lower_with_under</td>
+<td>_lower_with_under (protected) or __lower_with_under (private)</td>
+</tr>
+<tr>
+<td>Method Names</td>
+<td>lower_with_under()</td>
+<td>_lower_with_under() (protected) or __lower_with_under() (private)</td>
+</tr>
+<tr>
+<td>Function/Method Parameters</td>
+<td>lower_with_under</td>
+<td></td>
+</tr>
+<tr>
+<td>Local Variables</td>
+<td>lower_with_under</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<h4 id="import"><a href="#import" class="headerlink" title="import"></a>import</h4><hr>
+<ul>
+<li>所有 import 尽量放在文件开头，在 docstring 下面，其他变量定义的上面</li>
+<li>不要使用 <code>from foo imort *</code></li>
+<li>import 需要分组，每组之间一个空行，每个分组内的顺序尽量采用字典序，分组顺序是：<ul>
+<li>标准库</li>
+<li>第三方库</li>
+<li>本项目的 package 和 module</li>
+</ul>
+</li>
+<li>不要使用隐式的相对导入（implicit relative imports），可是使用显示的相对导入（explicit relative imports），如 <code>from ..utils import validator</code>，<strong>最好</strong>使用全路径导入（absolute imports）</li>
+<li><p>对于不同的 package，一个 import 单独一行，同一个 package/module 下的内容可以写一起：</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># bad</span><br><span class="line"><span class="keyword">import</span> sys, os, time</span><br><span class="line"></span><br><span class="line"># good</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"># ok</span><br><span class="line">from flask <span class="keyword">import</span> Flask, render_template, jsonify</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>为了避免可能出现的命名冲突，可以使用 as 或导入上一级命名空间</p>
+</li>
+<li>不要出现循环导入(cyclic import)</li>
+</ul>
+<p><br></p>
+<h4 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h4><hr>
+<ul>
+<li>文档字符串 docstring, 是 package, module, class, method, function 级别的注释，可以通过 <strong>doc</strong> 成员访问到，注释内容在一对 “”” 符号之间</li>
+<li>function, method 的文档字符串应当描述其功能、输入参数、返回值，如果有复杂的算法和实现，也需要写清楚</li>
+<li><p>不要写错误的注释，不要无谓的注释</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># bad 无谓的注释</span><br><span class="line">x = x + <span class="number">1</span>       # increase x by <span class="number">1</span></span><br><span class="line"></span><br><span class="line"># bad 错误的注释</span><br><span class="line">x = x - <span class="number">1</span>       # increase x by <span class="number">1</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>优先使用英文写注释，英文不好全部写中文，否则更加看不懂</p>
+</li>
+</ul>
+<p><br></p>
+<h4 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h4><hr>
+<ul>
+<li>不要轻易使用 <code>try/except</code></li>
+<li>except 后面需要指定捕捉的异常，裸露的 except 会捕捉所有异常，意味着会隐藏潜在的问题</li>
+<li>可以有多个 except 语句，捕捉多种异常，分别做异常处理</li>
+<li>使用 finally 子句来处理一些收尾操作</li>
+<li>try/except 里的内容不要太多，只在可能抛出异常的地方使用，如：</li>
+</ul>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"># bad</span><br><span class="line">try:</span><br><span class="line">    user = User()</span><br><span class="line">    user.name = <span class="string">"leon"</span></span><br><span class="line">    user.age = <span class="keyword">int</span>(age) # 可能抛出异常</span><br><span class="line">    user.created_at = datetime.datetime.utcnow()</span><br><span class="line"></span><br><span class="line">    db.session.add(user)</span><br><span class="line">    db.session.commit() # 可能抛出异常</span><br><span class="line">except:</span><br><span class="line">    db.session.rollback()</span><br><span class="line"></span><br><span class="line"># better</span><br><span class="line">try:</span><br><span class="line">    age = <span class="keyword">int</span>(age)</span><br><span class="line">except (TypeError, ValueError):</span><br><span class="line">    <span class="keyword">return</span> # 或别的操作</span><br><span class="line"></span><br><span class="line">user = User()</span><br><span class="line">user.name = <span class="string">"leon"</span></span><br><span class="line">user.age = age</span><br><span class="line">user.created_at = datetime.datetime.utcnow()</span><br><span class="line">db.session.add(user)</span><br><span class="line"></span><br><span class="line">try:</span><br><span class="line">    db.session.commit()</span><br><span class="line">except sqlalchemy.exc.SQLAlchemyError: # 或者更具体的异常</span><br><span class="line">    db.session.rollback()</span><br><span class="line">finally:</span><br><span class="line">    db.session.<span class="built_in">close</span>()</span><br></pre></td></tr></table></figure>
+<ul>
+<li>从 Exception 而不是 BaseException 继承自定义的异常类</li>
+</ul>
+<p><br></p>
+<h4 id="Class（类）"><a href="#Class（类）" class="headerlink" title="Class（类）"></a>Class（类）</h4><hr>
+<ul>
+<li>显示的写明父类，如果不是继承自别的类，就继承自 object 类</li>
+<li>使用 super 调用父类的方法</li>
+<li>支持多继承，即同时有多个父类，建议使用 Mixin</li>
+</ul>
+<p><br></p>
+<h4 id="编码建议"><a href="#编码建议" class="headerlink" title="编码建议"></a>编码建议</h4><hr>
+<p><strong>字符串</strong></p>
+<ul>
+<li>使用字符串的 join 方法拼接字符串</li>
+<li>使用字符串类型的方法，而不是 string 模块的方法</li>
+<li>使用 startswith 和 endswith 方法比较前缀和后缀</li>
+<li>使用 format 方法格式化字符串</li>
+</ul>
+<p><strong>比较</strong></p>
+<ul>
+<li>空的 list, str, tuple, set, dict 和 0, 0.0, None 都是 False</li>
+<li>使用 if some_list 而不是 if len(some_list) 判断某个 list 是否为空，其他类型同理</li>
+<li>使用 is 和 is not 与单例（如 None）进行比较，而不是用 == 和 !=</li>
+<li>使用 if a is not None 而不是 if not a is None</li>
+<li>用 isinstance 而不是 type 判断类型</li>
+<li>不要用 == 和 != 与 True 和 False 比较（除非有特殊情况，如在 sqlalchemy 中可能用到）</li>
+<li><p>使用 in 操作：</p>
+<ul>
+<li><p>用 key in dict 而不是 dict.has_key()，比如</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"> # bad</span><br><span class="line"><span class="keyword">if</span> d.has_key(k):</span><br><span class="line">    do_something()</span><br><span class="line"></span><br><span class="line"># good</span><br><span class="line"><span class="keyword">if</span> k in d:</span><br><span class="line">    do_something()</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>用 set 加速 “存在性” 检查，list 的查找是线性的，复杂度 O(n)，set 底层是 hash table, 复杂度 O(1)，但用 set 需要比 list 更多内存空间</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><br></p>
+<h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><hr>
+<ul>
+<li>使用列表表达式（<a href="https://www.python.org/dev/peps/pep-0202/" target="_blank" rel="noopener">list comprehension</a>），字典表达式(<a href="https://www.python.org/dev/peps/pep-0274/" target="_blank" rel="noopener">dict comprehension</a>, Python 2.7+) 和生成器(generator)</li>
+<li>dict 的 get 方法可以指定默认值，但有些时候应该用 [] 操作，使得可以抛出 KeyError</li>
+<li>使用 for item in list 迭代 list, for index, item in enumerate(list) 迭代 list 并获取下标</li>
+<li>使用内建函数 sorted 和 list.sort 进行排序</li>
+<li>适量使用 map, reduce, filter 和 lambda，使用内建的 all, any 处理多个条件的判断</li>
+<li>使用 defaultdict (Python 2.5+), Counter(Python 2.7+) 等 “冷门” 但好用的标准库算法和数据结构</li>
+<li>使用装饰器(decorator)</li>
+<li>使用 with 语句处理上下文</li>
+<li>有些时候不要对类型做太过严格的限制，利用 Python 的鸭子类型（Duck Type）特性</li>
+<li>使用 logging 记录日志，配置好格式和级别</li>
+<li>了解 Python 的 Magic Method：<a href="http://www.rafekettler.com/magicmethods.html" target="_blank" rel="noopener">A Guide to Python’s Magic Methods</a>, <a href="http://pycoders-weekly-chinese.readthedocs.org/en/latest/issue6/a-guide-to-pythons-magic-methods.html" target="_blank" rel="noopener">Python 魔术方法指南</a></li>
+<li>阅读优秀的开源代码，如 <a href="https://github.com/mitsuhiko/flask" target="_blank" rel="noopener">Flask 框架</a>, <a href="https://github.com/kennethreitz/requests" target="_blank" rel="noopener">Requests for Humans</a></li>
+<li>不要重复造轮子，查看标准库、PyPi、Github、Google 等使用现有的优秀的解决方案</li>
+</ul>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/Other/">Other</a>
+</div>
+
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://juniway.github.io/2015/11/13/python-coding-standards/" data-title="Python Coding Style Guide | BN Stack" data-tsina="1324264260" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2015/11/13/system-build-ningja/" title="Use Ninja to replace make">
+  <strong>Prev：</strong><br/>
+  <span>
+  Use Ninja to replace make</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2015/11/05/vim-file-and-window/"  title="File and multi windows in Vim">
+ <strong>Next：</strong><br/>
+ <span>File and multi windows in Vim
+</span>
+</a>
+</div>
+
+</nav>
+
+
+	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2015/11/13/python-coding-standards/" data-title="Python Coding Style Guide" data-url="http://juniway.github.io/2015/11/13/python-coding-standards/"></div>
+</section>
+
+
+<section id="comments" class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+
+  
+
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">Categories</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/Algo/" title="Algo">Algo<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Cpp/" title="Cpp">Cpp<sup>4</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Database/" title="Database">Database<sup>2</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Distributed-System/" title="Distributed System">Distributed System<sup>9</sup></a></li>
+		  
+		
+		  
+		
+		  
+			<li><a href="/categories/Git/" title="Git">Git<sup>9</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Go/" title="Go">Go<sup>23</sup></a></li>
+		  
+		
+		  
+		
+		  
+			<li><a href="/categories/Life/" title="Life">Life<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Linux/" title="Linux">Linux<sup>24</sup></a></li>
+		  
+		
+		  
+		
+		  
+			<li><a href="/categories/Network-Programming/" title="Network Programming">Network Programming<sup>14</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/OS/" title="OS">OS<sup>5</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Other/" title="Other">Other<sup>8</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/System-Build/" title="System Build">System Build<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Tools/" title="Tools">Tools<sup>11</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Vim/" title="Vim">Vim<sup>4</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/VirtualBox/" title="VirtualBox">VirtualBox<sup>13</sup></a></li>
+		  
+		
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="archiveslist">
+    <p class="asidetitle"><a href="/archives">Archives</a></p>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">二月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">一月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">一月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">十一月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">九月 2016</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a><span class="archive-list-count">15</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">十月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">九月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/09/">九月 2013</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">八月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/07/">七月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/06/">六月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/03/">三月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/02/">二月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/01/">一月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/10/">十月 2012</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/09/">九月 2012</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/06/">六月 2012</a><span class="archive-list-count">1</span></li></ul>
+  </div>
+
+
+  
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Welcome to juniway&#39;s blog! <br/>
+			Let&#39;s do something technically.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1324264260" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a>
+		
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<span id="busuanzi_container_site_pv" style='display:none'>
+</br>total: <span id="busuanzi_value_site_pv"></span>, current: <span id="busuanzi_value_page_pv"></span>
+</span>
+
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"juniway"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'juniway';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?c2318a1b515efe9b35d9b636c112b180";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1259471060'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/z_stat.php%3Fid%3D1259471060' type='text/javascript'%3E%3C/script%3E"));</script>
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>
