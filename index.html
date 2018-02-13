@@ -102,7 +102,7 @@
     
      
            <p itemprop="description" >认识紫霞完全是一次意外，也就是熟人介绍。因为结局不太好，在冷静了一段时间后，我决定写下这个特别的经历。
-三月份，妈妈生病，我把她带到北京住院治疗，住院期间，她跟我提起紫霞，实际上在年初她就提过，只不过我一直都是不愿相亲，觉得没意思。但是现在每天在身边照顾她，她又是病人，我不得不心</p>
+得从三月份讲起，那时妈妈生病，我不放心，就把她带到北京住院治疗，住院期间，她跟我提起紫霞，实际上在年初她就提过，只不过我一直都是不愿相亲，觉得没意思。但是那时每天在身边照顾她，</p>
         
     
     <time datetime="2018-01-30T17:30:33.000Z" itemprop="datePublished">2018-01-31</time>
@@ -126,26 +126,6 @@
         
     
     <time datetime="2017-12-21T03:28:41.000Z" itemprop="datePublished">2017-12-21</time>
-  </a>
-</section>
-
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
-    <a href="/2017/12/16/tools-grpc-install/" title="grpc 的安装和使用" itemprop="url">
-  
-    <h1 itemprop="name">grpc 的安装和使用</h1>
-    
-     
-           <p itemprop="description" >介绍grpc 是 Google 在 2015 年 2 月底时发布的一款开源 RPC 框架，其源码是由 C 语言编写的。按照 Google 的说法，grpc 是：A high performance, open source, general RPC framework that </p>
-        
-    
-    <time datetime="2017-12-16T03:22:47.000Z" itemprop="datePublished">2017-12-16</time>
   </a>
 </section>
 
@@ -221,13 +201,12 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2017/12/16/tools-grpc-go-cient-server/" title="grpc-go 编写 Client/Server" itemprop="url">
+    <a href="/2017/12/16/tools-grpc-install/" title="grpc 的安装和使用" itemprop="url">
   
-    <h1 itemprop="name">grpc-go 编写 Client/Server</h1>
+    <h1 itemprop="name">grpc 的安装和使用</h1>
     
      
-           <p itemprop="description" >介绍这篇文章介绍使用 grpc-go 编写 Client/Server 程序
-一、proto 文件定义及 Go 代码生成gRpc 使用 protobuf 作为默认的 wire-format 传输，在 .proto 文件中，我们需要定义传输过程中需要使用的各种 Message 类型</p>
+           <p itemprop="description" >介绍grpc 是 Google 在 2015 年 2 月底时发布的一款开源 RPC 框架，其源码是由 C 语言编写的。按照 Google 的说法，grpc 是：A high performance, open source, general RPC framework that </p>
         
     
     <time datetime="2017-12-16T03:22:47.000Z" itemprop="datePublished">2017-12-16</time>
@@ -248,6 +227,27 @@
     
      
            <p itemprop="description" >介绍Google 原生的 grpc 框架 是用 C 语言实现的，其默认包含了多种语言（cpp, ruby, python, c# 等）的实现，因而可以支持多种语言的 grpc 调用。但是默认没有提供 Go 和 Java 两种语言的 GRPC 实现。虽然如此，Google 官方在另</p>
+        
+    
+    <time datetime="2017-12-16T03:22:47.000Z" itemprop="datePublished">2017-12-16</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2017/12/16/tools-grpc-go-cient-server/" title="grpc-go 编写 Client/Server" itemprop="url">
+  
+    <h1 itemprop="name">grpc-go 编写 Client/Server</h1>
+    
+     
+           <p itemprop="description" >介绍这篇文章介绍使用 grpc-go 编写 Client/Server 程序
+一、proto 文件定义及 Go 代码生成gRpc 使用 protobuf 作为默认的 wire-format 传输，在 .proto 文件中，我们需要定义传输过程中需要使用的各种 Message 类型</p>
         
     
     <time datetime="2017-12-16T03:22:47.000Z" itemprop="datePublished">2017-12-16</time>
@@ -464,14 +464,14 @@ Go vendor 的项目管理方式在 Go 1.6 版本中得到正式引入，上述�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/10/14/go-var-scope/" title="Variable shadowing in Go" itemprop="url">
+    <a href="/2016/10/14/go-go-json/" title="Process json in Go" itemprop="url">
   
-    <h1 itemprop="name">Variable shadowing in Go</h1>
+    <h1 itemprop="name">Process json in Go</h1>
     
      
-           <p itemprop="description" >在 Go 语言开发过程中，经常会遇到需要使用局部（或临时）变量隐藏（shadow）全局同名变量的情形（比如常见的语句：val, err := somefunc()）。因此，本文总结介绍 Go 语言中最常用到的变量隐藏的知识。
-
-在相同作用域中同名变量的关系。Go 语言中申明一个变</p>
+           <p itemprop="description" >简介
+JSON 作为一种网络传输格式非常广泛，各种语言几乎都有支持，Go 语言也一样，提供了一个标准库 encoding/json 用于处理这种格式的数据。
+首先，我们必须明白，JSON 文本（或者称为 JSON 对象）本质上就是一串符合一定格式的字符串（在 Go 中是 []by</p>
         
     
     <time datetime="2016-10-14T03:28:41.000Z" itemprop="datePublished">2016-10-14</time>
@@ -486,14 +486,14 @@ Go vendor 的项目管理方式在 Go 1.6 版本中得到正式引入，上述�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/10/14/go-go-json/" title="Process json in Go" itemprop="url">
+    <a href="/2016/10/14/go-var-scope/" title="Variable shadowing in Go" itemprop="url">
   
-    <h1 itemprop="name">Process json in Go</h1>
+    <h1 itemprop="name">Variable shadowing in Go</h1>
     
      
-           <p itemprop="description" >简介
-JSON 作为一种网络传输格式非常广泛，各种语言几乎都有支持，Go 语言也一样，提供了一个标准库 encoding/json 用于处理这种格式的数据。
-首先，我们必须明白，JSON 文本（或者称为 JSON 对象）本质上就是一串符合一定格式的字符串（在 Go 中是 []by</p>
+           <p itemprop="description" >在 Go 语言开发过程中，经常会遇到需要使用局部（或临时）变量隐藏（shadow）全局同名变量的情形（比如常见的语句：val, err := somefunc()）。因此，本文总结介绍 Go 语言中最常用到的变量隐藏的知识。
+
+在相同作用域中同名变量的关系。Go 语言中申明一个变</p>
         
     
     <time datetime="2016-10-14T03:28:41.000Z" itemprop="datePublished">2016-10-14</time>
@@ -579,14 +579,13 @@ JSON 作为一种网络传输格式非常广泛，各种语言几乎都有支持
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/09/16/go-go-performance-tips/" title="Go performance tips" itemprop="url">
+    <a href="/2016/09/16/life-edge-of-life/" title="Death edge" itemprop="url">
   
-    <h1 itemprop="name">Go performance tips</h1>
+    <h1 itemprop="name">Death edge</h1>
     
      
-           <p itemprop="description" >本文列举一些可以更好的提升 Go 程序性能的场景和方法。
-
-string 与 []byte 相互转换在写程序的过程中经常遇到string与[]byte的相互转换，但是这种转换是有代价的，string与[]byte并不共享底层内存空间，所以每次转换都伴随着内存的分配与底层字节的拷贝</p>
+           <p itemprop="description" >写点东西，回忆一下我生命中经历过的生与死的边界。
+印象中最早的一次事情发生在读小学时候，放学后跟同学去游泳，那时候农村的鱼塘很多，水质也不错，大夏天放学后去结伴去游泳是很常见的事情。 然而我不会游泳，我最多算凑热闹的。由于第一次去没有经验，本来只打算在浅水区打打水玩玩的不小心就溜</p>
         
     
     <time datetime="2016-09-16T03:30:33.000Z" itemprop="datePublished">2016-09-16</time>
