@@ -76,12 +76,12 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/05/22/distributed-system-multi-raft/" title="Multi Raft" itemprop="url">
+    <a href="/2016/05/22/distributed-system-consensus/" title="Consensus - Leader Election Algorithms" itemprop="url">
   
-    <h1 itemprop="name">Multi Raft</h1>
+    <h1 itemprop="name">Consensus - Leader Election Algorithms</h1>
     
      
-           <p itemprop="description" >As the number of cluster node increasing, single raft will suffer performance penalty as the more nodes participate in the leader election a</p>
+           <p itemprop="description" >在分布式系统中，需要在多个节点之间保持数据的一致性，通常需要有一个协调者，这个协调者（Coodinator）作为整个集群的出口单独对外提供服务。通常，我们需要在集群中的所有节点中选出这么一个节点，作为所有节点的 Leader 来承担这个工作。Leader 只能有一个，其他节点为 </p>
         
     
     <time datetime="2016-05-22T12:16:25.000Z" itemprop="datePublished">2016-05-22</time>
@@ -429,14 +429,15 @@ ab 是通过模拟发送 http 请求的方式对服务程序进行测试，通�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2015/11/13/system-build-ningja/" title="Use Ninja to replace make" itemprop="url">
+    <a href="/2015/11/13/python-coding-standards/" title="Python Coding Style Guide" itemprop="url">
   
-    <h1 itemprop="name">Use Ninja to replace make</h1>
+    <h1 itemprop="name">Python Coding Style Guide</h1>
     
      
-           <p itemprop="description" >Introduction
-As stated in the official site, Ninja is a small build system with a focus on speed.
-There are multiplay ways to install ninja </p>
+           <p itemprop="description" >遵循良好的编码风格，可以有效的提高代码的可读性，降低出错几率和维护难度。在团队开发中，使用（尽量）统一的编码风格，还可以降低沟通成本。网上有很多版本的编码规范，基本上都是遵循 PEP8 的规范：
+
+PEP 0008 – Style Guide for Python Code
+Go</p>
         
     
     <time datetime="2015-11-13T03:30:33.000Z" itemprop="datePublished">2015-11-13</time>
@@ -451,15 +452,14 @@ There are multiplay ways to install ninja </p>
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2015/11/13/python-coding-standards/" title="Python Coding Style Guide" itemprop="url">
+    <a href="/2015/11/13/system-build-ningja/" title="Use Ninja to replace make" itemprop="url">
   
-    <h1 itemprop="name">Python Coding Style Guide</h1>
+    <h1 itemprop="name">Use Ninja to replace make</h1>
     
      
-           <p itemprop="description" >遵循良好的编码风格，可以有效的提高代码的可读性，降低出错几率和维护难度。在团队开发中，使用（尽量）统一的编码风格，还可以降低沟通成本。网上有很多版本的编码规范，基本上都是遵循 PEP8 的规范：
-
-PEP 0008 – Style Guide for Python Code
-Go</p>
+           <p itemprop="description" >Introduction
+As stated in the official site, Ninja is a small build system with a focus on speed.
+There are multiplay ways to install ninja </p>
         
     
     <time datetime="2015-11-13T03:30:33.000Z" itemprop="datePublished">2015-11-13</time>
