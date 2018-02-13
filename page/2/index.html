@@ -98,13 +98,15 @@ string 与 []byte 相互转换在写程序的过程中经常遇到string与[]byt
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/09/13/go-interface-principle/" title="Understand interface{}" itemprop="url">
+    <a href="/2016/09/13/go-interface-notes/" title="Mastering Go interface" itemprop="url">
   
-    <h1 itemprop="name">Understand interface{}</h1>
+    <h1 itemprop="name">Mastering Go interface</h1>
     
      
-           <p itemprop="description" >简介
-Go 语言中的 interface 关键字可以用来定义一个接口类型，里面声明一些方法，也可以当做任意类型，那么 interface 类型的底层是怎么实现的呢？ 其实早在 2009 年，Russ Cox 就写过一篇文章 来解释 interface 类型的值在 Go 语言中底层</p>
+           <p itemprop="description" >interface 类型在 Go 语言中是一个核心类型，用途及其广泛，本文列举其中最主要的使用场景，详述其使用方式，从而掌握使用它的精髓。
+
+1. interface 接口类型做参数
+想要函数对任何类型都能处理，并且处理后返回，可以把参数设置成接收 duck type，然后通过参</p>
         
     
     <time datetime="2016-09-13T03:30:33.000Z" itemprop="datePublished">2016-09-13</time>
@@ -119,14 +121,13 @@ Go 语言中的 interface 关键字可以用来定义一个接口类型，里面
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/09/13/go-go-type-alias/" title="Type Alias in Go" itemprop="url">
+    <a href="/2016/09/13/go-interface-principle/" title="Understand interface{}" itemprop="url">
   
-    <h1 itemprop="name">Type Alias in Go</h1>
+    <h1 itemprop="name">Understand interface{}</h1>
     
      
-           <p itemprop="description" >在 Go 语言中，可以为一个已有的类型指定一个别名，其语法格式是：
-1type myint int
-这样就把 myint 定义为了 int 类型的一个别名。需要注意的是，一旦定义了一个类型别名，它与原有的类型就是完全两个类型。由于 Go 语言中禁止类型的自动隐式转换，因此，别名和</p>
+           <p itemprop="description" >简介
+Go 语言中的 interface 关键字可以用来定义一个接口类型，里面声明一些方法，也可以当做任意类型，那么 interface 类型的底层是怎么实现的呢？ 其实早在 2009 年，Russ Cox 就写过一篇文章 来解释 interface 类型的值在 Go 语言中底层</p>
         
     
     <time datetime="2016-09-13T03:30:33.000Z" itemprop="datePublished">2016-09-13</time>
@@ -181,15 +182,14 @@ Go 语言中的 interface 关键字可以用来定义一个接口类型，里面
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/09/13/go-interface-notes/" title="Mastering Go interface" itemprop="url">
+    <a href="/2016/09/13/go-go-type-alias/" title="Type Alias in Go" itemprop="url">
   
-    <h1 itemprop="name">Mastering Go interface</h1>
+    <h1 itemprop="name">Type Alias in Go</h1>
     
      
-           <p itemprop="description" >interface 类型在 Go 语言中是一个核心类型，用途及其广泛，本文列举其中最主要的使用场景，详述其使用方式，从而掌握使用它的精髓。
-
-1. interface 接口类型做参数
-想要函数对任何类型都能处理，并且处理后返回，可以把参数设置成接收 duck type，然后通过参</p>
+           <p itemprop="description" >在 Go 语言中，可以为一个已有的类型指定一个别名，其语法格式是：
+1type myint int
+这样就把 myint 定义为了 int 类型的一个别名。需要注意的是，一旦定义了一个类型别名，它与原有的类型就是完全两个类型。由于 Go 语言中禁止类型的自动隐式转换，因此，别名和</p>
         
     
     <time datetime="2016-09-13T03:30:33.000Z" itemprop="datePublished">2016-09-13</time>
@@ -308,15 +308,12 @@ Go 语言中的 interface 关键字可以用来定义一个接口类型，里面
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/09/10/git-git-squash-commits/" title="Git squash several commits to one" itemprop="url">
+    <a href="/2016/09/10/network-programming-server-mode1/" title="服务器端编程模型（1）—— 同步阻塞迭代" itemprop="url">
   
-    <h1 itemprop="name">Git squash several commits to one</h1>
+    <h1 itemprop="name">服务器端编程模型（1）—— 同步阻塞迭代</h1>
     
      
-           <p itemprop="description" >There are multiple ways to squash several commits to a single commits before we push to the remote repository.
-
-1. git rebase -i HEAD~x
-This</p>
+           <p itemprop="description" >引言：似乎现在阻碍服务端大部分情况下都属于IO瓶颈，硬盘的转速等，而计算的瓶颈大部分云端计算采用分布式计算，如基于 GFS 的 MapReduce 模型，网格计算或者其他的一些分布式处理。所以，现在服务端的服务衡量指标基本集中在并发量，QPS，响应速度，稳定性等。其中一部分也不乏</p>
         
     
     <time datetime="2016-09-10T03:30:33.000Z" itemprop="datePublished">2016-09-10</time>
@@ -351,12 +348,15 @@ This</p>
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/09/10/network-programming-server-mode1/" title="服务器端编程模型（1）—— 同步阻塞迭代" itemprop="url">
+    <a href="/2016/09/10/git-git-squash-commits/" title="Git squash several commits to one" itemprop="url">
   
-    <h1 itemprop="name">服务器端编程模型（1）—— 同步阻塞迭代</h1>
+    <h1 itemprop="name">Git squash several commits to one</h1>
     
      
-           <p itemprop="description" >引言：似乎现在阻碍服务端大部分情况下都属于IO瓶颈，硬盘的转速等，而计算的瓶颈大部分云端计算采用分布式计算，如基于 GFS 的 MapReduce 模型，网格计算或者其他的一些分布式处理。所以，现在服务端的服务衡量指标基本集中在并发量，QPS，响应速度，稳定性等。其中一部分也不乏</p>
+           <p itemprop="description" >There are multiple ways to squash several commits to a single commits before we push to the remote repository.
+
+1. git rebase -i HEAD~x
+This</p>
         
     
     <time datetime="2016-09-10T03:30:33.000Z" itemprop="datePublished">2016-09-10</time>
@@ -434,12 +434,12 @@ shard: Each shard contains a subset of the sharded data. Each shard can be </p>
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/08/20/git-git-untrack/" title="Remove a file from a Git repository without deleting it from the local filesystem" itemprop="url">
+    <a href="/2016/08/20/git-git-undo/" title="Undo anything in Git" itemprop="url">
   
-    <h1 itemprop="name">Remove a file from a Git repository without deleting it from the local filesystem</h1>
+    <h1 itemprop="name">Undo anything in Git</h1>
     
      
-           <p itemprop="description" >There are sometimes that we want to untrack a file but don’t want to delete, in another word, we want to keep it in local file system but de</p>
+           <p itemprop="description" >When working in a software project whose code base is managed by Git, undo is a very common and frequent operation,and also it is one of the</p>
         
     
     <time datetime="2016-08-20T12:30:00.000Z" itemprop="datePublished">2016-08-20</time>
@@ -454,12 +454,12 @@ shard: Each shard contains a subset of the sharded data. Each shard can be </p>
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/08/20/git-git-undo/" title="Undo anything in Git" itemprop="url">
+    <a href="/2016/08/20/git-git-untrack/" title="Remove a file from a Git repository without deleting it from the local filesystem" itemprop="url">
   
-    <h1 itemprop="name">Undo anything in Git</h1>
+    <h1 itemprop="name">Remove a file from a Git repository without deleting it from the local filesystem</h1>
     
      
-           <p itemprop="description" >When working in a software project whose code base is managed by Git, undo is a very common and frequent operation,and also it is one of the</p>
+           <p itemprop="description" >There are sometimes that we want to untrack a file but don’t want to delete, in another word, we want to keep it in local file system but de</p>
         
     
     <time datetime="2016-08-20T12:30:00.000Z" itemprop="datePublished">2016-08-20</time>
