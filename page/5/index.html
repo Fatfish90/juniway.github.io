@@ -244,13 +244,13 @@ CMake 中默认的模块文件通常会位于 /usr/share/cmake-3.7.1/Module 目�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2015/06/18/os-cpu-cache-consistency-1/" title="缓存一致性（Cache Coherency）" itemprop="url">
+    <a href="/2015/06/18/os-cpu-cache/" title="利用多核多线程进行程序优化" itemprop="url">
   
-    <h1 itemprop="name">缓存一致性（Cache Coherency）</h1>
+    <h1 itemprop="name">利用多核多线程进行程序优化</h1>
     
      
-           <p itemprop="description" >本文是 RAD Game Tools 程序员 Fabian “ryg” Giesen 在其博客上发表的《Cache coherency primer》一文的翻译。该系列共有两篇，本文系第一篇。
-我计划写一些关于多核场景下数据组织的文章。写了第一篇，但我很快意识到有大量的基础知识我</p>
+           <p itemprop="description" >本文转载自：https://www.ibm.com/developerworks/cn/linux/l-cn-optimization/index.html
+大家也许还记得 2005 年 3 月 C++ 大师 Herb Sutter 在 Dr.Dobb’s Journal 上发表</p>
         
     
     <time datetime="2015-06-18T14:18:24.000Z" itemprop="datePublished">2015-06-18</time>
@@ -265,13 +265,13 @@ CMake 中默认的模块文件通常会位于 /usr/share/cmake-3.7.1/Module 目�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2015/06/18/os-cpu-cache/" title="利用多核多线程进行程序优化" itemprop="url">
+    <a href="/2015/06/18/os-cpu-cache-consistency-1/" title="缓存一致性（Cache Coherency）" itemprop="url">
   
-    <h1 itemprop="name">利用多核多线程进行程序优化</h1>
+    <h1 itemprop="name">缓存一致性（Cache Coherency）</h1>
     
      
-           <p itemprop="description" >本文转载自：https://www.ibm.com/developerworks/cn/linux/l-cn-optimization/index.html
-大家也许还记得 2005 年 3 月 C++ 大师 Herb Sutter 在 Dr.Dobb’s Journal 上发表</p>
+           <p itemprop="description" >本文是 RAD Game Tools 程序员 Fabian “ryg” Giesen 在其博客上发表的《Cache coherency primer》一文的翻译。该系列共有两篇，本文系第一篇。
+我计划写一些关于多核场景下数据组织的文章。写了第一篇，但我很快意识到有大量的基础知识我</p>
         
     
     <time datetime="2015-06-18T14:18:24.000Z" itemprop="datePublished">2015-06-18</time>
@@ -327,6 +327,27 @@ CMake 中默认的模块文件通常会位于 /usr/share/cmake-3.7.1/Module 目�
   
 <section class="post" itemscope itemprop="blogitem">
   
+    <a href="/2014/09/23/network-programming-select/" title="Use select to multiplexing network connections" itemprop="url">
+  
+    <h1 itemprop="name">Use select to multiplexing network connections</h1>
+    
+     
+           <p itemprop="description" >基本概念IO多路复用是指内核一旦发现进程指定的一个或者多个IO条件准备读取，它就通知该进程。IO多路复用适用如下场合：
+（1）当客户处理多个描述字时（一般是交互式输入和网络套接口），必须使用I/O复用。（2）当一个客户同时处理多个套接口时，而这种情况是可能的，但很少出现。（3）如</p>
+        
+    
+    <time datetime="2014-09-23T03:30:33.000Z" itemprop="datePublished">2014-09-23</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
     <a href="/2014/09/23/network-programming-diff-select-poll-epoll/" title="Difference between select, poll and epoll" itemprop="url">
   
     <h1 itemprop="name">Difference between select, poll and epoll</h1>
@@ -354,27 +375,6 @@ select，poll，epoll 都是 IO 多路复用的机制。I/O多路复用就通过
     
      
            <p itemprop="description" >基本知识poll 的机制与 select 类似，与 select 在本质上没有多大差别，管理多个描述符也是进行轮询，根据描述符的状态进行处理，但是poll没有最大文件描述符数量的限制。poll 和 select 同样存在一个缺点就是，包含大量文件描述符的数组被整体复制于用户态和内</p>
-        
-    
-    <time datetime="2014-09-23T03:30:33.000Z" itemprop="datePublished">2014-09-23</time>
-  </a>
-</section>
-
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
-    <a href="/2014/09/23/network-programming-select/" title="Use select to multiplexing network connections" itemprop="url">
-  
-    <h1 itemprop="name">Use select to multiplexing network connections</h1>
-    
-     
-           <p itemprop="description" >基本概念IO多路复用是指内核一旦发现进程指定的一个或者多个IO条件准备读取，它就通知该进程。IO多路复用适用如下场合：
-（1）当客户处理多个描述字时（一般是交互式输入和网络套接口），必须使用I/O复用。（2）当一个客户同时处理多个套接口时，而这种情况是可能的，但很少出现。（3）如</p>
         
     
     <time datetime="2014-09-23T03:30:33.000Z" itemprop="datePublished">2014-09-23</time>
@@ -476,13 +476,12 @@ Hoare的双向扫描
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2013/09/28/linux-shellstring/" title="Shell String Manipulations" itemprop="url">
+    <a href="/2013/09/28/linux-service-script/" title="How to write a service script" itemprop="url">
   
-    <h1 itemprop="name">Shell String Manipulations</h1>
+    <h1 itemprop="name">How to write a service script</h1>
     
      
-           <p itemprop="description" >String OperatorsThere are following string operators supported by Bourne Shell.
-Assume variable a holds “abc” and variable b holds “efg” the</p>
+           <p itemprop="description" >In Linux, service scripts are usually located in /etc/init.d/ directory (In CentOS 7, it is /usr/lib/systemd/system/my.service), if we don’t</p>
         
     
     <time datetime="2013-09-28T11:51:48.000Z" itemprop="datePublished">2013-09-28</time>
@@ -497,12 +496,13 @@ Assume variable a holds “abc” and variable b holds “efg” the</p>
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2013/09/28/linux-service-script/" title="How to write a service script" itemprop="url">
+    <a href="/2013/09/28/linux-shellstring/" title="Shell String Manipulations" itemprop="url">
   
-    <h1 itemprop="name">How to write a service script</h1>
+    <h1 itemprop="name">Shell String Manipulations</h1>
     
      
-           <p itemprop="description" >In Linux, service scripts are usually located in /etc/init.d/ directory (In CentOS 7, it is /usr/lib/systemd/system/my.service), if we don’t</p>
+           <p itemprop="description" >String OperatorsThere are following string operators supported by Bourne Shell.
+Assume variable a holds “abc” and variable b holds “efg” the</p>
         
     
     <time datetime="2013-09-28T11:51:48.000Z" itemprop="datePublished">2013-09-28</time>
