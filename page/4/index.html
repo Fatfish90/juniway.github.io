@@ -165,13 +165,15 @@ Note: this is the recom</p>
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/05/20/git-git-init/" title="Git init and remote branch" itemprop="url">
+    <a href="/2016/05/20/git-git-diff-local-repo/" title="Check the difference of file between local and repository" itemprop="url">
   
-    <h1 itemprop="name">Git init and remote branch</h1>
+    <h1 itemprop="name">Check the difference of file between local and repository</h1>
     
      
-           <p itemprop="description" >本地目录与远程库的区别
-如果已经在本地建好了一个目录，比如 myproj，同时，在 github.com 上也已经建了一个项目 proj_test，那么想把这个 proj_test 里的内容拉下来放到本地的 myproj 目录中，同时本地的 myproj 目录中原有的文件还继续能</p>
+           <p itemprop="description" >git diff masterorgit diff HEAD
+
+
+git diffShows the changes between the working directory and the index. This shows what has been changed, bu</p>
         
     
     <time datetime="2016-05-20T12:16:25.000Z" itemprop="datePublished">2016-05-20</time>
@@ -186,15 +188,13 @@ Note: this is the recom</p>
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/05/20/git-git-diff-local-repo/" title="Check the difference of file between local and repository" itemprop="url">
+    <a href="/2016/05/20/git-git-init/" title="Git init and remote branch" itemprop="url">
   
-    <h1 itemprop="name">Check the difference of file between local and repository</h1>
+    <h1 itemprop="name">Git init and remote branch</h1>
     
      
-           <p itemprop="description" >git diff masterorgit diff HEAD
-
-
-git diffShows the changes between the working directory and the index. This shows what has been changed, bu</p>
+           <p itemprop="description" >本地目录与远程库的区别
+如果已经在本地建好了一个目录，比如 myproj，同时，在 github.com 上也已经建了一个项目 proj_test，那么想把这个 proj_test 里的内容拉下来放到本地的 myproj 目录中，同时本地的 myproj 目录中原有的文件还继续能</p>
         
     
     <time datetime="2016-05-20T12:16:25.000Z" itemprop="datePublished">2016-05-20</time>
@@ -358,14 +358,19 @@ Paxos 协议是分布式系统中最著名的一致性协议，最早由 Lamport
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/01/28/linux-fish-programming/" title="Fish Shell Programming" itemprop="url">
+    <a href="/2016/01/28/linux-shell-variables/" title="Advanced Shell Variables" itemprop="url">
   
-    <h1 itemprop="name">Fish Shell Programming</h1>
+    <h1 itemprop="name">Advanced Shell Variables</h1>
     
      
-           <p itemprop="description" >Fish shell 是我个人开发环境中最喜爱的 shell 环境，因此一些 fish 下的命令有必要掌握，方便我更高效的在 fish 下进行工作。
-Fish shell 下与 bash 有很多不同，这里主要列出编写 fish shell 下脚本常用的命令
-在 bash 中是通过</p>
+           <p itemprop="description" >Bash 变量只有两种类型，字符串和数组。
+变量的赋值与引用
+变量通过等于号= (左右两边无空格)来赋值，通过 $ 来引用, 引用未定义过的变量，那么会以空字符取代。
+数组变量的赋值：
+
+Arr[index]=value
+declare -a Arr
+Arr=(value1 va</p>
         
     
     <time datetime="2016-01-28T11:51:48.000Z" itemprop="datePublished">2016-01-28</time>
@@ -380,19 +385,14 @@ Fish shell 下与 bash 有很多不同，这里主要列出编写 fish shell 下
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/01/28/linux-shell-variables/" title="Advanced Shell Variables" itemprop="url">
+    <a href="/2016/01/28/linux-fish-programming/" title="Fish Shell Programming" itemprop="url">
   
-    <h1 itemprop="name">Advanced Shell Variables</h1>
+    <h1 itemprop="name">Fish Shell Programming</h1>
     
      
-           <p itemprop="description" >Bash 变量只有两种类型，字符串和数组。
-变量的赋值与引用
-变量通过等于号= (左右两边无空格)来赋值，通过 $ 来引用, 引用未定义过的变量，那么会以空字符取代。
-数组变量的赋值：
-
-Arr[index]=value
-declare -a Arr
-Arr=(value1 va</p>
+           <p itemprop="description" >Fish shell 是我个人开发环境中最喜爱的 shell 环境，因此一些 fish 下的命令有必要掌握，方便我更高效的在 fish 下进行工作。
+Fish shell 下与 bash 有很多不同，这里主要列出编写 fish shell 下脚本常用的命令
+在 bash 中是通过</p>
         
     
     <time datetime="2016-01-28T11:51:48.000Z" itemprop="datePublished">2016-01-28</time>
@@ -512,6 +512,31 @@ g</p>
   
 <section class="post" itemscope itemprop="blogitem">
   
+    <a href="/2015/11/05/vim-file-and-window/" title="File and multi windows in Vim" itemprop="url">
+  
+    <h1 itemprop="name">File and multi windows in Vim</h1>
+    
+     
+           <p itemprop="description" >Editing multiple files1) Open multiple files at the same time
+
+vi a.txt b.txt c.txt
+:n, :next edit next file
+:2n edit next two files 
+:N, :p</p>
+        
+    
+    <time datetime="2015-11-05T13:11:48.000Z" itemprop="datePublished">2015-11-05</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
     <a href="/2015/11/05/vim-vim-edit-fast/" title="Edit fast in Vim" itemprop="url">
   
     <h1 itemprop="name">Edit fast in Vim</h1>
@@ -540,31 +565,6 @@ insert before the cursor
 
 I
 insert before the fi</p>
-        
-    
-    <time datetime="2015-11-05T13:11:48.000Z" itemprop="datePublished">2015-11-05</time>
-  </a>
-</section>
-
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
-    <a href="/2015/11/05/vim-file-and-window/" title="File and multi windows in Vim" itemprop="url">
-  
-    <h1 itemprop="name">File and multi windows in Vim</h1>
-    
-     
-           <p itemprop="description" >Editing multiple files1) Open multiple files at the same time
-
-vi a.txt b.txt c.txt
-:n, :next edit next file
-:2n edit next two files 
-:N, :p</p>
         
     
     <time datetime="2015-11-05T13:11:48.000Z" itemprop="datePublished">2015-11-05</time>
@@ -753,7 +753,7 @@ set nocp该命令指定让 VIM 工作在不兼容模式下。在 VIM 之前，�
   
   <div class="archiveslist">
     <p class="asidetitle"><a href="/archives">Archives</a></p>
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">一月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">一月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">十一月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">九月 2016</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a><span class="archive-list-count">15</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">十月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">九月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/09/">九月 2013</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">八月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/07/">七月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/06/">六月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/03/">三月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/02/">二月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/01/">一月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/10/">十月 2012</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/09/">九月 2012</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/06/">六月 2012</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">二月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">一月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">十一月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">九月 2016</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a><span class="archive-list-count">15</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">十月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">九月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/09/">九月 2013</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">八月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/07/">七月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/06/">六月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/03/">三月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/02/">二月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/01/">一月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/10/">十月 2012</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/09/">九月 2012</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/06/">六月 2012</a><span class="archive-list-count">1</span></li></ul>
   </div>
 
 
