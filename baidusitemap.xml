@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://juniway.github.io/2018/02/13/life-zixia/</loc>
-    <lastmod>2018-02-14T03:17:43.738Z</lastmod>
+    <lastmod>2018-02-14T13:41:03.374Z</lastmod>
     <data>
         <display>
         <title>紫霞</title>
@@ -53,6 +53,24 @@
     </url>
 
     
+    
+  <url>
+    <loc>http://juniway.github.io/2015/11/05/vim-vim-move-fast/</loc>
+    <lastmod>2018-02-13T13:55:04.123Z</lastmod>
+    <data>
+        <display>
+        <title>Move fast in Vim</title>
+        <pubTime>2015-11-05T13:11:48.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Vim" url="http://juniway.github.io/categories/Vim/"/>
+          
+        </display>
+    </data>
+    </url>
+
     
   <url>
     <loc>http://juniway.github.io/2015/10/11/vim-vimrc-setting/</loc>
@@ -109,17 +127,17 @@
 
     
   <url>
-    <loc>http://juniway.github.io/2015/11/05/vim-vim-move-fast/</loc>
-    <lastmod>2018-02-13T13:55:04.123Z</lastmod>
+    <loc>http://juniway.github.io/2013/07/03/vbox-vbox-portforwarding/</loc>
+    <lastmod>2018-02-13T13:55:04.122Z</lastmod>
     <data>
         <display>
-        <title>Move fast in Vim</title>
-        <pubTime>2015-11-05T13:11:48.000Z</pubTime>
+        <title>VirtualBox Port Forwarding</title>
+        <pubTime>2013-07-03T13:23:48.000Z</pubTime>
         
          
            
              
-              <breadCrumb title="Vim" url="http://juniway.github.io/categories/Vim/"/>
+              <breadCrumb title="VirtualBox" url="http://juniway.github.io/categories/VirtualBox/"/>
           
         </display>
     </data>
@@ -151,24 +169,6 @@
         <display>
         <title>Change the virtual hard disk size of a VM</title>
         <pubTime>2016-05-14T12:43:48.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="VirtualBox" url="http://juniway.github.io/categories/VirtualBox/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://juniway.github.io/2013/07/03/vbox-vbox-portforwarding/</loc>
-    <lastmod>2018-02-13T13:55:04.122Z</lastmod>
-    <data>
-        <display>
-        <title>VirtualBox Port Forwarding</title>
-        <pubTime>2013-07-03T13:23:48.000Z</pubTime>
         
          
            
@@ -235,48 +235,12 @@
 
     
   <url>
-    <loc>http://juniway.github.io/2012/09/27/vbox-vbox-config-files/</loc>
+    <loc>http://juniway.github.io/2016/07/02/vbox-vbox-create-vms-using-vboxmanage/</loc>
     <lastmod>2018-02-13T13:55:04.120Z</lastmod>
     <data>
         <display>
-        <title>VM Definition File in VirtualBox</title>
-        <pubTime>2012-09-27T03:30:33.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="VirtualBox" url="http://juniway.github.io/categories/VirtualBox/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://juniway.github.io/2012/06/11/vbox-vbox-guestaddition-shared-folder/</loc>
-    <lastmod>2018-02-13T13:55:04.120Z</lastmod>
-    <data>
-        <display>
-        <title>Installing GuestAdditions and Setup SharedFolder in VirtualBox</title>
-        <pubTime>2012-06-11T12:43:48.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="VirtualBox" url="http://juniway.github.io/categories/VirtualBox/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://juniway.github.io/2013/06/04/vbox-vbox-dhcp/</loc>
-    <lastmod>2018-02-13T13:55:04.120Z</lastmod>
-    <data>
-        <display>
-        <title>Enable DHCP server in VirtualBox</title>
-        <pubTime>2013-06-04T03:30:33.000Z</pubTime>
+        <title>A Windows command line script to create VMs in VirtualBox</title>
+        <pubTime>2016-07-02T12:43:48.000Z</pubTime>
         
          
            
@@ -307,12 +271,48 @@
 
     
   <url>
-    <loc>http://juniway.github.io/2016/07/02/vbox-vbox-create-vms-using-vboxmanage/</loc>
+    <loc>http://juniway.github.io/2012/06/11/vbox-vbox-guestaddition-shared-folder/</loc>
     <lastmod>2018-02-13T13:55:04.120Z</lastmod>
     <data>
         <display>
-        <title>A Windows command line script to create VMs in VirtualBox</title>
-        <pubTime>2016-07-02T12:43:48.000Z</pubTime>
+        <title>Installing GuestAdditions and Setup SharedFolder in VirtualBox</title>
+        <pubTime>2012-06-11T12:43:48.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="VirtualBox" url="http://juniway.github.io/categories/VirtualBox/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://juniway.github.io/2012/09/27/vbox-vbox-config-files/</loc>
+    <lastmod>2018-02-13T13:55:04.120Z</lastmod>
+    <data>
+        <display>
+        <title>VM Definition File in VirtualBox</title>
+        <pubTime>2012-09-27T03:30:33.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="VirtualBox" url="http://juniway.github.io/categories/VirtualBox/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://juniway.github.io/2013/06/04/vbox-vbox-dhcp/</loc>
+    <lastmod>2018-02-13T13:55:04.120Z</lastmod>
+    <data>
+        <display>
+        <title>Enable DHCP server in VirtualBox</title>
+        <pubTime>2013-06-04T03:30:33.000Z</pubTime>
         
          
            
@@ -343,24 +343,6 @@
 
     
   <url>
-    <loc>http://juniway.github.io/2012/09/27/vbox-gateway-dns/</loc>
-    <lastmod>2018-02-13T13:55:04.119Z</lastmod>
-    <data>
-        <display>
-        <title>Gateway and DNS</title>
-        <pubTime>2012-09-27T03:30:33.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="VirtualBox" url="http://juniway.github.io/categories/VirtualBox/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://juniway.github.io/2016/05/27/vbox-vbox-access-server-in-guestos/</loc>
     <lastmod>2018-02-13T13:55:04.119Z</lastmod>
     <data>
@@ -379,12 +361,30 @@
 
     
   <url>
-    <loc>http://juniway.github.io/2013/03/27/tools-makefile-notes/</loc>
+    <loc>http://juniway.github.io/2012/09/27/vbox-gateway-dns/</loc>
+    <lastmod>2018-02-13T13:55:04.119Z</lastmod>
+    <data>
+        <display>
+        <title>Gateway and DNS</title>
+        <pubTime>2012-09-27T03:30:33.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="VirtualBox" url="http://juniway.github.io/categories/VirtualBox/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://juniway.github.io/2017/12/16/tools-grpc-go-install/</loc>
     <lastmod>2018-02-13T13:55:04.118Z</lastmod>
     <data>
         <display>
-        <title>Write Makefile in simple</title>
-        <pubTime>2013-03-27T11:51:48.000Z</pubTime>
+        <title>grpc-go 的安装和使用</title>
+        <pubTime>2017-12-16T03:22:47.000Z</pubTime>
         
          
            
@@ -402,24 +402,6 @@
     <data>
         <display>
         <title>protoc2 与 protoc3 区别</title>
-        <pubTime>2017-12-16T03:22:47.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="Tools" url="http://juniway.github.io/categories/Tools/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://juniway.github.io/2017/12/16/tools-grpc-go-install/</loc>
-    <lastmod>2018-02-13T13:55:04.118Z</lastmod>
-    <data>
-        <display>
-        <title>grpc-go 的安装和使用</title>
         <pubTime>2017-12-16T03:22:47.000Z</pubTime>
         
          
@@ -469,53 +451,17 @@
 
     
   <url>
-    <loc>http://juniway.github.io/2015/07/29/tools-cmake-module/</loc>
-    <lastmod>2018-02-13T13:55:04.117Z</lastmod>
+    <loc>http://juniway.github.io/2013/03/27/tools-makefile-notes/</loc>
+    <lastmod>2018-02-13T13:55:04.118Z</lastmod>
     <data>
         <display>
-        <title>Write custom CMake modules</title>
-        <pubTime>2015-07-29T12:33:48.000Z</pubTime>
+        <title>Write Makefile in simple</title>
+        <pubTime>2013-03-27T11:51:48.000Z</pubTime>
         
          
            
              
               <breadCrumb title="Tools" url="http://juniway.github.io/categories/Tools/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://juniway.github.io/2015/07/29/tools-cmake-advanced/</loc>
-    <lastmod>2018-02-13T13:55:04.117Z</lastmod>
-    <data>
-        <display>
-        <title>CMake Advanced</title>
-        <pubTime>2015-07-29T12:33:48.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="Tools" url="http://juniway.github.io/categories/Tools/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://juniway.github.io/2015/11/13/system-build-ningja/</loc>
-    <lastmod>2018-02-13T13:55:04.117Z</lastmod>
-    <data>
-        <display>
-        <title>Use Ninja to replace make</title>
-        <pubTime>2015-11-13T03:30:33.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="System Build" url="http://juniway.github.io/categories/System-Build/"/>
           
         </display>
     </data>
@@ -541,12 +487,48 @@
 
     
   <url>
-    <loc>http://juniway.github.io/2017/12/16/tools-grpc-go-cient-server/</loc>
+    <loc>http://juniway.github.io/2015/11/13/system-build-ningja/</loc>
     <lastmod>2018-02-13T13:55:04.117Z</lastmod>
     <data>
         <display>
-        <title>grpc-go 编写 Client/Server</title>
-        <pubTime>2017-12-16T03:22:47.000Z</pubTime>
+        <title>Use Ninja to replace make</title>
+        <pubTime>2015-11-13T03:30:33.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="System Build" url="http://juniway.github.io/categories/System-Build/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://juniway.github.io/2015/07/29/tools-cmake-advanced/</loc>
+    <lastmod>2018-02-13T13:55:04.117Z</lastmod>
+    <data>
+        <display>
+        <title>CMake Advanced</title>
+        <pubTime>2015-07-29T12:33:48.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Tools" url="http://juniway.github.io/categories/Tools/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://juniway.github.io/2015/07/29/tools-cmake-module/</loc>
+    <lastmod>2018-02-13T13:55:04.117Z</lastmod>
+    <data>
+        <display>
+        <title>Write custom CMake modules</title>
+        <pubTime>2015-07-29T12:33:48.000Z</pubTime>
         
          
            
@@ -577,35 +559,17 @@
 
     
   <url>
-    <loc>http://juniway.github.io/2016/07/19/os-share-data-threads/</loc>
-    <lastmod>2018-02-13T13:55:04.116Z</lastmod>
+    <loc>http://juniway.github.io/2017/12/16/tools-grpc-go-cient-server/</loc>
+    <lastmod>2018-02-13T13:55:04.117Z</lastmod>
     <data>
         <display>
-        <title>Sharing data between threads</title>
-        <pubTime>2016-07-19T14:18:24.000Z</pubTime>
+        <title>grpc-go 编写 Client/Server</title>
+        <pubTime>2017-12-16T03:22:47.000Z</pubTime>
         
          
            
              
-              <breadCrumb title="OS" url="http://juniway.github.io/categories/OS/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://juniway.github.io/2015/06/18/os-cpu-cache-consistency-1/</loc>
-    <lastmod>2018-02-13T13:55:04.116Z</lastmod>
-    <data>
-        <display>
-        <title>缓存一致性（Cache Coherency）</title>
-        <pubTime>2015-06-18T14:18:24.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="OS" url="http://juniway.github.io/categories/OS/"/>
+              <breadCrumb title="Tools" url="http://juniway.github.io/categories/Tools/"/>
           
         </display>
     </data>
@@ -667,30 +631,12 @@
 
     
   <url>
-    <loc>http://juniway.github.io/2016/09/10/network-programming-server-mode6/</loc>
-    <lastmod>2018-02-13T13:55:04.115Z</lastmod>
+    <loc>http://juniway.github.io/2015/06/18/os-cpu-cache-consistency-1/</loc>
+    <lastmod>2018-02-13T13:55:04.116Z</lastmod>
     <data>
         <display>
-        <title>服务器端编程模型（6）—— Reactor 模式（基于 epoll 的反应堆）</title>
-        <pubTime>2016-09-10T04:30:38.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="Network Programming" url="http://juniway.github.io/categories/Network-Programming/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://juniway.github.io/2016/06/05/os-cpu-atomic-contention-2/</loc>
-    <lastmod>2018-02-13T13:55:04.115Z</lastmod>
-    <data>
-        <display>
-        <title>原子操作和竞争</title>
-        <pubTime>2016-06-05T14:18:24.000Z</pubTime>
+        <title>缓存一致性（Cache Coherency）</title>
+        <pubTime>2015-06-18T14:18:24.000Z</pubTime>
         
          
            
@@ -703,17 +649,17 @@
 
     
   <url>
-    <loc>http://juniway.github.io/2016/09/10/network-programming-server-mode3/</loc>
-    <lastmod>2018-02-13T13:55:04.115Z</lastmod>
+    <loc>http://juniway.github.io/2016/07/19/os-share-data-threads/</loc>
+    <lastmod>2018-02-13T13:55:04.116Z</lastmod>
     <data>
         <display>
-        <title>服务器端编程模型（3）——多线程并发式（线程池）</title>
-        <pubTime>2016-09-10T03:30:35.000Z</pubTime>
+        <title>Sharing data between threads</title>
+        <pubTime>2016-07-19T14:18:24.000Z</pubTime>
         
          
            
              
-              <breadCrumb title="Network Programming" url="http://juniway.github.io/categories/Network-Programming/"/>
+              <breadCrumb title="OS" url="http://juniway.github.io/categories/OS/"/>
           
         </display>
     </data>
@@ -757,11 +703,101 @@
 
     
   <url>
+    <loc>http://juniway.github.io/2016/09/10/network-programming-server-mode3/</loc>
+    <lastmod>2018-02-13T13:55:04.115Z</lastmod>
+    <data>
+        <display>
+        <title>服务器端编程模型（3）——多线程并发式（线程池）</title>
+        <pubTime>2016-09-10T03:30:35.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Network Programming" url="http://juniway.github.io/categories/Network-Programming/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://juniway.github.io/2016/06/05/os-cpu-atomic-contention-2/</loc>
+    <lastmod>2018-02-13T13:55:04.115Z</lastmod>
+    <data>
+        <display>
+        <title>原子操作和竞争</title>
+        <pubTime>2016-06-05T14:18:24.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="OS" url="http://juniway.github.io/categories/OS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://juniway.github.io/2016/09/10/network-programming-server-mode6/</loc>
+    <lastmod>2018-02-13T13:55:04.115Z</lastmod>
+    <data>
+        <display>
+        <title>服务器端编程模型（6）—— Reactor 模式（基于 epoll 的反应堆）</title>
+        <pubTime>2016-09-10T04:30:38.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Network Programming" url="http://juniway.github.io/categories/Network-Programming/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://juniway.github.io/2016/09/10/network-programming-server-mode1/</loc>
+    <lastmod>2018-02-13T13:55:04.114Z</lastmod>
+    <data>
+        <display>
+        <title>服务器端编程模型（1）—— 同步阻塞迭代</title>
+        <pubTime>2016-09-10T03:30:33.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Network Programming" url="http://juniway.github.io/categories/Network-Programming/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://juniway.github.io/2014/09/23/network-programming-select/</loc>
     <lastmod>2018-02-13T13:55:04.114Z</lastmod>
     <data>
         <display>
         <title>Use select to multiplexing network connections</title>
+        <pubTime>2014-09-23T03:30:33.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Network Programming" url="http://juniway.github.io/categories/Network-Programming/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://juniway.github.io/2014/09/23/network-programming-poll/</loc>
+    <lastmod>2018-02-13T13:55:04.114Z</lastmod>
+    <data>
+        <display>
+        <title>Use poll to multiplexing network connections</title>
         <pubTime>2014-09-23T03:30:33.000Z</pubTime>
         
          
@@ -793,48 +829,12 @@
 
     
   <url>
-    <loc>http://juniway.github.io/2016/09/10/network-programming-server-mode1/</loc>
-    <lastmod>2018-02-13T13:55:04.114Z</lastmod>
-    <data>
-        <display>
-        <title>服务器端编程模型（1）—— 同步阻塞迭代</title>
-        <pubTime>2016-09-10T03:30:33.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="Network Programming" url="http://juniway.github.io/categories/Network-Programming/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://juniway.github.io/2016/09/10/network-programming-server-mode2/</loc>
     <lastmod>2018-02-13T13:55:04.114Z</lastmod>
     <data>
         <display>
         <title>服务器端编程模型（2）—— 多进程并发式</title>
         <pubTime>2016-09-10T03:30:34.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="Network Programming" url="http://juniway.github.io/categories/Network-Programming/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://juniway.github.io/2014/09/23/network-programming-poll/</loc>
-    <lastmod>2018-02-13T13:55:04.114Z</lastmod>
-    <data>
-        <display>
-        <title>Use poll to multiplexing network connections</title>
-        <pubTime>2014-09-23T03:30:33.000Z</pubTime>
         
          
            
@@ -865,12 +865,12 @@
 
     
   <url>
-    <loc>http://juniway.github.io/2015/10/25/network-programming-listen-accept/</loc>
+    <loc>http://juniway.github.io/2014/09/23/network-programming-epoll/</loc>
     <lastmod>2018-02-13T13:55:04.113Z</lastmod>
     <data>
         <display>
-        <title>listen 和 accept 的套接字之间的关系</title>
-        <pubTime>2015-10-25T13:12:17.000Z</pubTime>
+        <title>Use epoll to multiplexing network connections</title>
+        <pubTime>2014-09-23T03:30:33.000Z</pubTime>
         
          
            
@@ -883,12 +883,12 @@
 
     
   <url>
-    <loc>http://juniway.github.io/2014/09/23/network-programming-epoll/</loc>
+    <loc>http://juniway.github.io/2015/10/25/network-programming-listen-accept/</loc>
     <lastmod>2018-02-13T13:55:04.113Z</lastmod>
     <data>
         <display>
-        <title>Use epoll to multiplexing network connections</title>
-        <pubTime>2014-09-23T03:30:33.000Z</pubTime>
+        <title>listen 和 accept 的套接字之间的关系</title>
+        <pubTime>2015-10-25T13:12:17.000Z</pubTime>
         
          
            
@@ -919,17 +919,17 @@
 
     
   <url>
-    <loc>http://juniway.github.io/2016/09/01/mongodb-shard-cluster/</loc>
+    <loc>http://juniway.github.io/2014/09/23/network-programming-diff-select-poll-epoll/</loc>
     <lastmod>2018-02-13T13:55:04.112Z</lastmod>
     <data>
         <display>
-        <title>Mongodb shard cluster</title>
-        <pubTime>2016-09-01T11:51:48.000Z</pubTime>
+        <title>Difference between select, poll and epoll</title>
+        <pubTime>2014-09-23T03:30:33.000Z</pubTime>
         
          
            
              
-              <breadCrumb title="Database" url="http://juniway.github.io/categories/Database/"/>
+              <breadCrumb title="Network Programming" url="http://juniway.github.io/categories/Network-Programming/"/>
           
         </display>
     </data>
@@ -943,24 +943,6 @@
         <display>
         <title>zip and unzip in Linux</title>
         <pubTime>2016-06-05T13:11:48.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="Linux" url="http://juniway.github.io/categories/Linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://juniway.github.io/2016/06/25/linux-ssh-remote-cmds/</loc>
-    <lastmod>2018-02-13T13:55:04.112Z</lastmod>
-    <data>
-        <display>
-        <title>Executing commands on remote machine using SSH</title>
-        <pubTime>2016-06-25T10:49:48.000Z</pubTime>
         
          
            
@@ -991,30 +973,12 @@
 
     
   <url>
-    <loc>http://juniway.github.io/2014/09/23/network-programming-diff-select-poll-epoll/</loc>
+    <loc>http://juniway.github.io/2016/06/25/linux-ssh-remote-cmds/</loc>
     <lastmod>2018-02-13T13:55:04.112Z</lastmod>
     <data>
         <display>
-        <title>Difference between select, poll and epoll</title>
-        <pubTime>2014-09-23T03:30:33.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="Network Programming" url="http://juniway.github.io/categories/Network-Programming/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://juniway.github.io/2016/05/24/linux-ss/</loc>
-    <lastmod>2018-02-13T13:55:04.111Z</lastmod>
-    <data>
-        <display>
-        <title>ss</title>
-        <pubTime>2016-05-24T03:53:22.000Z</pubTime>
+        <title>Executing commands on remote machine using SSH</title>
+        <pubTime>2016-06-25T10:49:48.000Z</pubTime>
         
          
            
@@ -1027,17 +991,17 @@
 
     
   <url>
-    <loc>http://juniway.github.io/2013/09/28/linux-shellstring/</loc>
-    <lastmod>2018-02-13T13:55:04.111Z</lastmod>
+    <loc>http://juniway.github.io/2016/09/01/mongodb-shard-cluster/</loc>
+    <lastmod>2018-02-13T13:55:04.112Z</lastmod>
     <data>
         <display>
-        <title>Shell String Manipulations</title>
-        <pubTime>2013-09-28T11:51:48.000Z</pubTime>
+        <title>Mongodb shard cluster</title>
+        <pubTime>2016-09-01T11:51:48.000Z</pubTime>
         
          
            
              
-              <breadCrumb title="Linux" url="http://juniway.github.io/categories/Linux/"/>
+              <breadCrumb title="Database" url="http://juniway.github.io/categories/Database/"/>
           
         </display>
     </data>
@@ -1045,48 +1009,12 @@
 
     
   <url>
-    <loc>http://juniway.github.io/2016/01/28/linux-shell-variables/</loc>
+    <loc>http://juniway.github.io/2016/05/20/linux-scp/</loc>
     <lastmod>2018-02-13T13:55:04.111Z</lastmod>
     <data>
         <display>
-        <title>Advanced Shell Variables</title>
-        <pubTime>2016-01-28T11:51:48.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="Linux" url="http://juniway.github.io/categories/Linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://juniway.github.io/2013/09/28/linux-service-script/</loc>
-    <lastmod>2018-02-13T13:55:04.111Z</lastmod>
-    <data>
-        <display>
-        <title>How to write a service script</title>
-        <pubTime>2013-09-28T11:51:48.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="Linux" url="http://juniway.github.io/categories/Linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://juniway.github.io/2016/06/05/linux-sed/</loc>
-    <lastmod>2018-02-13T13:55:04.111Z</lastmod>
-    <data>
-        <display>
-        <title>sed and regular expression</title>
-        <pubTime>2016-06-05T13:11:48.000Z</pubTime>
+        <title>scp</title>
+        <pubTime>2016-05-20T04:01:33.000Z</pubTime>
         
          
            
@@ -1117,12 +1045,12 @@
 
     
   <url>
-    <loc>http://juniway.github.io/2016/05/20/linux-scp/</loc>
+    <loc>http://juniway.github.io/2016/05/24/linux-ss/</loc>
     <lastmod>2018-02-13T13:55:04.111Z</lastmod>
     <data>
         <display>
-        <title>scp</title>
-        <pubTime>2016-05-20T04:01:33.000Z</pubTime>
+        <title>ss</title>
+        <pubTime>2016-05-24T03:53:22.000Z</pubTime>
         
          
            
@@ -1135,12 +1063,12 @@
 
     
   <url>
-    <loc>http://juniway.github.io/2016/05/22/linux-grep/</loc>
-    <lastmod>2018-02-13T13:55:04.110Z</lastmod>
+    <loc>http://juniway.github.io/2016/01/28/linux-shell-variables/</loc>
+    <lastmod>2018-02-13T13:55:04.111Z</lastmod>
     <data>
         <display>
-        <title>grep and regular expression</title>
-        <pubTime>2016-05-22T10:49:55.000Z</pubTime>
+        <title>Advanced Shell Variables</title>
+        <pubTime>2016-01-28T11:51:48.000Z</pubTime>
         
          
            
@@ -1153,12 +1081,48 @@
 
     
   <url>
-    <loc>http://juniway.github.io/2016/06/06/linux-job-cmd/</loc>
-    <lastmod>2018-02-13T13:55:04.110Z</lastmod>
+    <loc>http://juniway.github.io/2016/06/05/linux-sed/</loc>
+    <lastmod>2018-02-13T13:55:04.111Z</lastmod>
     <data>
         <display>
-        <title>Job commands</title>
-        <pubTime>2016-06-06T12:58:18.000Z</pubTime>
+        <title>sed and regular expression</title>
+        <pubTime>2016-06-05T13:11:48.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Linux" url="http://juniway.github.io/categories/Linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://juniway.github.io/2013/09/28/linux-service-script/</loc>
+    <lastmod>2018-02-13T13:55:04.111Z</lastmod>
+    <data>
+        <display>
+        <title>How to write a service script</title>
+        <pubTime>2013-09-28T11:51:48.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Linux" url="http://juniway.github.io/categories/Linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://juniway.github.io/2013/09/28/linux-shellstring/</loc>
+    <lastmod>2018-02-13T13:55:04.111Z</lastmod>
+    <data>
+        <display>
+        <title>Shell String Manipulations</title>
+        <pubTime>2013-09-28T11:51:48.000Z</pubTime>
         
          
            
@@ -1189,12 +1153,12 @@
 
     
   <url>
-    <loc>http://juniway.github.io/2016/06/05/linux-nc/</loc>
+    <loc>http://juniway.github.io/2016/06/06/linux-job-cmd/</loc>
     <lastmod>2018-02-13T13:55:04.110Z</lastmod>
     <data>
         <display>
-        <title>nc</title>
-        <pubTime>2016-06-05T13:11:48.000Z</pubTime>
+        <title>Job commands</title>
+        <pubTime>2016-06-06T12:58:18.000Z</pubTime>
         
          
            
@@ -1207,12 +1171,30 @@
 
     
   <url>
-    <loc>http://juniway.github.io/2015/09/19/linux-lsof/</loc>
+    <loc>http://juniway.github.io/2016/05/22/linux-grep/</loc>
     <lastmod>2018-02-13T13:55:04.110Z</lastmod>
     <data>
         <display>
-        <title>Use lsof in Linux</title>
-        <pubTime>2015-09-19T13:03:48.000Z</pubTime>
+        <title>grep and regular expression</title>
+        <pubTime>2016-05-22T10:49:55.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Linux" url="http://juniway.github.io/categories/Linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://juniway.github.io/2016/06/05/linux-nc/</loc>
+    <lastmod>2018-02-13T13:55:04.110Z</lastmod>
+    <data>
+        <display>
+        <title>nc</title>
+        <pubTime>2016-06-05T13:11:48.000Z</pubTime>
         
          
            
@@ -1243,66 +1225,30 @@
 
     
   <url>
+    <loc>http://juniway.github.io/2015/09/19/linux-lsof/</loc>
+    <lastmod>2018-02-13T13:55:04.110Z</lastmod>
+    <data>
+        <display>
+        <title>Use lsof in Linux</title>
+        <pubTime>2015-09-19T13:03:48.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Linux" url="http://juniway.github.io/categories/Linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://juniway.github.io/2016/01/28/linux-fish-programming/</loc>
     <lastmod>2018-02-13T13:55:04.110Z</lastmod>
     <data>
         <display>
         <title>Fish Shell Programming</title>
         <pubTime>2016-01-28T11:51:48.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="Linux" url="http://juniway.github.io/categories/Linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://juniway.github.io/2016/05/23/linux-find-xargs/</loc>
-    <lastmod>2018-02-13T13:55:04.109Z</lastmod>
-    <data>
-        <display>
-        <title>find and xargs</title>
-        <pubTime>2016-05-23T09:52:44.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="Linux" url="http://juniway.github.io/categories/Linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://juniway.github.io/2015/07/02/linux-env-files/</loc>
-    <lastmod>2018-02-13T13:55:04.109Z</lastmod>
-    <data>
-        <display>
-        <title>Understand Linux Environment Variables</title>
-        <pubTime>2015-07-02T12:43:48.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="Linux" url="http://juniway.github.io/categories/Linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://juniway.github.io/2015/09/16/linux-crontab/</loc>
-    <lastmod>2018-02-13T13:55:04.109Z</lastmod>
-    <data>
-        <display>
-        <title>crontab</title>
-        <pubTime>2015-09-16T03:30:33.000Z</pubTime>
         
          
            
@@ -1333,12 +1279,12 @@
 
     
   <url>
-    <loc>http://juniway.github.io/2016/06/06/linux-cut-paste/</loc>
+    <loc>http://juniway.github.io/2015/09/16/linux-crontab/</loc>
     <lastmod>2018-02-13T13:55:04.109Z</lastmod>
     <data>
         <display>
-        <title>Text field processing using cut and paste</title>
-        <pubTime>2016-06-06T12:43:48.000Z</pubTime>
+        <title>crontab</title>
+        <pubTime>2015-09-16T03:30:33.000Z</pubTime>
         
          
            
@@ -1369,17 +1315,17 @@
 
     
   <url>
-    <loc>http://juniway.github.io/2016/09/16/life-edge-of-life/</loc>
-    <lastmod>2018-02-13T13:55:04.108Z</lastmod>
+    <loc>http://juniway.github.io/2016/06/06/linux-cut-paste/</loc>
+    <lastmod>2018-02-13T13:55:04.109Z</lastmod>
     <data>
         <display>
-        <title>Death edge</title>
-        <pubTime>2016-09-16T03:30:33.000Z</pubTime>
+        <title>Text field processing using cut and paste</title>
+        <pubTime>2016-06-06T12:43:48.000Z</pubTime>
         
          
            
              
-              <breadCrumb title="Life" url="http://juniway.github.io/categories/Life/"/>
+              <breadCrumb title="Linux" url="http://juniway.github.io/categories/Linux/"/>
           
         </display>
     </data>
@@ -1387,17 +1333,35 @@
 
     
   <url>
-    <loc>http://juniway.github.io/2016/06/09/hadoop-reduce-tasks/</loc>
-    <lastmod>2018-02-13T13:55:04.108Z</lastmod>
+    <loc>http://juniway.github.io/2015/07/02/linux-env-files/</loc>
+    <lastmod>2018-02-13T13:55:04.109Z</lastmod>
     <data>
         <display>
-        <title>Hadoop reduce task</title>
-        <pubTime>2016-06-09T12:43:48.000Z</pubTime>
+        <title>Understand Linux Environment Variables</title>
+        <pubTime>2015-07-02T12:43:48.000Z</pubTime>
         
          
            
              
-              <breadCrumb title="Other" url="http://juniway.github.io/categories/Other/"/>
+              <breadCrumb title="Linux" url="http://juniway.github.io/categories/Linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://juniway.github.io/2016/05/23/linux-find-xargs/</loc>
+    <lastmod>2018-02-13T13:55:04.109Z</lastmod>
+    <data>
+        <display>
+        <title>find and xargs</title>
+        <pubTime>2016-05-23T09:52:44.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Linux" url="http://juniway.github.io/categories/Linux/"/>
           
         </display>
     </data>
@@ -1441,6 +1405,42 @@
 
     
   <url>
+    <loc>http://juniway.github.io/2016/06/09/hadoop-reduce-tasks/</loc>
+    <lastmod>2018-02-13T13:55:04.108Z</lastmod>
+    <data>
+        <display>
+        <title>Hadoop reduce task</title>
+        <pubTime>2016-06-09T12:43:48.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Other" url="http://juniway.github.io/categories/Other/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://juniway.github.io/2016/09/16/life-edge-of-life/</loc>
+    <lastmod>2018-02-13T13:55:04.108Z</lastmod>
+    <data>
+        <display>
+        <title>Death edge</title>
+        <pubTime>2016-09-16T03:30:33.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Life" url="http://juniway.github.io/categories/Life/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://juniway.github.io/2016/06/06/linux-awk/</loc>
     <lastmod>2018-02-13T13:55:04.108Z</lastmod>
     <data>
@@ -1452,6 +1452,78 @@
            
              
               <breadCrumb title="Linux" url="http://juniway.github.io/categories/Linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://juniway.github.io/2016/06/09/hadoop-hadoop-configurations/</loc>
+    <lastmod>2018-02-13T13:55:04.107Z</lastmod>
+    <data>
+        <display>
+        <title>Hadoop Configuration</title>
+        <pubTime>2016-06-09T12:43:48.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Other" url="http://juniway.github.io/categories/Other/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://juniway.github.io/2016/10/14/go-var-scope/</loc>
+    <lastmod>2018-02-13T13:55:04.107Z</lastmod>
+    <data>
+        <display>
+        <title>Variable shadowing in Go</title>
+        <pubTime>2016-10-14T03:28:41.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Go" url="http://juniway.github.io/categories/Go/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://juniway.github.io/2016/11/26/go-tls-mutual-auth/</loc>
+    <lastmod>2018-02-13T13:55:04.107Z</lastmod>
+    <data>
+        <display>
+        <title>TLS Mutual Authentication in Go</title>
+        <pubTime>2016-11-26T03:33:41.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Go" url="http://juniway.github.io/categories/Go/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://juniway.github.io/2016/07/04/hadoop-hadoop-runtime/</loc>
+    <lastmod>2018-02-13T13:55:04.107Z</lastmod>
+    <data>
+        <display>
+        <title>Hadoop runtime paramters</title>
+        <pubTime>2016-07-04T12:43:48.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Other" url="http://juniway.github.io/categories/Other/"/>
           
         </display>
     </data>
@@ -1495,138 +1567,12 @@
 
     
   <url>
-    <loc>http://juniway.github.io/2016/11/26/go-tls-mutual-auth/</loc>
-    <lastmod>2018-02-13T13:55:04.107Z</lastmod>
-    <data>
-        <display>
-        <title>TLS Mutual Authentication in Go</title>
-        <pubTime>2016-11-26T03:33:41.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="Go" url="http://juniway.github.io/categories/Go/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://juniway.github.io/2016/06/09/hadoop-hadoop-configurations/</loc>
-    <lastmod>2018-02-13T13:55:04.107Z</lastmod>
-    <data>
-        <display>
-        <title>Hadoop Configuration</title>
-        <pubTime>2016-06-09T12:43:48.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="Other" url="http://juniway.github.io/categories/Other/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://juniway.github.io/2016/07/04/hadoop-hadoop-runtime/</loc>
-    <lastmod>2018-02-13T13:55:04.107Z</lastmod>
-    <data>
-        <display>
-        <title>Hadoop runtime paramters</title>
-        <pubTime>2016-07-04T12:43:48.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="Other" url="http://juniway.github.io/categories/Other/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://juniway.github.io/2016/10/14/go-var-scope/</loc>
-    <lastmod>2018-02-13T13:55:04.107Z</lastmod>
-    <data>
-        <display>
-        <title>Variable shadowing in Go</title>
-        <pubTime>2016-10-14T03:28:41.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="Go" url="http://juniway.github.io/categories/Go/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://juniway.github.io/2016/07/16/go-slice/</loc>
-    <lastmod>2018-02-13T13:55:04.106Z</lastmod>
-    <data>
-        <display>
-        <title>slice in Go</title>
-        <pubTime>2016-07-16T03:30:33.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="Go" url="http://juniway.github.io/categories/Go/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://juniway.github.io/2016/07/29/go-redigo-analysis/</loc>
     <lastmod>2018-02-13T13:55:04.106Z</lastmod>
     <data>
         <display>
         <title>Redigo test report</title>
         <pubTime>2016-07-29T03:30:33.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="Go" url="http://juniway.github.io/categories/Go/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://juniway.github.io/2016/09/19/go-print-struct-map/</loc>
-    <lastmod>2018-02-13T13:55:04.106Z</lastmod>
-    <data>
-        <display>
-        <title>Print struct and map in a human readable format</title>
-        <pubTime>2016-09-19T14:28:41.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="Go" url="http://juniway.github.io/categories/Go/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://juniway.github.io/2016/07/29/go-mgo-source-structure/</loc>
-    <lastmod>2018-02-13T13:55:04.106Z</lastmod>
-    <data>
-        <display>
-        <title>mgo source</title>
-        <pubTime>2016-07-29T12:17:33.000Z</pubTime>
         
          
            
@@ -1657,12 +1603,84 @@
 
     
   <url>
+    <loc>http://juniway.github.io/2016/07/29/go-mgo-source-structure/</loc>
+    <lastmod>2018-02-13T13:55:04.106Z</lastmod>
+    <data>
+        <display>
+        <title>mgo source</title>
+        <pubTime>2016-07-29T12:17:33.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Go" url="http://juniway.github.io/categories/Go/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://juniway.github.io/2016/07/16/go-slice/</loc>
+    <lastmod>2018-02-13T13:55:04.106Z</lastmod>
+    <data>
+        <display>
+        <title>slice in Go</title>
+        <pubTime>2016-07-16T03:30:33.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Go" url="http://juniway.github.io/categories/Go/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://juniway.github.io/2016/09/19/go-print-struct-map/</loc>
+    <lastmod>2018-02-13T13:55:04.106Z</lastmod>
+    <data>
+        <display>
+        <title>Print struct and map in a human readable format</title>
+        <pubTime>2016-09-19T14:28:41.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Go" url="http://juniway.github.io/categories/Go/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://juniway.github.io/2016/07/16/go-slice-array/</loc>
     <lastmod>2018-02-13T13:55:04.106Z</lastmod>
     <data>
         <display>
         <title>The difference between slice and array in Go</title>
         <pubTime>2016-07-16T03:30:33.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Go" url="http://juniway.github.io/categories/Go/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://juniway.github.io/2017/01/07/go-http-hijacker/</loc>
+    <lastmod>2018-02-13T13:55:04.105Z</lastmod>
+    <data>
+        <display>
+        <title>Use http.Hijacker to take over the http connection</title>
+        <pubTime>2017-01-07T01:31:41.000Z</pubTime>
         
          
            
@@ -1693,24 +1711,6 @@
 
     
   <url>
-    <loc>http://juniway.github.io/2016/09/13/go-interface-principle/</loc>
-    <lastmod>2018-02-13T13:55:04.105Z</lastmod>
-    <data>
-        <display>
-        <title>Understand interface{}</title>
-        <pubTime>2016-09-13T03:30:33.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="Go" url="http://juniway.github.io/categories/Go/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://juniway.github.io/2016/09/13/go-interface-notes/</loc>
     <lastmod>2018-02-13T13:55:04.105Z</lastmod>
     <data>
@@ -1729,12 +1729,30 @@
 
     
   <url>
-    <loc>http://juniway.github.io/2017/01/07/go-http-hijacker/</loc>
+    <loc>http://juniway.github.io/2016/09/13/go-interface-principle/</loc>
     <lastmod>2018-02-13T13:55:04.105Z</lastmod>
     <data>
         <display>
-        <title>Use http.Hijacker to take over the http connection</title>
-        <pubTime>2017-01-07T01:31:41.000Z</pubTime>
+        <title>Understand interface{}</title>
+        <pubTime>2016-09-13T03:30:33.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Go" url="http://juniway.github.io/categories/Go/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://juniway.github.io/2016/10/14/go-json-encoder/</loc>
+    <lastmod>2018-02-13T13:55:04.105Z</lastmod>
+    <data>
+        <display>
+        <title>Streaming Encoders and Decoders for json</title>
+        <pubTime>2016-10-14T03:30:33.000Z</pubTime>
         
          
            
@@ -1783,29 +1801,11 @@
 
     
   <url>
-    <loc>http://juniway.github.io/2016/10/14/go-json-encoder/</loc>
-    <lastmod>2018-02-13T13:55:04.105Z</lastmod>
-    <data>
-        <display>
-        <title>Streaming Encoders and Decoders for json</title>
-        <pubTime>2016-10-14T03:30:33.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="Go" url="http://juniway.github.io/categories/Go/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://juniway.github.io/2016/09/13/go-go-type-alias/</loc>
+    <loc>http://juniway.github.io/2016/09/13/go-convertion-int-string/</loc>
     <lastmod>2018-02-13T13:55:04.104Z</lastmod>
     <data>
         <display>
-        <title>Type Alias in Go</title>
+        <title>Convertion between int and string values</title>
         <pubTime>2016-09-13T03:30:33.000Z</pubTime>
         
          
@@ -1819,30 +1819,12 @@
 
     
   <url>
-    <loc>http://juniway.github.io/2016/09/13/go-go-sizeof/</loc>
+    <loc>http://juniway.github.io/2017/12/21/go-convert-to-byte/</loc>
     <lastmod>2018-02-13T13:55:04.104Z</lastmod>
     <data>
         <display>
-        <title>Use sizeof in Go</title>
-        <pubTime>2016-09-13T03:30:33.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="Go" url="http://juniway.github.io/categories/Go/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://juniway.github.io/2016/10/13/go-go-sync-map/</loc>
-    <lastmod>2018-02-13T13:55:04.104Z</lastmod>
-    <data>
-        <display>
-        <title>A concurrency-safe implementation of map in Go</title>
-        <pubTime>2016-10-13T03:30:33.000Z</pubTime>
+        <title>Convert int to []byte in Go</title>
+        <pubTime>2017-12-21T03:28:41.000Z</pubTime>
         
          
            
@@ -1873,11 +1855,47 @@
 
     
   <url>
-    <loc>http://juniway.github.io/2016/09/13/go-convertion-int-string/</loc>
+    <loc>http://juniway.github.io/2016/11/21/go-gen-ca-key/</loc>
     <lastmod>2018-02-13T13:55:04.104Z</lastmod>
     <data>
         <display>
-        <title>Convertion between int and string values</title>
+        <title>Generate CA and key pairs in Go</title>
+        <pubTime>2016-11-21T01:31:41.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Go" url="http://juniway.github.io/categories/Go/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://juniway.github.io/2016/09/13/go-go-sizeof/</loc>
+    <lastmod>2018-02-13T13:55:04.104Z</lastmod>
+    <data>
+        <display>
+        <title>Use sizeof in Go</title>
+        <pubTime>2016-09-13T03:30:33.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Go" url="http://juniway.github.io/categories/Go/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://juniway.github.io/2016/09/13/go-go-type-alias/</loc>
+    <lastmod>2018-02-13T13:55:04.104Z</lastmod>
+    <data>
+        <display>
+        <title>Type Alias in Go</title>
         <pubTime>2016-09-13T03:30:33.000Z</pubTime>
         
          
@@ -1909,71 +1927,17 @@
 
     
   <url>
-    <loc>http://juniway.github.io/2016/11/21/go-gen-ca-key/</loc>
+    <loc>http://juniway.github.io/2016/10/13/go-go-sync-map/</loc>
     <lastmod>2018-02-13T13:55:04.104Z</lastmod>
     <data>
         <display>
-        <title>Generate CA and key pairs in Go</title>
-        <pubTime>2016-11-21T01:31:41.000Z</pubTime>
+        <title>A concurrency-safe implementation of map in Go</title>
+        <pubTime>2016-10-13T03:30:33.000Z</pubTime>
         
          
            
              
               <breadCrumb title="Go" url="http://juniway.github.io/categories/Go/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://juniway.github.io/2017/12/21/go-convert-to-byte/</loc>
-    <lastmod>2018-02-13T13:55:04.104Z</lastmod>
-    <data>
-        <display>
-        <title>Convert int to []byte in Go</title>
-        <pubTime>2017-12-21T03:28:41.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="Go" url="http://juniway.github.io/categories/Go/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://juniway.github.io/2016/05/21/git-multiple-remotes/</loc>
-    <lastmod>2018-02-13T13:55:04.103Z</lastmod>
-    <data>
-        <display>
-        <title>Manage multiple remotes for one local repository</title>
-        <pubTime>2016-05-21T12:16:25.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="Git" url="http://juniway.github.io/categories/Git/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://juniway.github.io/2016/08/20/git-git-undo/</loc>
-    <lastmod>2018-02-13T13:55:04.103Z</lastmod>
-    <data>
-        <display>
-        <title>Undo anything in Git</title>
-        <pubTime>2016-08-20T12:30:00.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="Git" url="http://juniway.github.io/categories/Git/"/>
           
         </display>
     </data>
@@ -1999,12 +1963,48 @@
 
     
   <url>
+    <loc>http://juniway.github.io/2016/05/21/git-multiple-remotes/</loc>
+    <lastmod>2018-02-13T13:55:04.103Z</lastmod>
+    <data>
+        <display>
+        <title>Manage multiple remotes for one local repository</title>
+        <pubTime>2016-05-21T12:16:25.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Git" url="http://juniway.github.io/categories/Git/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://juniway.github.io/2016/09/10/git-git-rebase-branch/</loc>
     <lastmod>2018-02-13T13:55:04.103Z</lastmod>
     <data>
         <display>
         <title>Cooperative development workflow using git branch</title>
         <pubTime>2016-09-10T03:30:33.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Git" url="http://juniway.github.io/categories/Git/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://juniway.github.io/2016/08/20/git-git-undo/</loc>
+    <lastmod>2018-02-13T13:55:04.103Z</lastmod>
+    <data>
+        <display>
+        <title>Undo anything in Git</title>
+        <pubTime>2016-08-20T12:30:00.000Z</pubTime>
         
          
            
@@ -2089,6 +2089,24 @@
 
     
   <url>
+    <loc>http://juniway.github.io/2016/05/22/distributed-system-raft/</loc>
+    <lastmod>2018-02-13T13:55:04.101Z</lastmod>
+    <data>
+        <display>
+        <title>Raft</title>
+        <pubTime>2016-05-22T12:16:25.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Distributed System" url="http://juniway.github.io/categories/Distributed-System/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://juniway.github.io/2016/05/20/git-git-diff-local-repo/</loc>
     <lastmod>2018-02-13T13:55:04.101Z</lastmod>
     <data>
@@ -2107,11 +2125,47 @@
 
     
   <url>
-    <loc>http://juniway.github.io/2016/05/22/distributed-system-raft/</loc>
-    <lastmod>2018-02-13T13:55:04.101Z</lastmod>
+    <loc>http://juniway.github.io/2016/05/22/distributed-system-multi-raft/</loc>
+    <lastmod>2018-02-13T13:55:04.100Z</lastmod>
     <data>
         <display>
-        <title>Raft</title>
+        <title>Multi Raft</title>
+        <pubTime>2016-05-22T12:16:25.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Distributed System" url="http://juniway.github.io/categories/Distributed-System/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://juniway.github.io/2016/05/11/distributed-system-paxos/</loc>
+    <lastmod>2018-02-13T13:55:04.100Z</lastmod>
+    <data>
+        <display>
+        <title>Paxos</title>
+        <pubTime>2016-05-11T12:16:25.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Distributed System" url="http://juniway.github.io/categories/Distributed-System/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://juniway.github.io/2016/05/22/distributed-system-consensus/</loc>
+    <lastmod>2018-02-13T13:55:04.100Z</lastmod>
+    <data>
+        <display>
+        <title>Consensus - Leader Election Algorithms</title>
         <pubTime>2016-05-22T12:16:25.000Z</pubTime>
         
          
@@ -2143,65 +2197,11 @@
 
     
   <url>
-    <loc>http://juniway.github.io/2016/05/11/distributed-system-paxos/</loc>
-    <lastmod>2018-02-13T13:55:04.100Z</lastmod>
-    <data>
-        <display>
-        <title>Paxos</title>
-        <pubTime>2016-05-11T12:16:25.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="Distributed System" url="http://juniway.github.io/categories/Distributed-System/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://juniway.github.io/2016/05/22/distributed-system-mvcc/</loc>
     <lastmod>2018-02-13T13:55:04.100Z</lastmod>
     <data>
         <display>
         <title>MVCC</title>
-        <pubTime>2016-05-22T12:16:25.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="Distributed System" url="http://juniway.github.io/categories/Distributed-System/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://juniway.github.io/2016/05/22/distributed-system-consensus/</loc>
-    <lastmod>2018-02-13T13:55:04.100Z</lastmod>
-    <data>
-        <display>
-        <title>Consensus - Leader Election Algorithms</title>
-        <pubTime>2016-05-22T12:16:25.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="Distributed System" url="http://juniway.github.io/categories/Distributed-System/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://juniway.github.io/2016/05/22/distributed-system-multi-raft/</loc>
-    <lastmod>2018-02-13T13:55:04.100Z</lastmod>
-    <data>
-        <display>
-        <title>Multi Raft</title>
         <pubTime>2016-05-22T12:16:25.000Z</pubTime>
         
          
@@ -2287,12 +2287,12 @@
 
     
   <url>
-    <loc>http://juniway.github.io/2013/02/16/cpp-cpp-high-performance-programming/</loc>
+    <loc>http://juniway.github.io/2014/12/16/cpp-crtp/</loc>
     <lastmod>2018-02-13T13:55:04.098Z</lastmod>
     <data>
         <display>
-        <title>C++ High Performance Programming</title>
-        <pubTime>2013-02-16T03:30:33.000Z</pubTime>
+        <title>CRTP, Curiously Recurring Template Pattern</title>
+        <pubTime>2014-12-16T03:30:33.000Z</pubTime>
         
          
            
@@ -2341,12 +2341,12 @@
 
     
   <url>
-    <loc>http://juniway.github.io/2014/12/16/cpp-crtp/</loc>
+    <loc>http://juniway.github.io/2013/02/16/cpp-cpp-high-performance-programming/</loc>
     <lastmod>2018-02-13T13:55:04.098Z</lastmod>
     <data>
         <display>
-        <title>CRTP, Curiously Recurring Template Pattern</title>
-        <pubTime>2014-12-16T03:30:33.000Z</pubTime>
+        <title>C++ High Performance Programming</title>
+        <pubTime>2013-02-16T03:30:33.000Z</pubTime>
         
          
            
