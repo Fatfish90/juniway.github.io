@@ -76,12 +76,12 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/05/22/distributed-system-consensus/" title="Consensus - Leader Election Algorithms" itemprop="url">
+    <a href="/2016/05/22/distributed-system-multi-raft/" title="Multi Raft" itemprop="url">
   
-    <h1 itemprop="name">Consensus - Leader Election Algorithms</h1>
+    <h1 itemprop="name">Multi Raft</h1>
     
      
-           <p itemprop="description" >在分布式系统中，需要在多个节点之间保持数据的一致性，通常需要有一个协调者，这个协调者（Coodinator）作为整个集群的出口单独对外提供服务。通常，我们需要在集群中的所有节点中选出这么一个节点，作为所有节点的 Leader 来承担这个工作。Leader 只能有一个，其他节点为 </p>
+           <p itemprop="description" >As the number of cluster node increasing, single raft will suffer performance penalty as the more nodes participate in the leader election a</p>
         
     
     <time datetime="2016-05-22T12:16:25.000Z" itemprop="datePublished">2016-05-22</time>
@@ -165,15 +165,13 @@ Note: this is the recom</p>
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/05/20/git-git-diff-local-repo/" title="Check the difference of file between local and repository" itemprop="url">
+    <a href="/2016/05/20/git-git-init/" title="Git init and remote branch" itemprop="url">
   
-    <h1 itemprop="name">Check the difference of file between local and repository</h1>
+    <h1 itemprop="name">Git init and remote branch</h1>
     
      
-           <p itemprop="description" >git diff masterorgit diff HEAD
-
-
-git diffShows the changes between the working directory and the index. This shows what has been changed, bu</p>
+           <p itemprop="description" >本地目录与远程库的区别
+如果已经在本地建好了一个目录，比如 myproj，同时，在 github.com 上也已经建了一个项目 proj_test，那么想把这个 proj_test 里的内容拉下来放到本地的 myproj 目录中，同时本地的 myproj 目录中原有的文件还继续能</p>
         
     
     <time datetime="2016-05-20T12:16:25.000Z" itemprop="datePublished">2016-05-20</time>
@@ -188,13 +186,15 @@ git diffShows the changes between the working directory and the index. This show
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/05/20/git-git-init/" title="Git init and remote branch" itemprop="url">
+    <a href="/2016/05/20/git-git-diff-local-repo/" title="Check the difference of file between local and repository" itemprop="url">
   
-    <h1 itemprop="name">Git init and remote branch</h1>
+    <h1 itemprop="name">Check the difference of file between local and repository</h1>
     
      
-           <p itemprop="description" >本地目录与远程库的区别
-如果已经在本地建好了一个目录，比如 myproj，同时，在 github.com 上也已经建了一个项目 proj_test，那么想把这个 proj_test 里的内容拉下来放到本地的 myproj 目录中，同时本地的 myproj 目录中原有的文件还继续能</p>
+           <p itemprop="description" >git diff masterorgit diff HEAD
+
+
+git diffShows the changes between the working directory and the index. This shows what has been changed, bu</p>
         
     
     <time datetime="2016-05-20T12:16:25.000Z" itemprop="datePublished">2016-05-20</time>
