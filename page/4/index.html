@@ -61,7 +61,7 @@
  					
 						<form class="search"  accept-charset="utf-8">
 							<label>Search</label>
-						<input type="text" class="st-default-search-input" maxlength="20" placeholder="search">
+						<input type="text" class="st-default-search-input" maxlength="20" placeholder="Search">
 						</form>
 					
 					</li>
@@ -76,13 +76,12 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/05/22/distributed-system-raft/" title="Raft" itemprop="url">
+    <a href="/2016/05/22/distributed-system-consensus/" title="Consensus - Leader Election Algorithms" itemprop="url">
   
-    <h1 itemprop="name">Raft</h1>
+    <h1 itemprop="name">Consensus - Leader Election Algorithms</h1>
     
      
-           <p itemprop="description" >简介
-Raft 是分布式一致性协议 Paxos 的一个变种，最早是在 2013 年由斯坦福大学 的 PhD 学生 Diego Ongaro 和他的导师 John Ousterhout 在论文“In Search of an Understandable Consensus Alg</p>
+           <p itemprop="description" >在分布式系统中，需要在多个节点之间保持数据的一致性，通常需要有一个协调者，这个协调者（Coodinator）作为整个集群的出口单独对外提供服务。通常，我们需要在集群中的所有节点中选出这么一个节点，作为所有节点的 Leader 来承担这个工作。Leader 只能有一个，其他节点为 </p>
         
     
     <time datetime="2016-05-22T12:16:25.000Z" itemprop="datePublished">2016-05-22</time>
@@ -166,13 +165,15 @@ Note: this is the recom</p>
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/05/20/git-git-init/" title="Git init and remote branch" itemprop="url">
+    <a href="/2016/05/20/git-git-diff-local-repo/" title="Check the difference of file between local and repository" itemprop="url">
   
-    <h1 itemprop="name">Git init and remote branch</h1>
+    <h1 itemprop="name">Check the difference of file between local and repository</h1>
     
      
-           <p itemprop="description" >本地目录与远程库的区别
-如果已经在本地建好了一个目录，比如 myproj，同时，在 github.com 上也已经建了一个项目 proj_test，那么想把这个 proj_test 里的内容拉下来放到本地的 myproj 目录中，同时本地的 myproj 目录中原有的文件还继续能</p>
+           <p itemprop="description" >git diff masterorgit diff HEAD
+
+
+git diffShows the changes between the working directory and the index. This shows what has been changed, bu</p>
         
     
     <time datetime="2016-05-20T12:16:25.000Z" itemprop="datePublished">2016-05-20</time>
@@ -187,15 +188,13 @@ Note: this is the recom</p>
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/05/20/git-git-diff-local-repo/" title="Check the difference of file between local and repository" itemprop="url">
+    <a href="/2016/05/20/git-git-init/" title="Git init and remote branch" itemprop="url">
   
-    <h1 itemprop="name">Check the difference of file between local and repository</h1>
+    <h1 itemprop="name">Git init and remote branch</h1>
     
      
-           <p itemprop="description" >git diff masterorgit diff HEAD
-
-
-git diffShows the changes between the working directory and the index. This shows what has been changed, bu</p>
+           <p itemprop="description" >本地目录与远程库的区别
+如果已经在本地建好了一个目录，比如 myproj，同时，在 github.com 上也已经建了一个项目 proj_test，那么想把这个 proj_test 里的内容拉下来放到本地的 myproj 目录中，同时本地的 myproj 目录中原有的文件还继续能</p>
         
     
     <time datetime="2016-05-20T12:16:25.000Z" itemprop="datePublished">2016-05-20</time>
@@ -676,7 +675,7 @@ set nocp该命令指定让 VIM 工作在不兼容模式下。在 VIM 之前，�
 
   
 <div class="categorieslist">
-	<p class="asidetitle">Category</p>
+	<p class="asidetitle">Categories</p>
 		<ul>
 		
 		  
@@ -753,7 +752,7 @@ set nocp该命令指定让 VIM 工作在不兼容模式下。在 VIM 之前，�
 
   
   <div class="archiveslist">
-    <p class="asidetitle"><a href="/archives">Archive</a></p>
+    <p class="asidetitle"><a href="/archives">Archives</a></p>
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">二月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">一月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">十一月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">九月 2016</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a><span class="archive-list-count">15</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">十月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">九月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/09/">九月 2013</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">八月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/07/">七月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/06/">六月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/03/">三月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/02/">二月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/01/">一月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/10/">十月 2012</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/09/">九月 2012</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/06/">六月 2012</a><span class="archive-list-count">1</span></li></ul>
   </div>
 
@@ -912,7 +911,7 @@ var _hmt = _hmt || [];
 <!-- Totop Begin -->
 
 	<div id="totop">
-	<a title="BackToTop"><img src="/img/scrollup.png"/></a>
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
 	</div>
 	<script src="/js/totop.js"></script>
 

@@ -61,7 +61,7 @@
  					
 						<form class="search"  accept-charset="utf-8">
 							<label>Search</label>
-						<input type="text" class="st-default-search-input" maxlength="20" placeholder="search">
+						<input type="text" class="st-default-search-input" maxlength="20" placeholder="Search">
 						</form>
 					
 					</li>
@@ -223,13 +223,13 @@ NAT 是通过 VirtualBox 内置的 NAT Engine 把 Guest OS 中</p>
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/06/09/hadoop-reduce-tasks/" title="Hadoop reduce task" itemprop="url">
+    <a href="/2016/06/09/hadoop-hadoop-configurations/" title="Hadoop Configuration" itemprop="url">
   
-    <h1 itemprop="name">Hadoop reduce task</h1>
+    <h1 itemprop="name">Hadoop Configuration</h1>
     
      
-           <p itemprop="description" >By default, there is only one reduce task, this means it will output part-00000 including all keys.
-In face of huge amount of data, the redu</p>
+           <p itemprop="description" >Hadoop configurations
+Once we have installed hadoop cluster we need to set up its configuration before it can work properly.One of the commo</p>
         
     
     <time datetime="2016-06-09T12:43:48.000Z" itemprop="datePublished">2016-06-09</time>
@@ -244,13 +244,13 @@ In face of huge amount of data, the redu</p>
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/06/09/hadoop-hadoop-configurations/" title="Hadoop Configuration" itemprop="url">
+    <a href="/2016/06/09/hadoop-reduce-tasks/" title="Hadoop reduce task" itemprop="url">
   
-    <h1 itemprop="name">Hadoop Configuration</h1>
+    <h1 itemprop="name">Hadoop reduce task</h1>
     
      
-           <p itemprop="description" >Hadoop configurations
-Once we have installed hadoop cluster we need to set up its configuration before it can work properly.One of the commo</p>
+           <p itemprop="description" >By default, there is only one reduce task, this means it will output part-00000 including all keys.
+In face of huge amount of data, the redu</p>
         
     
     <time datetime="2016-06-09T12:43:48.000Z" itemprop="datePublished">2016-06-09</time>
@@ -428,13 +428,12 @@ CREATE - to create object</p>
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/06/05/linux-sed/" title="sed and regular expression" itemprop="url">
+    <a href="/2016/06/05/linux-nc/" title="nc" itemprop="url">
   
-    <h1 itemprop="name">sed and regular expression</h1>
+    <h1 itemprop="name">nc</h1>
     
      
-           <p itemprop="description" >IntroductionSED is a stream editing command in Linux, it is very powerful in text processing under Linux environment. 
-SED can be used in ma</p>
+           <p itemprop="description" >nc is the command which runs netcat, a simple Unix utility that reads and writes data across network connections, using the TCP or UDP proto</p>
         
     
     <time datetime="2016-06-05T13:11:48.000Z" itemprop="datePublished">2016-06-05</time>
@@ -449,12 +448,13 @@ SED can be used in ma</p>
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/06/05/linux-nc/" title="nc" itemprop="url">
+    <a href="/2016/06/05/linux-sed/" title="sed and regular expression" itemprop="url">
   
-    <h1 itemprop="name">nc</h1>
+    <h1 itemprop="name">sed and regular expression</h1>
     
      
-           <p itemprop="description" >nc is the command which runs netcat, a simple Unix utility that reads and writes data across network connections, using the TCP or UDP proto</p>
+           <p itemprop="description" >IntroductionSED is a stream editing command in Linux, it is very powerful in text processing under Linux environment. 
+SED can be used in ma</p>
         
     
     <time datetime="2016-06-05T13:11:48.000Z" itemprop="datePublished">2016-06-05</time>
@@ -550,6 +550,27 @@ As we known</p>
   
 <section class="post" itemscope itemprop="blogitem">
   
+    <a href="/2016/05/22/distributed-system-raft/" title="Raft" itemprop="url">
+  
+    <h1 itemprop="name">Raft</h1>
+    
+     
+           <p itemprop="description" >简介
+Raft 是分布式一致性协议 Paxos 的一个变种，最早是在 2013 年由斯坦福大学 的 PhD 学生 Diego Ongaro 和他的导师 John Ousterhout 在论文“In Search of an Understandable Consensus Alg</p>
+        
+    
+    <time datetime="2016-05-22T12:16:25.000Z" itemprop="datePublished">2016-05-22</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
     <a href="/2016/05/22/distributed-system-mvcc/" title="MVCC" itemprop="url">
   
     <h1 itemprop="name">MVCC</h1>
@@ -587,26 +608,6 @@ As we known</p>
 
 
 
-  
-<section class="post" itemscope itemprop="blogitem">
-  
-    <a href="/2016/05/22/distributed-system-consensus/" title="Consensus - Leader Election Algorithms" itemprop="url">
-  
-    <h1 itemprop="name">Consensus - Leader Election Algorithms</h1>
-    
-     
-           <p itemprop="description" >在分布式系统中，需要在多个节点之间保持数据的一致性，通常需要有一个协调者，这个协调者（Coodinator）作为整个集群的出口单独对外提供服务。通常，我们需要在集群中的所有节点中选出这么一个节点，作为所有节点的 Leader 来承担这个工作。Leader 只能有一个，其他节点为 </p>
-        
-    
-    <time datetime="2016-05-22T12:16:25.000Z" itemprop="datePublished">2016-05-22</time>
-  </a>
-</section>
-
-
-
-
-
-
 
   <nav id="page-nav" class="clearfix unexpand">
     <a class="extend prev" rel="prev" href="/page/2/"><span></span>Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/4/">Next<span></span></a>
@@ -624,7 +625,7 @@ As we known</p>
 
   
 <div class="categorieslist">
-	<p class="asidetitle">Category</p>
+	<p class="asidetitle">Categories</p>
 		<ul>
 		
 		  
@@ -701,7 +702,7 @@ As we known</p>
 
   
   <div class="archiveslist">
-    <p class="asidetitle"><a href="/archives">Archive</a></p>
+    <p class="asidetitle"><a href="/archives">Archives</a></p>
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">二月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">一月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">十一月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">九月 2016</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a><span class="archive-list-count">15</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">十月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">九月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/09/">九月 2013</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">八月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/07/">七月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/06/">六月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/03/">三月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/02/">二月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/01/">一月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/10/">十月 2012</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/09/">九月 2012</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/06/">六月 2012</a><span class="archive-list-count">1</span></li></ul>
   </div>
 
@@ -860,7 +861,7 @@ var _hmt = _hmt || [];
 <!-- Totop Begin -->
 
 	<div id="totop">
-	<a title="BackToTop"><img src="/img/scrollup.png"/></a>
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
 	</div>
 	<script src="/js/totop.js"></script>
 
