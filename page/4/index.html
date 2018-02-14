@@ -76,13 +76,12 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/05/22/distributed-system-raft/" title="Raft" itemprop="url">
+    <a href="/2016/05/22/distributed-system-mvcc/" title="MVCC" itemprop="url">
   
-    <h1 itemprop="name">Raft</h1>
+    <h1 itemprop="name">MVCC</h1>
     
      
-           <p itemprop="description" >简介
-Raft 是分布式一致性协议 Paxos 的一个变种，最早是在 2013 年由斯坦福大学 的 PhD 学生 Diego Ongaro 和他的导师 John Ousterhout 在论文“In Search of an Understandable Consensus Alg</p>
+           <p itemprop="description" >MVCC (Multi-Version Concurrency Control) 多版本并发控制在分布式系统中是一个很重要的技术手段。在传统的分布式并发读写一个共享数据时，如果要保证读写的一致性，需要加锁来控制单一时间只有一个访问者在读写数据，然而当遇到一个长时间的读操作时，这时</p>
         
     
     <time datetime="2016-05-22T12:16:25.000Z" itemprop="datePublished">2016-05-22</time>
@@ -359,14 +358,19 @@ Paxos 协议是分布式系统中最著名的一致性协议，最早由 Lamport
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/01/28/linux-fish-programming/" title="Fish Shell Programming" itemprop="url">
+    <a href="/2016/01/28/linux-shell-variables/" title="Advanced Shell Variables" itemprop="url">
   
-    <h1 itemprop="name">Fish Shell Programming</h1>
+    <h1 itemprop="name">Advanced Shell Variables</h1>
     
      
-           <p itemprop="description" >Fish shell 是我个人开发环境中最喜爱的 shell 环境，因此一些 fish 下的命令有必要掌握，方便我更高效的在 fish 下进行工作。
-Fish shell 下与 bash 有很多不同，这里主要列出编写 fish shell 下脚本常用的命令
-在 bash 中是通过</p>
+           <p itemprop="description" >Bash 变量只有两种类型，字符串和数组。
+变量的赋值与引用
+变量通过等于号= (左右两边无空格)来赋值，通过 $ 来引用, 引用未定义过的变量，那么会以空字符取代。
+数组变量的赋值：
+
+Arr[index]=value
+declare -a Arr
+Arr=(value1 va</p>
         
     
     <time datetime="2016-01-28T11:51:48.000Z" itemprop="datePublished">2016-01-28</time>
@@ -381,19 +385,14 @@ Fish shell 下与 bash 有很多不同，这里主要列出编写 fish shell 下
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/01/28/linux-shell-variables/" title="Advanced Shell Variables" itemprop="url">
+    <a href="/2016/01/28/linux-fish-programming/" title="Fish Shell Programming" itemprop="url">
   
-    <h1 itemprop="name">Advanced Shell Variables</h1>
+    <h1 itemprop="name">Fish Shell Programming</h1>
     
      
-           <p itemprop="description" >Bash 变量只有两种类型，字符串和数组。
-变量的赋值与引用
-变量通过等于号= (左右两边无空格)来赋值，通过 $ 来引用, 引用未定义过的变量，那么会以空字符取代。
-数组变量的赋值：
-
-Arr[index]=value
-declare -a Arr
-Arr=(value1 va</p>
+           <p itemprop="description" >Fish shell 是我个人开发环境中最喜爱的 shell 环境，因此一些 fish 下的命令有必要掌握，方便我更高效的在 fish 下进行工作。
+Fish shell 下与 bash 有很多不同，这里主要列出编写 fish shell 下脚本常用的命令
+在 bash 中是通过</p>
         
     
     <time datetime="2016-01-28T11:51:48.000Z" itemprop="datePublished">2016-01-28</time>
