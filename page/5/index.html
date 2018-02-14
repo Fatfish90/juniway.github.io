@@ -23,11 +23,11 @@
     <link rel="alternative" href="/atom.xml" title="BN Stack" type="application/atom+xml">
     
     
-    <link rel="icon" href="/img/author.jpg">
+    <link rel="icon" href="/img/author.jpeg">
     
     
-    <link rel="apple-touch-icon" href="/img/author.jpg">
-    <link rel="apple-touch-icon-precomposed" href="/img/author.jpg">
+    <link rel="apple-touch-icon" href="/img/author.jpeg">
+    <link rel="apple-touch-icon-precomposed" href="/img/author.jpeg">
     
     <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -287,27 +287,6 @@ CMake 中默认的模块文件通常会位于 /usr/share/cmake-3.7.1/Module 目�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2014/09/23/network-programming-diff-select-poll-epoll/" title="Difference between select, poll and epoll" itemprop="url">
-  
-    <h1 itemprop="name">Difference between select, poll and epoll</h1>
-    
-     
-           <p itemprop="description" >本文总结 select, poll, epoll 之间的区别
-select，poll，epoll 都是 IO 多路复用的机制。I/O多路复用就通过一种机制，可以监视多个描述符，一旦某个描述符就绪（一般是读就绪或者写就绪），能够通知程序进行相应的读写操作。但select，poll，</p>
-        
-    
-    <time datetime="2014-09-23T03:30:33.000Z" itemprop="datePublished">2014-09-23</time>
-  </a>
-</section>
-
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
     <a href="/2014/09/23/network-programming-epoll/" title="Use epoll to multiplexing network connections" itemprop="url">
   
     <h1 itemprop="name">Use epoll to multiplexing network connections</h1>
@@ -355,6 +334,27 @@ select，poll，epoll 都是 IO 多路复用的机制。I/O多路复用就通过
      
            <p itemprop="description" >基本概念IO多路复用是指内核一旦发现进程指定的一个或者多个IO条件准备读取，它就通知该进程。IO多路复用适用如下场合：
 （1）当客户处理多个描述字时（一般是交互式输入和网络套接口），必须使用I/O复用。（2）当一个客户同时处理多个套接口时，而这种情况是可能的，但很少出现。（3）如</p>
+        
+    
+    <time datetime="2014-09-23T03:30:33.000Z" itemprop="datePublished">2014-09-23</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2014/09/23/network-programming-diff-select-poll-epoll/" title="Difference between select, poll and epoll" itemprop="url">
+  
+    <h1 itemprop="name">Difference between select, poll and epoll</h1>
+    
+     
+           <p itemprop="description" >本文总结 select, poll, epoll 之间的区别
+select，poll，epoll 都是 IO 多路复用的机制。I/O多路复用就通过一种机制，可以监视多个描述符，一旦某个描述符就绪（一般是读就绪或者写就绪），能够通知程序进行相应的读写操作。但select，poll，</p>
         
     
     <time datetime="2014-09-23T03:30:33.000Z" itemprop="datePublished">2014-09-23</time>
@@ -456,13 +456,12 @@ Hoare的双向扫描
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2013/09/28/linux-shellstring/" title="Shell String Manipulations" itemprop="url">
+    <a href="/2013/09/28/linux-service-script/" title="How to write a service script" itemprop="url">
   
-    <h1 itemprop="name">Shell String Manipulations</h1>
+    <h1 itemprop="name">How to write a service script</h1>
     
      
-           <p itemprop="description" >String OperatorsThere are following string operators supported by Bourne Shell.
-Assume variable a holds “abc” and variable b holds “efg” the</p>
+           <p itemprop="description" >In Linux, service scripts are usually located in /etc/init.d/ directory (In CentOS 7, it is /usr/lib/systemd/system/my.service), if we don’t</p>
         
     
     <time datetime="2013-09-28T11:51:48.000Z" itemprop="datePublished">2013-09-28</time>
@@ -477,12 +476,13 @@ Assume variable a holds “abc” and variable b holds “efg” the</p>
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2013/09/28/linux-service-script/" title="How to write a service script" itemprop="url">
+    <a href="/2013/09/28/linux-shellstring/" title="Shell String Manipulations" itemprop="url">
   
-    <h1 itemprop="name">How to write a service script</h1>
+    <h1 itemprop="name">Shell String Manipulations</h1>
     
      
-           <p itemprop="description" >In Linux, service scripts are usually located in /etc/init.d/ directory (In CentOS 7, it is /usr/lib/systemd/system/my.service), if we don’t</p>
+           <p itemprop="description" >String OperatorsThere are following string operators supported by Bourne Shell.
+Assume variable a holds “abc” and variable b holds “efg” the</p>
         
     
     <time datetime="2013-09-28T11:51:48.000Z" itemprop="datePublished">2013-09-28</time>
