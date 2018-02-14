@@ -204,12 +204,13 @@ CMake 中默认的模块文件通常会位于 /usr/share/cmake-3.7.1/Module 目�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2015/06/18/os-memory-allocation-contention/" title="Memory Allocation Contention" itemprop="url">
+    <a href="/2015/06/18/os-cpu-cache/" title="利用多核多线程进行程序优化" itemprop="url">
   
-    <h1 itemprop="name">Memory Allocation Contention</h1>
+    <h1 itemprop="name">利用多核多线程进行程序优化</h1>
     
      
-           <p itemprop="description" >How much of a bottleneck is memory allocation/deallocation in typical real-world programs? Answers from any type of program where performanc</p>
+           <p itemprop="description" >本文转载自：https://www.ibm.com/developerworks/cn/linux/l-cn-optimization/index.html
+大家也许还记得 2005 年 3 月 C++ 大师 Herb Sutter 在 Dr.Dobb’s Journal 上发表</p>
         
     
     <time datetime="2015-06-18T14:18:24.000Z" itemprop="datePublished">2015-06-18</time>
@@ -245,13 +246,12 @@ CMake 中默认的模块文件通常会位于 /usr/share/cmake-3.7.1/Module 目�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2015/06/18/os-cpu-cache/" title="利用多核多线程进行程序优化" itemprop="url">
+    <a href="/2015/06/18/os-memory-allocation-contention/" title="Memory Allocation Contention" itemprop="url">
   
-    <h1 itemprop="name">利用多核多线程进行程序优化</h1>
+    <h1 itemprop="name">Memory Allocation Contention</h1>
     
      
-           <p itemprop="description" >本文转载自：https://www.ibm.com/developerworks/cn/linux/l-cn-optimization/index.html
-大家也许还记得 2005 年 3 月 C++ 大师 Herb Sutter 在 Dr.Dobb’s Journal 上发表</p>
+           <p itemprop="description" >How much of a bottleneck is memory allocation/deallocation in typical real-world programs? Answers from any type of program where performanc</p>
         
     
     <time datetime="2015-06-18T14:18:24.000Z" itemprop="datePublished">2015-06-18</time>
@@ -276,6 +276,47 @@ CMake 中默认的模块文件通常会位于 /usr/share/cmake-3.7.1/Module 目�
         
     
     <time datetime="2014-12-16T03:30:33.000Z" itemprop="datePublished">2014-12-16</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2014/09/23/network-programming-epoll/" title="Use epoll to multiplexing network connections" itemprop="url">
+  
+    <h1 itemprop="name">Use epoll to multiplexing network connections</h1>
+    
+     
+           <p itemprop="description" >基本知识epoll 是在 2.6内核中提出的，是之前的 select 和 poll 的增强版本。相对于 select 和 poll 来说，epoll 更加灵活，没有描述符限制。epoll 使用一个文件描述符管理多个描述符，将用户关系的文件描述符的事件存放到内核的一个事件表中，这样</p>
+        
+    
+    <time datetime="2014-09-23T03:30:33.000Z" itemprop="datePublished">2014-09-23</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2014/09/23/network-programming-select/" title="Use select to multiplexing network connections" itemprop="url">
+  
+    <h1 itemprop="name">Use select to multiplexing network connections</h1>
+    
+     
+           <p itemprop="description" >基本概念IO多路复用是指内核一旦发现进程指定的一个或者多个IO条件准备读取，它就通知该进程。IO多路复用适用如下场合：
+（1）当客户处理多个描述字时（一般是交互式输入和网络套接口），必须使用I/O复用。（2）当一个客户同时处理多个套接口时，而这种情况是可能的，但很少出现。（3）如</p>
+        
+    
+    <time datetime="2014-09-23T03:30:33.000Z" itemprop="datePublished">2014-09-23</time>
   </a>
 </section>
 
@@ -328,70 +369,6 @@ select，poll，epoll 都是 IO 多路复用的机制。I/O多路复用就通过
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2014/09/23/network-programming-select/" title="Use select to multiplexing network connections" itemprop="url">
-  
-    <h1 itemprop="name">Use select to multiplexing network connections</h1>
-    
-     
-           <p itemprop="description" >基本概念IO多路复用是指内核一旦发现进程指定的一个或者多个IO条件准备读取，它就通知该进程。IO多路复用适用如下场合：
-（1）当客户处理多个描述字时（一般是交互式输入和网络套接口），必须使用I/O复用。（2）当一个客户同时处理多个套接口时，而这种情况是可能的，但很少出现。（3）如</p>
-        
-    
-    <time datetime="2014-09-23T03:30:33.000Z" itemprop="datePublished">2014-09-23</time>
-  </a>
-</section>
-
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
-    <a href="/2014/09/23/network-programming-epoll/" title="Use epoll to multiplexing network connections" itemprop="url">
-  
-    <h1 itemprop="name">Use epoll to multiplexing network connections</h1>
-    
-     
-           <p itemprop="description" >基本知识epoll 是在 2.6内核中提出的，是之前的 select 和 poll 的增强版本。相对于 select 和 poll 来说，epoll 更加灵活，没有描述符限制。epoll 使用一个文件描述符管理多个描述符，将用户关系的文件描述符的事件存放到内核的一个事件表中，这样</p>
-        
-    
-    <time datetime="2014-09-23T03:30:33.000Z" itemprop="datePublished">2014-09-23</time>
-  </a>
-</section>
-
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
-    <a href="/2014/09/16/network-programming-encryption-basics/" title="Encryption terminology" itemprop="url">
-  
-    <h1 itemprop="name">Encryption terminology</h1>
-    
-     
-           <p itemprop="description" >在进行网络开发时，经常会需要处理加密连接等跟证书加密等相关的概念，本文总结了证书加密等常见的名词术语及文件格式。
-
-术语及常见概念SSL - Secure Sockets Layer
-现在应该叫”TLS”,但由于习惯问题,还有很多场景下会称为”SSL”，涵义跟 TLS 完全相同。</p>
-        
-    
-    <time datetime="2014-09-16T03:30:33.000Z" itemprop="datePublished">2014-09-16</time>
-  </a>
-</section>
-
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
     <a href="/2014/09/16/algo-quick-sort/" title="Complete quicksort analysis" itemprop="url">
   
     <h1 itemprop="name">Complete quicksort analysis</h1>
@@ -421,6 +398,29 @@ Hoare的双向扫描
 尾递归
 
 </p>
+        
+    
+    <time datetime="2014-09-16T03:30:33.000Z" itemprop="datePublished">2014-09-16</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2014/09/16/network-programming-encryption-basics/" title="Encryption terminology" itemprop="url">
+  
+    <h1 itemprop="name">Encryption terminology</h1>
+    
+     
+           <p itemprop="description" >在进行网络开发时，经常会需要处理加密连接等跟证书加密等相关的概念，本文总结了证书加密等常见的名词术语及文件格式。
+
+术语及常见概念SSL - Secure Sockets Layer
+现在应该叫”TLS”,但由于习惯问题,还有很多场景下会称为”SSL”，涵义跟 TLS 完全相同。</p>
         
     
     <time datetime="2014-09-16T03:30:33.000Z" itemprop="datePublished">2014-09-16</time>
