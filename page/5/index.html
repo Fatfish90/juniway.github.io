@@ -76,26 +76,6 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2015/08/16/cpp-rapidjson/" title="Use rapidjson" itemprop="url">
-  
-    <h1 itemprop="name">Use rapidjson</h1>
-    
-     
-           <p itemprop="description" >1. Parse jsonuse doc.Parse() to parse a json string, also, rapidjson provides a ParseInsitu() which can be use to parse json in place.After </p>
-        
-    
-    <time datetime="2015-08-16T03:30:33.000Z" itemprop="datePublished">2015-08-16</time>
-  </a>
-</section>
-
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
     <a href="/2015/07/29/tools-cmake-advanced/" title="CMake Advanced" itemprop="url">
   
     <h1 itemprop="name">CMake Advanced</h1>
@@ -182,6 +162,27 @@ CMake 中默认的模块文件通常会位于 /usr/share/cmake-3.7.1/Module 目�
   
 <section class="post" itemscope itemprop="blogitem">
   
+    <a href="/2015/06/18/os-cpu-cache-consistency-1/" title="缓存一致性（Cache Coherency）" itemprop="url">
+  
+    <h1 itemprop="name">缓存一致性（Cache Coherency）</h1>
+    
+     
+           <p itemprop="description" >本文是 RAD Game Tools 程序员 Fabian “ryg” Giesen 在其博客上发表的《Cache coherency primer》一文的翻译。该系列共有两篇，本文系第一篇。
+我计划写一些关于多核场景下数据组织的文章。写了第一篇，但我很快意识到有大量的基础知识我</p>
+        
+    
+    <time datetime="2015-06-18T14:18:24.000Z" itemprop="datePublished">2015-06-18</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
     <a href="/2015/06/18/os-memory-allocation-contention/" title="Memory Allocation Contention" itemprop="url">
   
     <h1 itemprop="name">Memory Allocation Contention</h1>
@@ -209,27 +210,6 @@ CMake 中默认的模块文件通常会位于 /usr/share/cmake-3.7.1/Module 目�
      
            <p itemprop="description" >本文转载自：https://www.ibm.com/developerworks/cn/linux/l-cn-optimization/index.html
 大家也许还记得 2005 年 3 月 C++ 大师 Herb Sutter 在 Dr.Dobb’s Journal 上发表</p>
-        
-    
-    <time datetime="2015-06-18T14:18:24.000Z" itemprop="datePublished">2015-06-18</time>
-  </a>
-</section>
-
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
-    <a href="/2015/06/18/os-cpu-cache-consistency-1/" title="缓存一致性（Cache Coherency）" itemprop="url">
-  
-    <h1 itemprop="name">缓存一致性（Cache Coherency）</h1>
-    
-     
-           <p itemprop="description" >本文是 RAD Game Tools 程序员 Fabian “ryg” Giesen 在其博客上发表的《Cache coherency primer》一文的翻译。该系列共有两篇，本文系第一篇。
-我计划写一些关于多核场景下数据组织的文章。写了第一篇，但我很快意识到有大量的基础知识我</p>
         
     
     <time datetime="2015-06-18T14:18:24.000Z" itemprop="datePublished">2015-06-18</time>
@@ -286,12 +266,12 @@ select，poll，epoll 都是 IO 多路复用的机制。I/O多路复用就通过
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2014/09/23/network-programming-poll/" title="Use poll to multiplexing network connections" itemprop="url">
+    <a href="/2014/09/23/network-programming-epoll/" title="Use epoll to multiplexing network connections" itemprop="url">
   
-    <h1 itemprop="name">Use poll to multiplexing network connections</h1>
+    <h1 itemprop="name">Use epoll to multiplexing network connections</h1>
     
      
-           <p itemprop="description" >基本知识poll 的机制与 select 类似，与 select 在本质上没有多大差别，管理多个描述符也是进行轮询，根据描述符的状态进行处理，但是poll没有最大文件描述符数量的限制。poll 和 select 同样存在一个缺点就是，包含大量文件描述符的数组被整体复制于用户态和内</p>
+           <p itemprop="description" >基本知识epoll 是在 2.6内核中提出的，是之前的 select 和 poll 的增强版本。相对于 select 和 poll 来说，epoll 更加灵活，没有描述符限制。epoll 使用一个文件描述符管理多个描述符，将用户关系的文件描述符的事件存放到内核的一个事件表中，这样</p>
         
     
     <time datetime="2014-09-23T03:30:33.000Z" itemprop="datePublished">2014-09-23</time>
@@ -327,38 +307,15 @@ select，poll，epoll 都是 IO 多路复用的机制。I/O多路复用就通过
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2014/09/23/network-programming-epoll/" title="Use epoll to multiplexing network connections" itemprop="url">
+    <a href="/2014/09/23/network-programming-poll/" title="Use poll to multiplexing network connections" itemprop="url">
   
-    <h1 itemprop="name">Use epoll to multiplexing network connections</h1>
+    <h1 itemprop="name">Use poll to multiplexing network connections</h1>
     
      
-           <p itemprop="description" >基本知识epoll 是在 2.6内核中提出的，是之前的 select 和 poll 的增强版本。相对于 select 和 poll 来说，epoll 更加灵活，没有描述符限制。epoll 使用一个文件描述符管理多个描述符，将用户关系的文件描述符的事件存放到内核的一个事件表中，这样</p>
+           <p itemprop="description" >基本知识poll 的机制与 select 类似，与 select 在本质上没有多大差别，管理多个描述符也是进行轮询，根据描述符的状态进行处理，但是poll没有最大文件描述符数量的限制。poll 和 select 同样存在一个缺点就是，包含大量文件描述符的数组被整体复制于用户态和内</p>
         
     
     <time datetime="2014-09-23T03:30:33.000Z" itemprop="datePublished">2014-09-23</time>
-  </a>
-</section>
-
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
-    <a href="/2014/09/16/network-programming-encryption-basics/" title="Encryption terminology" itemprop="url">
-  
-    <h1 itemprop="name">Encryption terminology</h1>
-    
-     
-           <p itemprop="description" >在进行网络开发时，经常会需要处理加密连接等跟证书加密等相关的概念，本文总结了证书加密等常见的名词术语及文件格式。
-
-术语及常见概念SSL - Secure Sockets Layer
-现在应该叫”TLS”,但由于习惯问题,还有很多场景下会称为”SSL”，涵义跟 TLS 完全相同。</p>
-        
-    
-    <time datetime="2014-09-16T03:30:33.000Z" itemprop="datePublished">2014-09-16</time>
   </a>
 </section>
 
@@ -413,6 +370,29 @@ Hoare的双向扫描
   
 <section class="post" itemscope itemprop="blogitem">
   
+    <a href="/2014/09/16/network-programming-encryption-basics/" title="Encryption terminology" itemprop="url">
+  
+    <h1 itemprop="name">Encryption terminology</h1>
+    
+     
+           <p itemprop="description" >在进行网络开发时，经常会需要处理加密连接等跟证书加密等相关的概念，本文总结了证书加密等常见的名词术语及文件格式。
+
+术语及常见概念SSL - Secure Sockets Layer
+现在应该叫”TLS”,但由于习惯问题,还有很多场景下会称为”SSL”，涵义跟 TLS 完全相同。</p>
+        
+    
+    <time datetime="2014-09-16T03:30:33.000Z" itemprop="datePublished">2014-09-16</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
     <a href="/2014/08/16/cpp-extern-c/" title="Call C functions in C++" itemprop="url">
   
     <h1 itemprop="name">Call C functions in C++</h1>
@@ -434,13 +414,12 @@ Hoare的双向扫描
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2013/09/28/linux-shellstring/" title="Shell String Manipulations" itemprop="url">
+    <a href="/2013/09/28/linux-service-script/" title="How to write a service script" itemprop="url">
   
-    <h1 itemprop="name">Shell String Manipulations</h1>
+    <h1 itemprop="name">How to write a service script</h1>
     
      
-           <p itemprop="description" >String OperatorsThere are following string operators supported by Bourne Shell.
-Assume variable a holds “abc” and variable b holds “efg” the</p>
+           <p itemprop="description" >In Linux, service scripts are usually located in /etc/init.d/ directory (In CentOS 7, it is /usr/lib/systemd/system/my.service), if we don’t</p>
         
     
     <time datetime="2013-09-28T11:51:48.000Z" itemprop="datePublished">2013-09-28</time>
@@ -455,12 +434,13 @@ Assume variable a holds “abc” and variable b holds “efg” the</p>
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2013/09/28/linux-service-script/" title="How to write a service script" itemprop="url">
+    <a href="/2013/09/28/linux-shellstring/" title="Shell String Manipulations" itemprop="url">
   
-    <h1 itemprop="name">How to write a service script</h1>
+    <h1 itemprop="name">Shell String Manipulations</h1>
     
      
-           <p itemprop="description" >In Linux, service scripts are usually located in /etc/init.d/ directory (In CentOS 7, it is /usr/lib/systemd/system/my.service), if we don’t</p>
+           <p itemprop="description" >String OperatorsThere are following string operators supported by Bourne Shell.
+Assume variable a holds “abc” and variable b holds “efg” the</p>
         
     
     <time datetime="2013-09-28T11:51:48.000Z" itemprop="datePublished">2013-09-28</time>
@@ -623,6 +603,26 @@ Bigtable presents a multi-dimensional sorted map to users.● Keys are (row, col
 
 
 
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2012/10/15/distributed-system-1-dist-two-general/" title="Distributed System Theory:Two Generals&#39; Problem" itemprop="url">
+  
+    <h1 itemprop="name">Distributed System Theory:Two Generals&#39; Problem</h1>
+    
+     
+           <p itemprop="description" >两军问题是计算机领域的一个思想实验，用来阐述在一个不可靠的通信链路上试图通过通信以达成一致是存在缺陷的和困难的。这个问题和更有名的“拜占庭将军问题”有关（译者注：拜占庭将军问题很早就被提出，但是没有普及，后来为了普及，采用故事的方式来说明问题，并命名为拜占庭将军问题），并且经常出</p>
+        
+    
+    <time datetime="2012-10-15T12:16:25.000Z" itemprop="datePublished">2012-10-15</time>
+  </a>
+</section>
+
+
+
+
+
+
 
   <nav id="page-nav" class="clearfix unexpand">
     <a class="extend prev" rel="prev" href="/page/4/"><span></span>Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/6/">Next<span></span></a>
@@ -672,7 +672,7 @@ Bigtable presents a multi-dimensional sorted map to users.● Keys are (row, col
 		  
 		
 		  
-			<li><a href="/categories/Life/" title="Life">Life<sup>2</sup></a></li>
+			<li><a href="/categories/Life/" title="Life">Life<sup>1</sup></a></li>
 		  
 		
 		  
@@ -718,7 +718,7 @@ Bigtable presents a multi-dimensional sorted map to users.● Keys are (row, col
   
   <div class="archiveslist">
     <p class="asidetitle"><a href="/archives">Archive</a></p>
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">二月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">一月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">十一月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">九月 2016</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a><span class="archive-list-count">15</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">十月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">九月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/09/">九月 2013</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">八月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/07/">七月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/06/">六月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/03/">三月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/02/">二月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/01/">一月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/10/">十月 2012</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/09/">九月 2012</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/06/">六月 2012</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">一月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">十一月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">九月 2016</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a><span class="archive-list-count">15</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">十月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">九月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/09/">九月 2013</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">八月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/07/">七月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/06/">六月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/03/">三月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/02/">二月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/01/">一月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/10/">十月 2012</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/09/">九月 2012</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/06/">六月 2012</a><span class="archive-list-count">1</span></li></ul>
   </div>
 
 
