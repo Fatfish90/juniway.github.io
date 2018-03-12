@@ -61,7 +61,7 @@
  					
 						<form class="search"  accept-charset="utf-8">
 							<label>Search</label>
-						<input type="text" class="st-default-search-input" maxlength="20" placeholder="search">
+						<input type="text" class="st-default-search-input" maxlength="20" placeholder="Search">
 						</form>
 					
 					</li>
@@ -202,13 +202,13 @@ CMake 中默认的模块文件通常会位于 /usr/share/cmake-3.7.1/Module 目�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2015/06/18/os-cpu-cache-consistency-1/" title="缓存一致性（Cache Coherency）" itemprop="url">
+    <a href="/2015/06/18/os-cpu-cache/" title="利用多核多线程进行程序优化" itemprop="url">
   
-    <h1 itemprop="name">缓存一致性（Cache Coherency）</h1>
+    <h1 itemprop="name">利用多核多线程进行程序优化</h1>
     
      
-           <p itemprop="description" >本文是 RAD Game Tools 程序员 Fabian “ryg” Giesen 在其博客上发表的《Cache coherency primer》一文的翻译。该系列共有两篇，本文系第一篇。
-我计划写一些关于多核场景下数据组织的文章。写了第一篇，但我很快意识到有大量的基础知识我</p>
+           <p itemprop="description" >本文转载自：https://www.ibm.com/developerworks/cn/linux/l-cn-optimization/index.html
+大家也许还记得 2005 年 3 月 C++ 大师 Herb Sutter 在 Dr.Dobb’s Journal 上发表</p>
         
     
     <time datetime="2015-06-18T14:18:24.000Z" itemprop="datePublished">2015-06-18</time>
@@ -223,13 +223,13 @@ CMake 中默认的模块文件通常会位于 /usr/share/cmake-3.7.1/Module 目�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2015/06/18/os-cpu-cache/" title="利用多核多线程进行程序优化" itemprop="url">
+    <a href="/2015/06/18/os-cpu-cache-consistency-1/" title="缓存一致性（Cache Coherency）" itemprop="url">
   
-    <h1 itemprop="name">利用多核多线程进行程序优化</h1>
+    <h1 itemprop="name">缓存一致性（Cache Coherency）</h1>
     
      
-           <p itemprop="description" >本文转载自：https://www.ibm.com/developerworks/cn/linux/l-cn-optimization/index.html
-大家也许还记得 2005 年 3 月 C++ 大师 Herb Sutter 在 Dr.Dobb’s Journal 上发表</p>
+           <p itemprop="description" >本文是 RAD Game Tools 程序员 Fabian “ryg” Giesen 在其博客上发表的《Cache coherency primer》一文的翻译。该系列共有两篇，本文系第一篇。
+我计划写一些关于多核场景下数据组织的文章。写了第一篇，但我很快意识到有大量的基础知识我</p>
         
     
     <time datetime="2015-06-18T14:18:24.000Z" itemprop="datePublished">2015-06-18</time>
@@ -265,33 +265,12 @@ CMake 中默认的模块文件通常会位于 /usr/share/cmake-3.7.1/Module 目�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2014/09/23/network-programming-select/" title="Use select to multiplexing network connections" itemprop="url">
+    <a href="/2014/09/23/network-programming-epoll/" title="Use epoll to multiplexing network connections" itemprop="url">
   
-    <h1 itemprop="name">Use select to multiplexing network connections</h1>
+    <h1 itemprop="name">Use epoll to multiplexing network connections</h1>
     
      
-           <p itemprop="description" >基本概念IO多路复用是指内核一旦发现进程指定的一个或者多个IO条件准备读取，它就通知该进程。IO多路复用适用如下场合：
-（1）当客户处理多个描述字时（一般是交互式输入和网络套接口），必须使用I/O复用。（2）当一个客户同时处理多个套接口时，而这种情况是可能的，但很少出现。（3）如</p>
-        
-    
-    <time datetime="2014-09-23T03:30:33.000Z" itemprop="datePublished">2014-09-23</time>
-  </a>
-</section>
-
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
-    <a href="/2014/09/23/network-programming-poll/" title="Use poll to multiplexing network connections" itemprop="url">
-  
-    <h1 itemprop="name">Use poll to multiplexing network connections</h1>
-    
-     
-           <p itemprop="description" >基本知识poll 的机制与 select 类似，与 select 在本质上没有多大差别，管理多个描述符也是进行轮询，根据描述符的状态进行处理，但是poll没有最大文件描述符数量的限制。poll 和 select 同样存在一个缺点就是，包含大量文件描述符的数组被整体复制于用户态和内</p>
+           <p itemprop="description" >基本知识epoll 是在 2.6内核中提出的，是之前的 select 和 poll 的增强版本。相对于 select 和 poll 来说，epoll 更加灵活，没有描述符限制。epoll 使用一个文件描述符管理多个描述符，将用户关系的文件描述符的事件存放到内核的一个事件表中，这样</p>
         
     
     <time datetime="2014-09-23T03:30:33.000Z" itemprop="datePublished">2014-09-23</time>
@@ -327,12 +306,33 @@ select，poll，epoll 都是 IO 多路复用的机制。I/O多路复用就通过
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2014/09/23/network-programming-epoll/" title="Use epoll to multiplexing network connections" itemprop="url">
+    <a href="/2014/09/23/network-programming-poll/" title="Use poll to multiplexing network connections" itemprop="url">
   
-    <h1 itemprop="name">Use epoll to multiplexing network connections</h1>
+    <h1 itemprop="name">Use poll to multiplexing network connections</h1>
     
      
-           <p itemprop="description" >基本知识epoll 是在 2.6内核中提出的，是之前的 select 和 poll 的增强版本。相对于 select 和 poll 来说，epoll 更加灵活，没有描述符限制。epoll 使用一个文件描述符管理多个描述符，将用户关系的文件描述符的事件存放到内核的一个事件表中，这样</p>
+           <p itemprop="description" >基本知识poll 的机制与 select 类似，与 select 在本质上没有多大差别，管理多个描述符也是进行轮询，根据描述符的状态进行处理，但是poll没有最大文件描述符数量的限制。poll 和 select 同样存在一个缺点就是，包含大量文件描述符的数组被整体复制于用户态和内</p>
+        
+    
+    <time datetime="2014-09-23T03:30:33.000Z" itemprop="datePublished">2014-09-23</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2014/09/23/network-programming-select/" title="Use select to multiplexing network connections" itemprop="url">
+  
+    <h1 itemprop="name">Use select to multiplexing network connections</h1>
+    
+     
+           <p itemprop="description" >基本概念IO多路复用是指内核一旦发现进程指定的一个或者多个IO条件准备读取，它就通知该进程。IO多路复用适用如下场合：
+（1）当客户处理多个描述字时（一般是交互式输入和网络套接口），必须使用I/O复用。（2）当一个客户同时处理多个套接口时，而这种情况是可能的，但很少出现。（3）如</p>
         
     
     <time datetime="2014-09-23T03:30:33.000Z" itemprop="datePublished">2014-09-23</time>
@@ -605,12 +605,13 @@ Bigtable presents a multi-dimensional sorted map to users.● Keys are (row, col
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/10/15/distributed-system-1-dist-two-general/" title="Distributed System Theory:Two Generals&#39; Problem" itemprop="url">
+    <a href="/2012/10/15/distributed-system-2-dist-byzantine-problem/" title="Distributed System Theory:Byzantine Generals&#39; problem" itemprop="url">
   
-    <h1 itemprop="name">Distributed System Theory:Two Generals&#39; Problem</h1>
+    <h1 itemprop="name">Distributed System Theory:Byzantine Generals&#39; problem</h1>
     
      
-           <p itemprop="description" >两军问题是计算机领域的一个思想实验，用来阐述在一个不可靠的通信链路上试图通过通信以达成一致是存在缺陷的和困难的。这个问题和更有名的“拜占庭将军问题”有关（译者注：拜占庭将军问题很早就被提出，但是没有普及，后来为了普及，采用故事的方式来说明问题，并命名为拜占庭将军问题），并且经常出</p>
+           <p itemprop="description" >Byzantine failures拜占庭将军问题又称为“拜占庭失败”，是由 Leslie Lamport 提出的点对点通信中的基本问题，论文原文
+拜占庭问题的最初描述是：N 个将军被分隔在不同的地方，忠诚的将军希望通过某种协议达成某个命令的一致（比如一起进攻或者一起后退）。但其</p>
         
     
     <time datetime="2012-10-15T12:16:25.000Z" itemprop="datePublished">2012-10-15</time>
@@ -639,7 +640,7 @@ Bigtable presents a multi-dimensional sorted map to users.● Keys are (row, col
 
   
 <div class="categorieslist">
-	<p class="asidetitle">Category</p>
+	<p class="asidetitle">Categories</p>
 		<ul>
 		
 		  
@@ -716,7 +717,7 @@ Bigtable presents a multi-dimensional sorted map to users.● Keys are (row, col
 
   
   <div class="archiveslist">
-    <p class="asidetitle"><a href="/archives">Archive</a></p>
+    <p class="asidetitle"><a href="/archives">Archives</a></p>
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">二月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">一月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">十一月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">九月 2016</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a><span class="archive-list-count">15</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">十月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">九月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/09/">九月 2013</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">八月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/07/">七月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/06/">六月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/03/">三月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/02/">二月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/01/">一月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/10/">十月 2012</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/09/">九月 2012</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/06/">六月 2012</a><span class="archive-list-count">1</span></li></ul>
   </div>
 
@@ -875,7 +876,7 @@ var _hmt = _hmt || [];
 <!-- Totop Begin -->
 
 	<div id="totop">
-	<a title="BackToTop"><img src="/img/scrollup.png"/></a>
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
 	</div>
 	<script src="/js/totop.js"></script>
 

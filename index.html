@@ -61,7 +61,7 @@
  					
 						<form class="search"  accept-charset="utf-8">
 							<label>Search</label>
-						<input type="text" class="st-default-search-input" maxlength="20" placeholder="search">
+						<input type="text" class="st-default-search-input" maxlength="20" placeholder="Search">
 						</form>
 					
 					</li>
@@ -76,7 +76,7 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2018/02/13/zixia/" title="紫霞" itemprop="url">
+    <a href="/2018/02/13/life-zixia/" title="紫霞" itemprop="url">
   
     <h1 itemprop="name">紫霞</h1>
     
@@ -158,28 +158,6 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2017/12/16/tools-protoc23diff/" title="protoc2 与 protoc3 区别" itemprop="url">
-  
-    <h1 itemprop="name">protoc2 与 protoc3 区别</h1>
-    
-     
-           <p itemprop="description" >介绍在新版的 Protobuf 中，强制要求 proto 文件必须指定版本（语法是：syntax=&amp;quot;proto3&amp;quot;;），这篇文章主要介绍 Protobuf 的 protoc2 与 protoc3 之间的区别。
-官方文档
-总体来说，proto3 比 proto2</p>
-        
-    
-    <time datetime="2017-12-16T03:22:47.000Z" itemprop="datePublished">2017-12-16</time>
-  </a>
-</section>
-
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
     <a href="/2017/12/16/tools-grpc-install/" title="grpc 的安装和使用" itemprop="url">
   
     <h1 itemprop="name">grpc 的安装和使用</h1>
@@ -206,6 +184,28 @@
     
      
            <p itemprop="description" >介绍Google 原生的 grpc 框架 是用 C 语言实现的，其默认包含了多种语言（cpp, ruby, python, c# 等）的实现，因而可以支持多种语言的 grpc 调用。但是默认没有提供 Go 和 Java 两种语言的 GRPC 实现。虽然如此，Google 官方在另</p>
+        
+    
+    <time datetime="2017-12-16T03:22:47.000Z" itemprop="datePublished">2017-12-16</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2017/12/16/tools-protoc23diff/" title="protoc2 与 protoc3 区别" itemprop="url">
+  
+    <h1 itemprop="name">protoc2 与 protoc3 区别</h1>
+    
+     
+           <p itemprop="description" >介绍在新版的 Protobuf 中，强制要求 proto 文件必须指定版本（语法是：syntax=&amp;quot;proto3&amp;quot;;），这篇文章主要介绍 Protobuf 的 protoc2 与 protoc3 之间的区别。
+官方文档
+总体来说，proto3 比 proto2</p>
         
     
     <time datetime="2017-12-16T03:22:47.000Z" itemprop="datePublished">2017-12-16</time>
@@ -321,12 +321,12 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/11/26/go-redirect-http-to-https/" title="Redirect http to https in Go" itemprop="url">
+    <a href="/2016/11/26/go-tls-mutual-auth/" title="TLS Mutual Authentication in Go" itemprop="url">
   
-    <h1 itemprop="name">Redirect http to https in Go</h1>
+    <h1 itemprop="name">TLS Mutual Authentication in Go</h1>
     
      
-           <p itemprop="description" >There are cases that we need to run both http server and https server so that the client can still have access to the web service.If we want</p>
+           <p itemprop="description" >We need to generate “cert.pem” and “key.pem” so that we can build a TLS server, then we should load the certificate files in TLS client, so </p>
         
     
     <time datetime="2016-11-26T03:33:41.000Z" itemprop="datePublished">2016-11-26</time>
@@ -341,12 +341,12 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/11/26/go-tls-mutual-auth/" title="TLS Mutual Authentication in Go" itemprop="url">
+    <a href="/2016/11/26/go-redirect-http-to-https/" title="Redirect http to https in Go" itemprop="url">
   
-    <h1 itemprop="name">TLS Mutual Authentication in Go</h1>
+    <h1 itemprop="name">Redirect http to https in Go</h1>
     
      
-           <p itemprop="description" >We need to generate “cert.pem” and “key.pem” so that we can build a TLS server, then we should load the certificate files in TLS client, so </p>
+           <p itemprop="description" >There are cases that we need to run both http server and https server so that the client can still have access to the web service.If we want</p>
         
     
     <time datetime="2016-11-26T03:33:41.000Z" itemprop="datePublished">2016-11-26</time>
@@ -423,14 +423,14 @@ Go vendor 的项目管理方式在 Go 1.6 版本中得到正式引入，上述�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/10/14/go-var-scope/" title="Variable shadowing in Go" itemprop="url">
+    <a href="/2016/10/14/go-go-json/" title="Process json in Go" itemprop="url">
   
-    <h1 itemprop="name">Variable shadowing in Go</h1>
+    <h1 itemprop="name">Process json in Go</h1>
     
      
-           <p itemprop="description" >在 Go 语言开发过程中，经常会遇到需要使用局部（或临时）变量隐藏（shadow）全局同名变量的情形（比如常见的语句：val, err := somefunc()）。因此，本文总结介绍 Go 语言中最常用到的变量隐藏的知识。
-
-在相同作用域中同名变量的关系。Go 语言中申明一个变</p>
+           <p itemprop="description" >简介
+JSON 作为一种网络传输格式非常广泛，各种语言几乎都有支持，Go 语言也一样，提供了一个标准库 encoding/json 用于处理这种格式的数据。
+首先，我们必须明白，JSON 文本（或者称为 JSON 对象）本质上就是一串符合一定格式的字符串（在 Go 中是 []by</p>
         
     
     <time datetime="2016-10-14T03:28:41.000Z" itemprop="datePublished">2016-10-14</time>
@@ -445,14 +445,14 @@ Go vendor 的项目管理方式在 Go 1.6 版本中得到正式引入，上述�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/10/14/go-go-json/" title="Process json in Go" itemprop="url">
+    <a href="/2016/10/14/go-var-scope/" title="Variable shadowing in Go" itemprop="url">
   
-    <h1 itemprop="name">Process json in Go</h1>
+    <h1 itemprop="name">Variable shadowing in Go</h1>
     
      
-           <p itemprop="description" >简介
-JSON 作为一种网络传输格式非常广泛，各种语言几乎都有支持，Go 语言也一样，提供了一个标准库 encoding/json 用于处理这种格式的数据。
-首先，我们必须明白，JSON 文本（或者称为 JSON 对象）本质上就是一串符合一定格式的字符串（在 Go 中是 []by</p>
+           <p itemprop="description" >在 Go 语言开发过程中，经常会遇到需要使用局部（或临时）变量隐藏（shadow）全局同名变量的情形（比如常见的语句：val, err := somefunc()）。因此，本文总结介绍 Go 语言中最常用到的变量隐藏的知识。
+
+在相同作用域中同名变量的关系。Go 语言中申明一个变</p>
         
     
     <time datetime="2016-10-14T03:28:41.000Z" itemprop="datePublished">2016-10-14</time>
@@ -615,7 +615,7 @@ string 与 []byte 相互转换在写程序的过程中经常遇到string与[]byt
 
   
 <div class="categorieslist">
-	<p class="asidetitle">Category</p>
+	<p class="asidetitle">Categories</p>
 		<ul>
 		
 		  
@@ -692,7 +692,7 @@ string 与 []byte 相互转换在写程序的过程中经常遇到string与[]byt
 
   
   <div class="archiveslist">
-    <p class="asidetitle"><a href="/archives">Archive</a></p>
+    <p class="asidetitle"><a href="/archives">Archives</a></p>
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">二月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">一月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">十一月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">九月 2016</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a><span class="archive-list-count">15</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">十月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">九月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/09/">九月 2013</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">八月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/07/">七月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/06/">六月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/03/">三月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/02/">二月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/01/">一月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/10/">十月 2012</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/09/">九月 2012</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/06/">六月 2012</a><span class="archive-list-count">1</span></li></ul>
   </div>
 
@@ -851,7 +851,7 @@ var _hmt = _hmt || [];
 <!-- Totop Begin -->
 
 	<div id="totop">
-	<a title="BackToTop"><img src="/img/scrollup.png"/></a>
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
 	</div>
 	<script src="/js/totop.js"></script>
 

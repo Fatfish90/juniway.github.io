@@ -61,7 +61,7 @@
  					
 						<form class="search"  accept-charset="utf-8">
 							<label>Search</label>
-						<input type="text" class="st-default-search-input" maxlength="20" placeholder="search">
+						<input type="text" class="st-default-search-input" maxlength="20" placeholder="Search">
 						</form>
 					
 					</li>
@@ -76,13 +76,13 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/07/02/hadoop-native-hadoop-lib/" title="Solve &quot;Unable to load native-hadoop library for your platform...&quot;" itemprop="url">
+    <a href="/2016/07/02/hadoop-hadoop-install/" title="Hadoop Installation" itemprop="url">
   
-    <h1 itemprop="name">Solve &quot;Unable to load native-hadoop library for your platform...&quot;</h1>
+    <h1 itemprop="name">Hadoop Installation</h1>
     
      
-           <p itemprop="description" >StatckOverflow:http://stackoverflow.com/questions/19943766/hadoop-unable-to-load-native-hadoop-library-for-your-platform-warning
-$ export HA</p>
+           <p itemprop="description" >Single-node InstallationRunning Hadoop on Ubuntu (Single node cluster setup)
+Before we set up a hadoop cluster, we will understand the meani</p>
         
     
     <time datetime="2016-07-02T12:43:48.000Z" itemprop="datePublished">2016-07-02</time>
@@ -138,13 +138,12 @@ $ export HA</p>
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/06/25/linux-ssh-remote-cmds/" title="Executing commands on remote machine using SSH" itemprop="url">
+    <a href="/2016/06/25/linux-ssh/" title="ssh" itemprop="url">
   
-    <h1 itemprop="name">Executing commands on remote machine using SSH</h1>
+    <h1 itemprop="name">ssh</h1>
     
      
-           <p itemprop="description" >如果在远程执行 sudo 的过程中报错提示：sudo: no tty present and no askpass program specified
-这是因为：sudo will only run a program as a different user if one of </p>
+           <p itemprop="description" >SSH (Secure Shell) is a UNIX-based command interface and protocol for securely getting access to a remote computer. SSH is actually a suite </p>
         
     
     <time datetime="2016-06-25T10:49:48.000Z" itemprop="datePublished">2016-06-25</time>
@@ -159,12 +158,13 @@ $ export HA</p>
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/06/25/linux-ssh/" title="ssh" itemprop="url">
+    <a href="/2016/06/25/linux-ssh-remote-cmds/" title="Executing commands on remote machine using SSH" itemprop="url">
   
-    <h1 itemprop="name">ssh</h1>
+    <h1 itemprop="name">Executing commands on remote machine using SSH</h1>
     
      
-           <p itemprop="description" >SSH (Secure Shell) is a UNIX-based command interface and protocol for securely getting access to a remote computer. SSH is actually a suite </p>
+           <p itemprop="description" >如果在远程执行 sudo 的过程中报错提示：sudo: no tty present and no askpass program specified
+这是因为：sudo will only run a program as a different user if one of </p>
         
     
     <time datetime="2016-06-25T10:49:48.000Z" itemprop="datePublished">2016-06-25</time>
@@ -202,13 +202,13 @@ NAT 是通过 VirtualBox 内置的 NAT Engine 把 Guest OS 中</p>
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/06/09/hadoop-hadoop-configurations/" title="Hadoop Configuration" itemprop="url">
+    <a href="/2016/06/09/hadoop-reduce-tasks/" title="Hadoop reduce task" itemprop="url">
   
-    <h1 itemprop="name">Hadoop Configuration</h1>
+    <h1 itemprop="name">Hadoop reduce task</h1>
     
      
-           <p itemprop="description" >Hadoop configurations
-Once we have installed hadoop cluster we need to set up its configuration before it can work properly.One of the commo</p>
+           <p itemprop="description" >By default, there is only one reduce task, this means it will output part-00000 including all keys.
+In face of huge amount of data, the redu</p>
         
     
     <time datetime="2016-06-09T12:43:48.000Z" itemprop="datePublished">2016-06-09</time>
@@ -223,13 +223,13 @@ Once we have installed hadoop cluster we need to set up its configuration before
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/06/09/hadoop-reduce-tasks/" title="Hadoop reduce task" itemprop="url">
+    <a href="/2016/06/09/hadoop-hadoop-configurations/" title="Hadoop Configuration" itemprop="url">
   
-    <h1 itemprop="name">Hadoop reduce task</h1>
+    <h1 itemprop="name">Hadoop Configuration</h1>
     
      
-           <p itemprop="description" >By default, there is only one reduce task, this means it will output part-00000 including all keys.
-In face of huge amount of data, the redu</p>
+           <p itemprop="description" >Hadoop configurations
+Once we have installed hadoop cluster we need to set up its configuration before it can work properly.One of the commo</p>
         
     
     <time datetime="2016-06-09T12:43:48.000Z" itemprop="datePublished">2016-06-09</time>
@@ -529,12 +529,12 @@ As we known</p>
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/05/22/distributed-system-consensus/" title="Consensus - Leader Election Algorithms" itemprop="url">
+    <a href="/2016/05/22/distributed-system-multi-raft/" title="Multi Raft" itemprop="url">
   
-    <h1 itemprop="name">Consensus - Leader Election Algorithms</h1>
+    <h1 itemprop="name">Multi Raft</h1>
     
      
-           <p itemprop="description" >在分布式系统中，需要在多个节点之间保持数据的一致性，通常需要有一个协调者，这个协调者（Coodinator）作为整个集群的出口单独对外提供服务。通常，我们需要在集群中的所有节点中选出这么一个节点，作为所有节点的 Leader 来承担这个工作。Leader 只能有一个，其他节点为 </p>
+           <p itemprop="description" >As the number of cluster node increasing, single raft will suffer performance penalty as the more nodes participate in the leader election a</p>
         
     
     <time datetime="2016-05-22T12:16:25.000Z" itemprop="datePublished">2016-05-22</time>
@@ -570,12 +570,12 @@ Raft 是分布式一致性协议 Paxos 的一个变种，最早是在 2013 年�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/05/22/distributed-system-multi-raft/" title="Multi Raft" itemprop="url">
+    <a href="/2016/05/22/distributed-system-mvcc/" title="MVCC" itemprop="url">
   
-    <h1 itemprop="name">Multi Raft</h1>
+    <h1 itemprop="name">MVCC</h1>
     
      
-           <p itemprop="description" >As the number of cluster node increasing, single raft will suffer performance penalty as the more nodes participate in the leader election a</p>
+           <p itemprop="description" >MVCC (Multi-Version Concurrency Control) 多版本并发控制在分布式系统中是一个很重要的技术手段。在传统的分布式并发读写一个共享数据时，如果要保证读写的一致性，需要加锁来控制单一时间只有一个访问者在读写数据，然而当遇到一个长时间的读操作时，这时</p>
         
     
     <time datetime="2016-05-22T12:16:25.000Z" itemprop="datePublished">2016-05-22</time>
@@ -590,12 +590,12 @@ Raft 是分布式一致性协议 Paxos 的一个变种，最早是在 2013 年�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/05/22/distributed-system-mvcc/" title="MVCC" itemprop="url">
+    <a href="/2016/05/22/distributed-system-consensus/" title="Consensus - Leader Election Algorithms" itemprop="url">
   
-    <h1 itemprop="name">MVCC</h1>
+    <h1 itemprop="name">Consensus - Leader Election Algorithms</h1>
     
      
-           <p itemprop="description" >MVCC (Multi-Version Concurrency Control) 多版本并发控制在分布式系统中是一个很重要的技术手段。在传统的分布式并发读写一个共享数据时，如果要保证读写的一致性，需要加锁来控制单一时间只有一个访问者在读写数据，然而当遇到一个长时间的读操作时，这时</p>
+           <p itemprop="description" >在分布式系统中，需要在多个节点之间保持数据的一致性，通常需要有一个协调者，这个协调者（Coodinator）作为整个集群的出口单独对外提供服务。通常，我们需要在集群中的所有节点中选出这么一个节点，作为所有节点的 Leader 来承担这个工作。Leader 只能有一个，其他节点为 </p>
         
     
     <time datetime="2016-05-22T12:16:25.000Z" itemprop="datePublished">2016-05-22</time>
@@ -624,7 +624,7 @@ Raft 是分布式一致性协议 Paxos 的一个变种，最早是在 2013 年�
 
   
 <div class="categorieslist">
-	<p class="asidetitle">Category</p>
+	<p class="asidetitle">Categories</p>
 		<ul>
 		
 		  
@@ -701,7 +701,7 @@ Raft 是分布式一致性协议 Paxos 的一个变种，最早是在 2013 年�
 
   
   <div class="archiveslist">
-    <p class="asidetitle"><a href="/archives">Archive</a></p>
+    <p class="asidetitle"><a href="/archives">Archives</a></p>
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">二月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">一月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">十一月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">九月 2016</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a><span class="archive-list-count">15</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">十月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">九月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/09/">九月 2013</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">八月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/07/">七月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/06/">六月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/03/">三月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/02/">二月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/01/">一月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/10/">十月 2012</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/09/">九月 2012</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/06/">六月 2012</a><span class="archive-list-count">1</span></li></ul>
   </div>
 
@@ -860,7 +860,7 @@ var _hmt = _hmt || [];
 <!-- Totop Begin -->
 
 	<div id="totop">
-	<a title="BackToTop"><img src="/img/scrollup.png"/></a>
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
 	</div>
 	<script src="/js/totop.js"></script>
 
