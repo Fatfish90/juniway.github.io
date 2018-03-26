@@ -61,7 +61,7 @@
  					
 						<form class="search"  accept-charset="utf-8">
 							<label>Search</label>
-						<input type="text" class="st-default-search-input" maxlength="20" placeholder="Search">
+						<input type="text" class="st-default-search-input" maxlength="20" placeholder="search">
 						</form>
 					
 					</li>
@@ -118,14 +118,15 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2015/07/29/tools-cmake-module/" title="Write custom CMake modules" itemprop="url">
+    <a href="/2015/07/29/tools-cmake-advanced/" title="CMake Advanced" itemprop="url">
   
-    <h1 itemprop="name">Write custom CMake modules</h1>
+    <h1 itemprop="name">CMake Advanced</h1>
     
      
-           <p itemprop="description" >注：本文中的大部分内容均参考至 CMake Practice 一书。
-
-CMake 中默认的模块文件通常会位于 /usr/share/cmake-3.7.1/Module 目录下，如果我们需要为工程项目自定义 CMake 的模块文件，通常在工程根目录下新建一个名称为 cmake </p>
+           <p itemprop="description" >本文介绍 CMake 的一些高级配置方式
+执行 cmake --help-variable VARIABLE_NAME 可以查看某个 CMake 变量的含义。
+自定义变量
+主要有隐式定义和显式定义两种。隐式定义的一个例子是 PROJECT 指令，它会隐式的定义 &amp;lt;proje</p>
         
     
     <time datetime="2015-07-29T12:33:48.000Z" itemprop="datePublished">2015-07-29</time>
@@ -140,15 +141,14 @@ CMake 中默认的模块文件通常会位于 /usr/share/cmake-3.7.1/Module 目�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2015/07/29/tools-cmake-advanced/" title="CMake Advanced" itemprop="url">
+    <a href="/2015/07/29/tools-cmake-module/" title="Write custom CMake modules" itemprop="url">
   
-    <h1 itemprop="name">CMake Advanced</h1>
+    <h1 itemprop="name">Write custom CMake modules</h1>
     
      
-           <p itemprop="description" >本文介绍 CMake 的一些高级配置方式
-执行 cmake --help-variable VARIABLE_NAME 可以查看某个 CMake 变量的含义。
-自定义变量
-主要有隐式定义和显式定义两种。隐式定义的一个例子是 PROJECT 指令，它会隐式的定义 &amp;lt;proje</p>
+           <p itemprop="description" >注：本文中的大部分内容均参考至 CMake Practice 一书。
+
+CMake 中默认的模块文件通常会位于 /usr/share/cmake-3.7.1/Module 目录下，如果我们需要为工程项目自定义 CMake 的模块文件，通常在工程根目录下新建一个名称为 cmake </p>
         
     
     <time datetime="2015-07-29T12:33:48.000Z" itemprop="datePublished">2015-07-29</time>
@@ -204,27 +204,6 @@ CMake 中默认的模块文件通常会位于 /usr/share/cmake-3.7.1/Module 目�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2015/06/18/os-cpu-cache/" title="利用多核多线程进行程序优化" itemprop="url">
-  
-    <h1 itemprop="name">利用多核多线程进行程序优化</h1>
-    
-     
-           <p itemprop="description" >本文转载自：https://www.ibm.com/developerworks/cn/linux/l-cn-optimization/index.html
-大家也许还记得 2005 年 3 月 C++ 大师 Herb Sutter 在 Dr.Dobb’s Journal 上发表</p>
-        
-    
-    <time datetime="2015-06-18T14:18:24.000Z" itemprop="datePublished">2015-06-18</time>
-  </a>
-</section>
-
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
     <a href="/2015/06/18/os-memory-allocation-contention/" title="Memory Allocation Contention" itemprop="url">
   
     <h1 itemprop="name">Memory Allocation Contention</h1>
@@ -266,16 +245,16 @@ CMake 中默认的模块文件通常会位于 /usr/share/cmake-3.7.1/Module 目�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2014/12/16/cpp-crtp/" title="CRTP, Curiously Recurring Template Pattern" itemprop="url">
+    <a href="/2015/06/18/os-cpu-cache/" title="利用多核多线程进行程序优化" itemprop="url">
   
-    <h1 itemprop="name">CRTP, Curiously Recurring Template Pattern</h1>
+    <h1 itemprop="name">利用多核多线程进行程序优化</h1>
     
      
-           <p itemprop="description" >一、简介
-什么是 CRTP？其英文全称是 Curiously Recurring Template Pattern，最早是由 James Coplien 在 1995 年提出的一个高级 C++ 编程技术，后来在 Stanley B. Lippman 写的 Cpp Gems 一书中</p>
+           <p itemprop="description" >本文转载自：https://www.ibm.com/developerworks/cn/linux/l-cn-optimization/index.html
+大家也许还记得 2005 年 3 月 C++ 大师 Herb Sutter 在 Dr.Dobb’s Journal 上发表</p>
         
     
-    <time datetime="2014-12-16T03:30:33.000Z" itemprop="datePublished">2014-12-16</time>
+    <time datetime="2015-06-18T14:18:24.000Z" itemprop="datePublished">2015-06-18</time>
   </a>
 </section>
 
@@ -287,15 +266,16 @@ CMake 中默认的模块文件通常会位于 /usr/share/cmake-3.7.1/Module 目�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2014/09/23/network-programming-poll/" title="Use poll to multiplexing network connections" itemprop="url">
+    <a href="/2014/12/16/cpp-crtp/" title="CRTP, Curiously Recurring Template Pattern" itemprop="url">
   
-    <h1 itemprop="name">Use poll to multiplexing network connections</h1>
+    <h1 itemprop="name">CRTP, Curiously Recurring Template Pattern</h1>
     
      
-           <p itemprop="description" >基本知识poll 的机制与 select 类似，与 select 在本质上没有多大差别，管理多个描述符也是进行轮询，根据描述符的状态进行处理，但是poll没有最大文件描述符数量的限制。poll 和 select 同样存在一个缺点就是，包含大量文件描述符的数组被整体复制于用户态和内</p>
+           <p itemprop="description" >一、简介
+什么是 CRTP？其英文全称是 Curiously Recurring Template Pattern，最早是由 James Coplien 在 1995 年提出的一个高级 C++ 编程技术，后来在 Stanley B. Lippman 写的 Cpp Gems 一书中</p>
         
     
-    <time datetime="2014-09-23T03:30:33.000Z" itemprop="datePublished">2014-09-23</time>
+    <time datetime="2014-12-16T03:30:33.000Z" itemprop="datePublished">2014-12-16</time>
   </a>
 </section>
 
@@ -369,6 +349,49 @@ select，poll，epoll 都是 IO 多路复用的机制。I/O多路复用就通过
   
 <section class="post" itemscope itemprop="blogitem">
   
+    <a href="/2014/09/23/network-programming-poll/" title="Use poll to multiplexing network connections" itemprop="url">
+  
+    <h1 itemprop="name">Use poll to multiplexing network connections</h1>
+    
+     
+           <p itemprop="description" >基本知识poll 的机制与 select 类似，与 select 在本质上没有多大差别，管理多个描述符也是进行轮询，根据描述符的状态进行处理，但是poll没有最大文件描述符数量的限制。poll 和 select 同样存在一个缺点就是，包含大量文件描述符的数组被整体复制于用户态和内</p>
+        
+    
+    <time datetime="2014-09-23T03:30:33.000Z" itemprop="datePublished">2014-09-23</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2014/09/16/network-programming-encryption-basics/" title="Encryption terminology" itemprop="url">
+  
+    <h1 itemprop="name">Encryption terminology</h1>
+    
+     
+           <p itemprop="description" >在进行网络开发时，经常会需要处理加密连接等跟证书加密等相关的概念，本文总结了证书加密等常见的名词术语及文件格式。
+
+术语及常见概念SSL - Secure Sockets Layer
+现在应该叫”TLS”,但由于习惯问题,还有很多场景下会称为”SSL”，涵义跟 TLS 完全相同。</p>
+        
+    
+    <time datetime="2014-09-16T03:30:33.000Z" itemprop="datePublished">2014-09-16</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
     <a href="/2014/09/16/algo-quick-sort/" title="Complete quicksort analysis" itemprop="url">
   
     <h1 itemprop="name">Complete quicksort analysis</h1>
@@ -398,29 +421,6 @@ Hoare的双向扫描
 尾递归
 
 </p>
-        
-    
-    <time datetime="2014-09-16T03:30:33.000Z" itemprop="datePublished">2014-09-16</time>
-  </a>
-</section>
-
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
-    <a href="/2014/09/16/network-programming-encryption-basics/" title="Encryption terminology" itemprop="url">
-  
-    <h1 itemprop="name">Encryption terminology</h1>
-    
-     
-           <p itemprop="description" >在进行网络开发时，经常会需要处理加密连接等跟证书加密等相关的概念，本文总结了证书加密等常见的名词术语及文件格式。
-
-术语及常见概念SSL - Secure Sockets Layer
-现在应该叫”TLS”,但由于习惯问题,还有很多场景下会称为”SSL”，涵义跟 TLS 完全相同。</p>
         
     
     <time datetime="2014-09-16T03:30:33.000Z" itemprop="datePublished">2014-09-16</time>
@@ -641,7 +641,7 @@ Bigtable presents a multi-dimensional sorted map to users.● Keys are (row, col
 
   
 <div class="categorieslist">
-	<p class="asidetitle">Categories</p>
+	<p class="asidetitle">Category</p>
 		<ul>
 		
 		  
@@ -718,7 +718,7 @@ Bigtable presents a multi-dimensional sorted map to users.● Keys are (row, col
 
   
   <div class="archiveslist">
-    <p class="asidetitle"><a href="/archives">Archives</a></p>
+    <p class="asidetitle"><a href="/archives">Archive</a></p>
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">三月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">二月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">一月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">十一月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">九月 2016</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a><span class="archive-list-count">15</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">十月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">九月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/09/">九月 2013</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">八月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/07/">七月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/06/">六月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/03/">三月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/02/">二月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/01/">一月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/10/">十月 2012</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/09/">九月 2012</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/06/">六月 2012</a><span class="archive-list-count">1</span></li></ul>
   </div>
 
@@ -877,7 +877,7 @@ var _hmt = _hmt || [];
 <!-- Totop Begin -->
 
 	<div id="totop">
-	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
+	<a title="BackToTop"><img src="/img/scrollup.png"/></a>
 	</div>
 	<script src="/js/totop.js"></script>
 
