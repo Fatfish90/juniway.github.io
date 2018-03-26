@@ -61,7 +61,7 @@
  					
 						<form class="search"  accept-charset="utf-8">
 							<label>Search</label>
-						<input type="text" class="st-default-search-input" maxlength="20" placeholder="search">
+						<input type="text" class="st-default-search-input" maxlength="20" placeholder="Search">
 						</form>
 					
 					</li>
@@ -76,12 +76,12 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/05/22/distributed-system-consensus/" title="Consensus - Leader Election Algorithms" itemprop="url">
+    <a href="/2016/05/22/distributed-system-mvcc/" title="MVCC" itemprop="url">
   
-    <h1 itemprop="name">Consensus - Leader Election Algorithms</h1>
+    <h1 itemprop="name">MVCC</h1>
     
      
-           <p itemprop="description" >在分布式系统中，需要在多个节点之间保持数据的一致性，通常需要有一个协调者，这个协调者（Coodinator）作为整个集群的出口单独对外提供服务。通常，我们需要在集群中的所有节点中选出这么一个节点，作为所有节点的 Leader 来承担这个工作。Leader 只能有一个，其他节点为 </p>
+           <p itemprop="description" >MVCC (Multi-Version Concurrency Control) 多版本并发控制在分布式系统中是一个很重要的技术手段。在传统的分布式并发读写一个共享数据时，如果要保证读写的一致性，需要加锁来控制单一时间只有一个访问者在读写数据，然而当遇到一个长时间的读操作时，这时</p>
         
     
     <time datetime="2016-05-22T12:16:25.000Z" itemprop="datePublished">2016-05-22</time>
@@ -429,29 +429,6 @@ ab 是通过模拟发送 http 请求的方式对服务程序进行测试，通�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2015/11/13/python-coding-standards/" title="Python Coding Style Guide" itemprop="url">
-  
-    <h1 itemprop="name">Python Coding Style Guide</h1>
-    
-     
-           <p itemprop="description" >遵循良好的编码风格，可以有效的提高代码的可读性，降低出错几率和维护难度。在团队开发中，使用（尽量）统一的编码风格，还可以降低沟通成本。网上有很多版本的编码规范，基本上都是遵循 PEP8 的规范：
-
-PEP 0008 – Style Guide for Python Code
-Go</p>
-        
-    
-    <time datetime="2015-11-13T03:30:33.000Z" itemprop="datePublished">2015-11-13</time>
-  </a>
-</section>
-
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
     <a href="/2015/11/13/system-build-ningja/" title="Use Ninja to replace make" itemprop="url">
   
     <h1 itemprop="name">Use Ninja to replace make</h1>
@@ -474,37 +451,18 @@ There are multiplay ways to install ninja </p>
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2015/11/05/vim-vim-edit-fast/" title="Edit fast in Vim" itemprop="url">
+    <a href="/2015/11/13/python-coding-standards/" title="Python Coding Style Guide" itemprop="url">
   
-    <h1 itemprop="name">Edit fast in Vim</h1>
+    <h1 itemprop="name">Python Coding Style Guide</h1>
     
      
-           <p itemprop="description" >Insert/Change
+           <p itemprop="description" >遵循良好的编码风格，可以有效的提高代码的可读性，降低出错几率和维护难度。在团队开发中，使用（尽量）统一的编码风格，还可以降低沟通成本。网上有很多版本的编码规范，基本上都是遵循 PEP8 的规范：
 
-
-Keys
-Function 
-
-
-
-
-a
-append after cursor
-
-
-A
-append at the end of line
-
-
-i
-insert before the cursor
-
-
-I
-insert before the fi</p>
+PEP 0008 – Style Guide for Python Code
+Go</p>
         
     
-    <time datetime="2015-11-05T13:11:48.000Z" itemprop="datePublished">2015-11-05</time>
+    <time datetime="2015-11-13T03:30:33.000Z" itemprop="datePublished">2015-11-13</time>
   </a>
 </section>
 
@@ -565,6 +523,48 @@ jump to the first non-blank character of line
 
 g_
 g</p>
+        
+    
+    <time datetime="2015-11-05T13:11:48.000Z" itemprop="datePublished">2015-11-05</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2015/11/05/vim-vim-edit-fast/" title="Edit fast in Vim" itemprop="url">
+  
+    <h1 itemprop="name">Edit fast in Vim</h1>
+    
+     
+           <p itemprop="description" >Insert/Change
+
+
+Keys
+Function 
+
+
+
+
+a
+append after cursor
+
+
+A
+append at the end of line
+
+
+i
+insert before the cursor
+
+
+I
+insert before the fi</p>
         
     
     <time datetime="2015-11-05T13:11:48.000Z" itemprop="datePublished">2015-11-05</time>
@@ -675,7 +675,7 @@ set nocp该命令指定让 VIM 工作在不兼容模式下。在 VIM 之前，�
 
   
 <div class="categorieslist">
-	<p class="asidetitle">Category</p>
+	<p class="asidetitle">Categories</p>
 		<ul>
 		
 		  
@@ -752,7 +752,7 @@ set nocp该命令指定让 VIM 工作在不兼容模式下。在 VIM 之前，�
 
   
   <div class="archiveslist">
-    <p class="asidetitle"><a href="/archives">Archive</a></p>
+    <p class="asidetitle"><a href="/archives">Archives</a></p>
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">三月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">二月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">一月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">十一月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">九月 2016</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a><span class="archive-list-count">15</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">十月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">九月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/09/">九月 2013</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">八月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/07/">七月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/06/">六月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/03/">三月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/02/">二月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/01/">一月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/10/">十月 2012</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/09/">九月 2012</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/06/">六月 2012</a><span class="archive-list-count">1</span></li></ul>
   </div>
 
@@ -911,7 +911,7 @@ var _hmt = _hmt || [];
 <!-- Totop Begin -->
 
 	<div id="totop">
-	<a title="BackToTop"><img src="/img/scrollup.png"/></a>
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
 	</div>
 	<script src="/js/totop.js"></script>
 

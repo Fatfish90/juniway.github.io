@@ -61,7 +61,7 @@
  					
 						<form class="search"  accept-charset="utf-8">
 							<label>Search</label>
-						<input type="text" class="st-default-search-input" maxlength="20" placeholder="search">
+						<input type="text" class="st-default-search-input" maxlength="20" placeholder="Search">
 						</form>
 					
 					</li>
@@ -117,29 +117,6 @@ Go 语言中的 interface 关键字可以用来定义一个接口类型，里面
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/09/13/go-interface-notes/" title="Mastering Go interface" itemprop="url">
-  
-    <h1 itemprop="name">Mastering Go interface</h1>
-    
-     
-           <p itemprop="description" >interface 类型在 Go 语言中是一个核心类型，用途及其广泛，本文列举其中最主要的使用场景，详述其使用方式，从而掌握使用它的精髓。
-
-1. interface 接口类型做参数
-想要函数对任何类型都能处理，并且处理后返回，可以把参数设置成接收 duck type，然后通过参</p>
-        
-    
-    <time datetime="2016-09-13T03:30:33.000Z" itemprop="datePublished">2016-09-13</time>
-  </a>
-</section>
-
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
     <a href="/2016/09/13/go-go-type-alias/" title="Type Alias in Go" itemprop="url">
   
     <h1 itemprop="name">Type Alias in Go</h1>
@@ -168,6 +145,29 @@ Go 语言中的 interface 关键字可以用来定义一个接口类型，里面
     
      
            <p itemprop="description" >Go 语言虽然作为一个编译型语言，但是它却没有提供类似 C/C++ 中那样的 sizeof 关键字来查看某个类型变量的所占内存空间的大小。不过，Go 标准库提供了一个 unsafe 包，这个包提供一个 Sizeof() 函数，我们可以使用这个函数来获得一个类型所占内存大小。uns</p>
+        
+    
+    <time datetime="2016-09-13T03:30:33.000Z" itemprop="datePublished">2016-09-13</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2016/09/13/go-interface-notes/" title="Mastering Go interface" itemprop="url">
+  
+    <h1 itemprop="name">Mastering Go interface</h1>
+    
+     
+           <p itemprop="description" >interface 类型在 Go 语言中是一个核心类型，用途及其广泛，本文列举其中最主要的使用场景，详述其使用方式，从而掌握使用它的精髓。
+
+1. interface 接口类型做参数
+想要函数对任何类型都能处理，并且处理后返回，可以把参数设置成接收 duck type，然后通过参</p>
         
     
     <time datetime="2016-09-13T03:30:33.000Z" itemprop="datePublished">2016-09-13</time>
@@ -306,12 +306,15 @@ Go 语言中的 interface 关键字可以用来定义一个接口类型，里面
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/09/10/git-git-rebase-branch/" title="Cooperative development workflow using git branch" itemprop="url">
+    <a href="/2016/09/10/git-git-squash-commits/" title="Git squash several commits to one" itemprop="url">
   
-    <h1 itemprop="name">Cooperative development workflow using git branch</h1>
+    <h1 itemprop="name">Git squash several commits to one</h1>
     
      
-           <p itemprop="description" >When we work cooperatively with other people in a team using git, the common practice is to use git’s branch tomanage our local changes, onc</p>
+           <p itemprop="description" >There are multiple ways to squash several commits to a single commits before we push to the remote repository.
+
+1. git rebase -i HEAD~x
+This</p>
         
     
     <time datetime="2016-09-10T03:30:33.000Z" itemprop="datePublished">2016-09-10</time>
@@ -326,15 +329,12 @@ Go 语言中的 interface 关键字可以用来定义一个接口类型，里面
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/09/10/git-git-squash-commits/" title="Git squash several commits to one" itemprop="url">
+    <a href="/2016/09/10/git-git-rebase-branch/" title="Cooperative development workflow using git branch" itemprop="url">
   
-    <h1 itemprop="name">Git squash several commits to one</h1>
+    <h1 itemprop="name">Cooperative development workflow using git branch</h1>
     
      
-           <p itemprop="description" >There are multiple ways to squash several commits to a single commits before we push to the remote repository.
-
-1. git rebase -i HEAD~x
-This</p>
+           <p itemprop="description" >When we work cooperatively with other people in a team using git, the common practice is to use git’s branch tomanage our local changes, onc</p>
         
     
     <time datetime="2016-09-10T03:30:33.000Z" itemprop="datePublished">2016-09-10</time>
@@ -412,12 +412,12 @@ shard: Each shard contains a subset of the sharded data. Each shard can be </p>
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/08/20/git-git-undo/" title="Undo anything in Git" itemprop="url">
+    <a href="/2016/08/20/git-git-untrack/" title="Remove a file from a Git repository without deleting it from the local filesystem" itemprop="url">
   
-    <h1 itemprop="name">Undo anything in Git</h1>
+    <h1 itemprop="name">Remove a file from a Git repository without deleting it from the local filesystem</h1>
     
      
-           <p itemprop="description" >When working in a software project whose code base is managed by Git, undo is a very common and frequent operation,and also it is one of the</p>
+           <p itemprop="description" >There are sometimes that we want to untrack a file but don’t want to delete, in another word, we want to keep it in local file system but de</p>
         
     
     <time datetime="2016-08-20T12:30:00.000Z" itemprop="datePublished">2016-08-20</time>
@@ -432,12 +432,12 @@ shard: Each shard contains a subset of the sharded data. Each shard can be </p>
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/08/20/git-git-untrack/" title="Remove a file from a Git repository without deleting it from the local filesystem" itemprop="url">
+    <a href="/2016/08/20/git-git-undo/" title="Undo anything in Git" itemprop="url">
   
-    <h1 itemprop="name">Remove a file from a Git repository without deleting it from the local filesystem</h1>
+    <h1 itemprop="name">Undo anything in Git</h1>
     
      
-           <p itemprop="description" >There are sometimes that we want to untrack a file but don’t want to delete, in another word, we want to keep it in local file system but de</p>
+           <p itemprop="description" >When working in a software project whose code base is managed by Git, undo is a very common and frequent operation,and also it is one of the</p>
         
     
     <time datetime="2016-08-20T12:30:00.000Z" itemprop="datePublished">2016-08-20</time>
@@ -618,7 +618,7 @@ The stack is just some memory in your application th</p>
 
   
 <div class="categorieslist">
-	<p class="asidetitle">Category</p>
+	<p class="asidetitle">Categories</p>
 		<ul>
 		
 		  
@@ -695,7 +695,7 @@ The stack is just some memory in your application th</p>
 
   
   <div class="archiveslist">
-    <p class="asidetitle"><a href="/archives">Archive</a></p>
+    <p class="asidetitle"><a href="/archives">Archives</a></p>
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">三月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">二月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">一月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">十一月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">九月 2016</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a><span class="archive-list-count">15</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">十月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">九月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/09/">九月 2013</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">八月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/07/">七月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/06/">六月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/03/">三月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/02/">二月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/01/">一月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/10/">十月 2012</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/09/">九月 2012</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/06/">六月 2012</a><span class="archive-list-count">1</span></li></ul>
   </div>
 
@@ -854,7 +854,7 @@ var _hmt = _hmt || [];
 <!-- Totop Begin -->
 
 	<div id="totop">
-	<a title="BackToTop"><img src="/img/scrollup.png"/></a>
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
 	</div>
 	<script src="/js/totop.js"></script>
 
