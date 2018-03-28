@@ -4,7 +4,7 @@
   <url>
     <loc>http://juniway.github.io/2018/03/13/life-surviveinus/</loc>
     
-    <lastmod>2018-03-26T12:48:47.980Z</lastmod>
+    <lastmod>2018-03-28T11:40:52.170Z</lastmod>
     
   </url>
   
@@ -44,7 +44,7 @@
   </url>
   
   <url>
-    <loc>http://juniway.github.io/2015/11/05/vim-vim-move-fast/</loc>
+    <loc>http://juniway.github.io/2015/10/11/vim-vimrc-setting/</loc>
     
     <lastmod>2018-02-13T13:55:04.123Z</lastmod>
     
@@ -58,21 +58,21 @@
   </url>
   
   <url>
-    <loc>http://juniway.github.io/2015/10/11/vim-vimrc-setting/</loc>
+    <loc>http://juniway.github.io/2015/11/05/vim-vim-move-fast/</loc>
     
     <lastmod>2018-02-13T13:55:04.123Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://juniway.github.io/2016/05/14/vbox-vbox-resize-hd/</loc>
+    <loc>http://juniway.github.io/2016/05/13/vbox-vboxmanage/</loc>
     
     <lastmod>2018-02-13T13:55:04.122Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://juniway.github.io/2016/05/13/vbox-vboxmanage/</loc>
+    <loc>http://juniway.github.io/2016/05/14/vbox-vbox-resize-hd/</loc>
     
     <lastmod>2018-02-13T13:55:04.122Z</lastmod>
     
@@ -86,13 +86,6 @@
   </url>
   
   <url>
-    <loc>http://juniway.github.io/2013/08/06/vbox-vbox-network-dialog/</loc>
-    
-    <lastmod>2018-02-13T13:55:04.121Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://juniway.github.io/2016/06/11/vbox-vbox-network-mode/</loc>
     
     <lastmod>2018-02-13T13:55:04.121Z</lastmod>
@@ -100,7 +93,14 @@
   </url>
   
   <url>
-    <loc>http://juniway.github.io/2012/09/27/vbox-vbox-config-files/</loc>
+    <loc>http://juniway.github.io/2013/08/06/vbox-vbox-network-dialog/</loc>
+    
+    <lastmod>2018-02-13T13:55:04.121Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://juniway.github.io/2012/09/27/vbox-vbox-nat-engine/</loc>
     
     <lastmod>2018-02-13T13:55:04.120Z</lastmod>
     
@@ -114,14 +114,14 @@
   </url>
   
   <url>
-    <loc>http://juniway.github.io/2012/09/27/vbox-vbox-nat-engine/</loc>
+    <loc>http://juniway.github.io/2012/06/11/vbox-vbox-guestaddition-shared-folder/</loc>
     
     <lastmod>2018-02-13T13:55:04.120Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://juniway.github.io/2016/07/02/vbox-vbox-create-vms-using-vboxmanage/</loc>
+    <loc>http://juniway.github.io/2012/09/27/vbox-vbox-config-files/</loc>
     
     <lastmod>2018-02-13T13:55:04.120Z</lastmod>
     
@@ -135,21 +135,21 @@
   </url>
   
   <url>
-    <loc>http://juniway.github.io/2012/06/11/vbox-vbox-guestaddition-shared-folder/</loc>
+    <loc>http://juniway.github.io/2016/07/02/vbox-vbox-create-vms-using-vboxmanage/</loc>
     
     <lastmod>2018-02-13T13:55:04.120Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://juniway.github.io/2012/09/27/vbox-gateway-dns/</loc>
+    <loc>http://juniway.github.io/2016/05/27/vbox-vbox-access-server-in-guestos/</loc>
     
     <lastmod>2018-02-13T13:55:04.119Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://juniway.github.io/2016/05/27/vbox-vbox-access-server-in-guestos/</loc>
+    <loc>http://juniway.github.io/2012/09/27/vbox-gateway-dns/</loc>
     
     <lastmod>2018-02-13T13:55:04.119Z</lastmod>
     
@@ -163,21 +163,14 @@
   </url>
   
   <url>
-    <loc>http://juniway.github.io/2017/12/16/tools-protobuf-go-cpp/</loc>
-    
-    <lastmod>2018-02-13T13:55:04.118Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://juniway.github.io/2017/12/16/tools-grpc-go-install/</loc>
-    
-    <lastmod>2018-02-13T13:55:04.118Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://juniway.github.io/2017/12/16/tools-protoc23diff/</loc>
+    
+    <lastmod>2018-02-13T13:55:04.118Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://juniway.github.io/2017/12/16/tools-protobuf-go-cpp/</loc>
     
     <lastmod>2018-02-13T13:55:04.118Z</lastmod>
     
@@ -191,9 +184,30 @@
   </url>
   
   <url>
+    <loc>http://juniway.github.io/2017/12/16/tools-grpc-go-install/</loc>
+    
+    <lastmod>2018-02-13T13:55:04.118Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://juniway.github.io/2017/12/16/tools-grpc-install/</loc>
     
     <lastmod>2018-02-13T13:55:04.118Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://juniway.github.io/2017/12/16/tools-grpc-go-cient-server/</loc>
+    
+    <lastmod>2018-02-13T13:55:04.117Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://juniway.github.io/2015/07/29/tools-cmake-module/</loc>
+    
+    <lastmod>2018-02-13T13:55:04.117Z</lastmod>
     
   </url>
   
@@ -212,27 +226,6 @@
   </url>
   
   <url>
-    <loc>http://juniway.github.io/2015/11/13/python-coding-standards/</loc>
-    
-    <lastmod>2018-02-13T13:55:04.117Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://juniway.github.io/2015/07/29/tools-cmake-module/</loc>
-    
-    <lastmod>2018-02-13T13:55:04.117Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://juniway.github.io/2017/12/16/tools-grpc-go-cient-server/</loc>
-    
-    <lastmod>2018-02-13T13:55:04.117Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://juniway.github.io/2015/07/29/tools-cmake-advanced/</loc>
     
     <lastmod>2018-02-13T13:55:04.117Z</lastmod>
@@ -240,14 +233,14 @@
   </url>
   
   <url>
-    <loc>http://juniway.github.io/2015/06/18/os-memory-allocation-contention/</loc>
+    <loc>http://juniway.github.io/2015/11/13/python-coding-standards/</loc>
     
-    <lastmod>2018-02-13T13:55:04.116Z</lastmod>
+    <lastmod>2018-02-13T13:55:04.117Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://juniway.github.io/2015/06/18/os-cpu-cache-consistency-1/</loc>
+    <loc>http://juniway.github.io/2016/07/19/os-share-data-threads/</loc>
     
     <lastmod>2018-02-13T13:55:04.116Z</lastmod>
     
@@ -261,6 +254,20 @@
   </url>
   
   <url>
+    <loc>http://juniway.github.io/2015/06/18/os-cpu-cache-consistency-1/</loc>
+    
+    <lastmod>2018-02-13T13:55:04.116Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://juniway.github.io/2015/06/18/os-memory-allocation-contention/</loc>
+    
+    <lastmod>2018-02-13T13:55:04.116Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://juniway.github.io/2016/01/27/other-stress-test/</loc>
     
     <lastmod>2018-02-13T13:55:04.116Z</lastmod>
@@ -268,14 +275,7 @@
   </url>
   
   <url>
-    <loc>http://juniway.github.io/2016/07/19/os-share-data-threads/</loc>
-    
-    <lastmod>2018-02-13T13:55:04.116Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://juniway.github.io/2016/06/05/os-cpu-atomic-contention-2/</loc>
+    <loc>http://juniway.github.io/2016/09/10/network-programming-server-mode3/</loc>
     
     <lastmod>2018-02-13T13:55:04.115Z</lastmod>
     
@@ -296,7 +296,7 @@
   </url>
   
   <url>
-    <loc>http://juniway.github.io/2016/09/10/network-programming-server-mode3/</loc>
+    <loc>http://juniway.github.io/2016/06/05/os-cpu-atomic-contention-2/</loc>
     
     <lastmod>2018-02-13T13:55:04.115Z</lastmod>
     
@@ -310,7 +310,7 @@
   </url>
   
   <url>
-    <loc>http://juniway.github.io/2014/09/23/network-programming-select/</loc>
+    <loc>http://juniway.github.io/2016/09/10/network-programming-server-mode1/</loc>
     
     <lastmod>2018-02-13T13:55:04.114Z</lastmod>
     
@@ -324,7 +324,7 @@
   </url>
   
   <url>
-    <loc>http://juniway.github.io/2016/09/10/network-programming-server-mode1/</loc>
+    <loc>http://juniway.github.io/2014/09/23/network-programming-select/</loc>
     
     <lastmod>2018-02-13T13:55:04.114Z</lastmod>
     
@@ -373,20 +373,6 @@
   </url>
   
   <url>
-    <loc>http://juniway.github.io/2014/09/23/network-programming-diff-select-poll-epoll/</loc>
-    
-    <lastmod>2018-02-13T13:55:04.112Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://juniway.github.io/2016/09/01/mongodb-shard-cluster/</loc>
-    
-    <lastmod>2018-02-13T13:55:04.112Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://juniway.github.io/2016/06/05/linux-zip-unzip/</loc>
     
     <lastmod>2018-02-13T13:55:04.112Z</lastmod>
@@ -394,7 +380,7 @@
   </url>
   
   <url>
-    <loc>http://juniway.github.io/2016/06/25/linux-ssh-remote-cmds/</loc>
+    <loc>http://juniway.github.io/2014/09/23/network-programming-diff-select-poll-epoll/</loc>
     
     <lastmod>2018-02-13T13:55:04.112Z</lastmod>
     
@@ -408,14 +394,21 @@
   </url>
   
   <url>
-    <loc>http://juniway.github.io/2016/05/24/linux-ss/</loc>
+    <loc>http://juniway.github.io/2016/06/25/linux-ssh-remote-cmds/</loc>
     
-    <lastmod>2018-02-13T13:55:04.111Z</lastmod>
+    <lastmod>2018-02-13T13:55:04.112Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://juniway.github.io/2013/09/28/linux-shellstring/</loc>
+    <loc>http://juniway.github.io/2016/09/01/mongodb-shard-cluster/</loc>
+    
+    <lastmod>2018-02-13T13:55:04.112Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://juniway.github.io/2016/05/24/linux-ss/</loc>
     
     <lastmod>2018-02-13T13:55:04.111Z</lastmod>
     
@@ -457,6 +450,13 @@
   </url>
   
   <url>
+    <loc>http://juniway.github.io/2013/09/28/linux-shellstring/</loc>
+    
+    <lastmod>2018-02-13T13:55:04.111Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://juniway.github.io/2016/08/26/linux-msys2/</loc>
     
     <lastmod>2018-02-13T13:55:04.110Z</lastmod>
@@ -472,6 +472,13 @@
   
   <url>
     <loc>http://juniway.github.io/2016/05/19/linux-netstat/</loc>
+    
+    <lastmod>2018-02-13T13:55:04.110Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://juniway.github.io/2015/09/19/linux-lsof/</loc>
     
     <lastmod>2018-02-13T13:55:04.110Z</lastmod>
     
@@ -499,14 +506,14 @@
   </url>
   
   <url>
-    <loc>http://juniway.github.io/2015/09/19/linux-lsof/</loc>
+    <loc>http://juniway.github.io/2016/05/23/linux-find-xargs/</loc>
     
-    <lastmod>2018-02-13T13:55:04.110Z</lastmod>
+    <lastmod>2018-02-13T13:55:04.109Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://juniway.github.io/2015/07/02/linux-env-files/</loc>
+    <loc>http://juniway.github.io/2016/06/06/linux-cut-paste/</loc>
     
     <lastmod>2018-02-13T13:55:04.109Z</lastmod>
     
@@ -534,14 +541,7 @@
   </url>
   
   <url>
-    <loc>http://juniway.github.io/2016/05/23/linux-find-xargs/</loc>
-    
-    <lastmod>2018-02-13T13:55:04.109Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://juniway.github.io/2016/06/06/linux-cut-paste/</loc>
+    <loc>http://juniway.github.io/2015/07/02/linux-env-files/</loc>
     
     <lastmod>2018-02-13T13:55:04.109Z</lastmod>
     
@@ -576,28 +576,7 @@
   </url>
   
   <url>
-    <loc>http://juniway.github.io/2016/11/26/go-tls-mutual-auth/</loc>
-    
-    <lastmod>2018-02-13T13:55:04.107Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://juniway.github.io/2016/06/09/hadoop-hadoop-configurations/</loc>
-    
-    <lastmod>2018-02-13T13:55:04.107Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://juniway.github.io/2016/07/02/hadoop-hadoop-ha/</loc>
-    
-    <lastmod>2018-02-13T13:55:04.107Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://juniway.github.io/2016/07/02/hadoop-hadoop-install/</loc>
     
     <lastmod>2018-02-13T13:55:04.107Z</lastmod>
     
@@ -611,30 +590,30 @@
   </url>
   
   <url>
-    <loc>http://juniway.github.io/2016/10/14/go-var-scope/</loc>
+    <loc>http://juniway.github.io/2016/11/26/go-tls-mutual-auth/</loc>
     
     <lastmod>2018-02-13T13:55:04.107Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://juniway.github.io/2016/07/29/go-mgo-source-structure/</loc>
+    <loc>http://juniway.github.io/2016/07/02/hadoop-hadoop-install/</loc>
     
-    <lastmod>2018-02-13T13:55:04.106Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://juniway.github.io/2016/09/19/go-print-struct-map/</loc>
-    
-    <lastmod>2018-02-13T13:55:04.106Z</lastmod>
+    <lastmod>2018-02-13T13:55:04.107Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://juniway.github.io/2016/07/29/go-redigo-analysis/</loc>
+    <loc>http://juniway.github.io/2016/07/02/hadoop-hadoop-ha/</loc>
     
-    <lastmod>2018-02-13T13:55:04.106Z</lastmod>
+    <lastmod>2018-02-13T13:55:04.107Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://juniway.github.io/2016/10/14/go-var-scope/</loc>
+    
+    <lastmod>2018-02-13T13:55:04.107Z</lastmod>
     
   </url>
   
@@ -660,7 +639,35 @@
   </url>
   
   <url>
-    <loc>http://juniway.github.io/2016/07/29/go-mgo-source-analysis/</loc>
+    <loc>http://juniway.github.io/2016/07/29/go-redigo-analysis/</loc>
+    
+    <lastmod>2018-02-13T13:55:04.106Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://juniway.github.io/2016/09/19/go-print-struct-map/</loc>
+    
+    <lastmod>2018-02-13T13:55:04.106Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://juniway.github.io/2016/07/29/go-mgo-source-structure/</loc>
+    
+    <lastmod>2018-02-13T13:55:04.106Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://juniway.github.io/2017/03/25/go-go-zk-server/</loc>
+    
+    <lastmod>2018-02-13T13:55:04.105Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://juniway.github.io/2016/10/16/go-go-vendor/</loc>
     
     <lastmod>2018-02-13T13:55:04.105Z</lastmod>
     
@@ -681,13 +688,6 @@
   </url>
   
   <url>
-    <loc>http://juniway.github.io/2017/01/07/go-http-hijacker/</loc>
-    
-    <lastmod>2018-02-13T13:55:04.105Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://juniway.github.io/2016/09/13/go-interface-notes/</loc>
     
     <lastmod>2018-02-13T13:55:04.105Z</lastmod>
@@ -695,16 +695,23 @@
   </url>
   
   <url>
-    <loc>http://juniway.github.io/2017/03/25/go-go-zk-server/</loc>
+    <loc>http://juniway.github.io/2017/01/07/go-http-hijacker/</loc>
     
     <lastmod>2018-02-13T13:55:04.105Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://juniway.github.io/2016/10/16/go-go-vendor/</loc>
+    <loc>http://juniway.github.io/2016/07/29/go-mgo-source-analysis/</loc>
     
     <lastmod>2018-02-13T13:55:04.105Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://juniway.github.io/2016/10/14/go-go-json/</loc>
+    
+    <lastmod>2018-02-13T13:55:04.104Z</lastmod>
     
   </url>
   
@@ -723,28 +730,7 @@
   </url>
   
   <url>
-    <loc>http://juniway.github.io/2017/12/21/go-convert-to-byte/</loc>
-    
-    <lastmod>2018-02-13T13:55:04.104Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://juniway.github.io/2016/09/13/go-convertion-int-string/</loc>
-    
-    <lastmod>2018-02-13T13:55:04.104Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://juniway.github.io/2016/11/21/go-gen-ca-key/</loc>
-    
-    <lastmod>2018-02-13T13:55:04.104Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://juniway.github.io/2016/10/14/go-go-json/</loc>
+    <loc>http://juniway.github.io/2016/09/13/go-go-sizeof/</loc>
     
     <lastmod>2018-02-13T13:55:04.104Z</lastmod>
     
@@ -758,21 +744,35 @@
   </url>
   
   <url>
-    <loc>http://juniway.github.io/2016/09/13/go-go-sizeof/</loc>
+    <loc>http://juniway.github.io/2016/11/21/go-gen-ca-key/</loc>
     
     <lastmod>2018-02-13T13:55:04.104Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://juniway.github.io/2016/05/21/git-multiple-remotes/</loc>
+    <loc>http://juniway.github.io/2016/09/13/go-convertion-int-string/</loc>
+    
+    <lastmod>2018-02-13T13:55:04.104Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://juniway.github.io/2017/12/21/go-convert-to-byte/</loc>
+    
+    <lastmod>2018-02-13T13:55:04.104Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://juniway.github.io/2016/09/10/git-git-rebase-branch/</loc>
     
     <lastmod>2018-02-13T13:55:04.103Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://juniway.github.io/2016/08/20/git-git-undo/</loc>
+    <loc>http://juniway.github.io/2016/05/21/git-multiple-remotes/</loc>
     
     <lastmod>2018-02-13T13:55:04.103Z</lastmod>
     
@@ -786,23 +786,16 @@
   </url>
   
   <url>
+    <loc>http://juniway.github.io/2016/08/20/git-git-undo/</loc>
+    
+    <lastmod>2018-02-13T13:55:04.103Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://juniway.github.io/2016/09/10/git-git-squash-commits/</loc>
     
     <lastmod>2018-02-13T13:55:04.103Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://juniway.github.io/2016/09/10/git-git-rebase-branch/</loc>
-    
-    <lastmod>2018-02-13T13:55:04.103Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://juniway.github.io/2016/08/31/git-git-mergetool/</loc>
-    
-    <lastmod>2018-02-13T13:55:04.102Z</lastmod>
     
   </url>
   
@@ -814,9 +807,9 @@
   </url>
   
   <url>
-    <loc>http://juniway.github.io/2016/05/20/git-git-diff-local-repo/</loc>
+    <loc>http://juniway.github.io/2016/08/31/git-git-mergetool/</loc>
     
-    <lastmod>2018-02-13T13:55:04.101Z</lastmod>
+    <lastmod>2018-02-13T13:55:04.102Z</lastmod>
     
   </url>
   
@@ -831,6 +824,20 @@
     <loc>http://juniway.github.io/2016/05/20/git-git-init/</loc>
     
     <lastmod>2018-02-13T13:55:04.101Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://juniway.github.io/2016/05/20/git-git-diff-local-repo/</loc>
+    
+    <lastmod>2018-02-13T13:55:04.101Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://juniway.github.io/2017/01/01/distributed-system-percolator/</loc>
+    
+    <lastmod>2018-02-13T13:55:04.100Z</lastmod>
     
   </url>
   
@@ -857,13 +864,6 @@
   
   <url>
     <loc>http://juniway.github.io/2016/05/22/distributed-system-consensus/</loc>
-    
-    <lastmod>2018-02-13T13:55:04.100Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://juniway.github.io/2017/01/01/distributed-system-percolator/</loc>
     
     <lastmod>2018-02-13T13:55:04.100Z</lastmod>
     
@@ -898,20 +898,6 @@
   </url>
   
   <url>
-    <loc>http://juniway.github.io/2015/08/16/cpp-rapidjson/</loc>
-    
-    <lastmod>2018-02-13T13:55:04.098Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://juniway.github.io/2014/12/16/cpp-crtp/</loc>
-    
-    <lastmod>2018-02-13T13:55:04.098Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://juniway.github.io/2013/02/16/cpp-cpp-high-performance-programming/</loc>
     
     <lastmod>2018-02-13T13:55:04.098Z</lastmod>
@@ -920,6 +906,20 @@
   
   <url>
     <loc>http://juniway.github.io/2014/08/16/cpp-extern-c/</loc>
+    
+    <lastmod>2018-02-13T13:55:04.098Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://juniway.github.io/2015/08/16/cpp-rapidjson/</loc>
+    
+    <lastmod>2018-02-13T13:55:04.098Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://juniway.github.io/2014/12/16/cpp-crtp/</loc>
     
     <lastmod>2018-02-13T13:55:04.098Z</lastmod>
     
