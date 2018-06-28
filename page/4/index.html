@@ -76,12 +76,12 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/05/22/distributed-system-multi-raft/" title="Multi Raft" itemprop="url">
+    <a href="/2016/05/22/distributed-system-consensus/" title="Consensus - Leader Election Algorithms" itemprop="url">
   
-    <h1 itemprop="name">Multi Raft</h1>
+    <h1 itemprop="name">Consensus - Leader Election Algorithms</h1>
     
      
-           <p itemprop="description" >As the number of cluster node increasing, single raft will suffer performance penalty as the more nodes participate in the leader election a</p>
+           <p itemprop="description" >在分布式系统中，需要在多个节点之间保持数据的一致性，通常需要有一个协调者，这个协调者（Coodinator）作为整个集群的出口单独对外提供服务。通常，我们需要在集群中的所有节点中选出这么一个节点，作为所有节点的 Leader 来承担这个工作。Leader 只能有一个，其他节点为 </p>
         
     
     <time datetime="2016-05-22T12:16:25.000Z" itemprop="datePublished">2016-05-22</time>
@@ -185,15 +185,13 @@ Note: this is the recom</p>
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/05/20/git-git-diff-local-repo/" title="Check the difference of file between local and repository" itemprop="url">
+    <a href="/2016/05/20/git-git-init/" title="Git init and remote branch" itemprop="url">
   
-    <h1 itemprop="name">Check the difference of file between local and repository</h1>
+    <h1 itemprop="name">Git init and remote branch</h1>
     
      
-           <p itemprop="description" >git diff masterorgit diff HEAD
-
-
-git diffShows the changes between the working directory and the index. This shows what has been changed, bu</p>
+           <p itemprop="description" >本地目录与远程库的区别
+如果已经在本地建好了一个目录，比如 myproj，同时，在 github.com 上也已经建了一个项目 proj_test，那么想把这个 proj_test 里的内容拉下来放到本地的 myproj 目录中，同时本地的 myproj 目录中原有的文件还继续能</p>
         
     
     <time datetime="2016-05-20T12:16:25.000Z" itemprop="datePublished">2016-05-20</time>
@@ -208,13 +206,15 @@ git diffShows the changes between the working directory and the index. This show
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/05/20/git-git-init/" title="Git init and remote branch" itemprop="url">
+    <a href="/2016/05/20/git-git-diff-local-repo/" title="Check the difference of file between local and repository" itemprop="url">
   
-    <h1 itemprop="name">Git init and remote branch</h1>
+    <h1 itemprop="name">Check the difference of file between local and repository</h1>
     
      
-           <p itemprop="description" >本地目录与远程库的区别
-如果已经在本地建好了一个目录，比如 myproj，同时，在 github.com 上也已经建了一个项目 proj_test，那么想把这个 proj_test 里的内容拉下来放到本地的 myproj 目录中，同时本地的 myproj 目录中原有的文件还继续能</p>
+           <p itemprop="description" >git diff masterorgit diff HEAD
+
+
+git diffShows the changes between the working directory and the index. This shows what has been changed, bu</p>
         
     
     <time datetime="2016-05-20T12:16:25.000Z" itemprop="datePublished">2016-05-20</time>
@@ -449,6 +449,28 @@ ab 是通过模拟发送 http 请求的方式对服务程序进行测试，通�
   
 <section class="post" itemscope itemprop="blogitem">
   
+    <a href="/2015/11/13/system-build-ningja/" title="Use Ninja to replace make" itemprop="url">
+  
+    <h1 itemprop="name">Use Ninja to replace make</h1>
+    
+     
+           <p itemprop="description" >Introduction
+As stated in the official site, Ninja is a small build system with a focus on speed.
+There are multiplay ways to install ninja </p>
+        
+    
+    <time datetime="2015-11-13T03:30:33.000Z" itemprop="datePublished">2015-11-13</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
     <a href="/2015/11/13/python-coding-standards/" title="Python Coding Style Guide" itemprop="url">
   
     <h1 itemprop="name">Python Coding Style Guide</h1>
@@ -472,56 +494,17 @@ Go</p>
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2015/11/13/system-build-ningja/" title="Use Ninja to replace make" itemprop="url">
+    <a href="/2015/11/05/vim-file-and-window/" title="File and multi windows in Vim" itemprop="url">
   
-    <h1 itemprop="name">Use Ninja to replace make</h1>
+    <h1 itemprop="name">File and multi windows in Vim</h1>
     
      
-           <p itemprop="description" >Introduction
-As stated in the official site, Ninja is a small build system with a focus on speed.
-There are multiplay ways to install ninja </p>
-        
-    
-    <time datetime="2015-11-13T03:30:33.000Z" itemprop="datePublished">2015-11-13</time>
-  </a>
-</section>
+           <p itemprop="description" >Editing multiple files1) Open multiple files at the same time
 
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
-    <a href="/2015/11/05/vim-vim-edit-fast/" title="Edit fast in Vim" itemprop="url">
-  
-    <h1 itemprop="name">Edit fast in Vim</h1>
-    
-     
-           <p itemprop="description" >Insert/Change
-
-
-Keys
-Function 
-
-
-
-
-a
-append after cursor
-
-
-A
-append at the end of line
-
-
-i
-insert before the cursor
-
-
-I
-insert before the fi</p>
+vi a.txt b.txt c.txt
+:n, :next edit next file
+:2n edit next two files 
+:N, :p</p>
         
     
     <time datetime="2015-11-05T13:11:48.000Z" itemprop="datePublished">2015-11-05</time>
@@ -574,17 +557,34 @@ g</p>
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2015/11/05/vim-file-and-window/" title="File and multi windows in Vim" itemprop="url">
+    <a href="/2015/11/05/vim-vim-edit-fast/" title="Edit fast in Vim" itemprop="url">
   
-    <h1 itemprop="name">File and multi windows in Vim</h1>
+    <h1 itemprop="name">Edit fast in Vim</h1>
     
      
-           <p itemprop="description" >Editing multiple files1) Open multiple files at the same time
+           <p itemprop="description" >Insert/Change
 
-vi a.txt b.txt c.txt
-:n, :next edit next file
-:2n edit next two files 
-:N, :p</p>
+
+Keys
+Function 
+
+
+
+
+a
+append after cursor
+
+
+A
+append at the end of line
+
+
+i
+insert before the cursor
+
+
+I
+insert before the fi</p>
         
     
     <time datetime="2015-11-05T13:11:48.000Z" itemprop="datePublished">2015-11-05</time>

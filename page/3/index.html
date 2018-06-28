@@ -96,27 +96,6 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/07/02/vbox-vbox-create-vms-using-vboxmanage/" title="A Windows command line script to create VMs in VirtualBox" itemprop="url">
-  
-    <h1 itemprop="name">A Windows command line script to create VMs in VirtualBox</h1>
-    
-     
-           <p itemprop="description" >This article introduces a script to create VirtualBox VMs in Windows
-12345678910111213141516171819202122232425262728293031@echo offSETLOCAL </p>
-        
-    
-    <time datetime="2016-07-02T12:43:48.000Z" itemprop="datePublished">2016-07-02</time>
-  </a>
-</section>
-
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
     <a href="/2016/07/02/hadoop-hadoop-install/" title="Hadoop Installation" itemprop="url">
   
     <h1 itemprop="name">Hadoop Installation</h1>
@@ -159,6 +138,27 @@ $ export HA</p>
   
 <section class="post" itemscope itemprop="blogitem">
   
+    <a href="/2016/07/02/vbox-vbox-create-vms-using-vboxmanage/" title="A Windows command line script to create VMs in VirtualBox" itemprop="url">
+  
+    <h1 itemprop="name">A Windows command line script to create VMs in VirtualBox</h1>
+    
+     
+           <p itemprop="description" >This article introduces a script to create VirtualBox VMs in Windows
+12345678910111213141516171819202122232425262728293031@echo offSETLOCAL </p>
+        
+    
+    <time datetime="2016-07-02T12:43:48.000Z" itemprop="datePublished">2016-07-02</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
     <a href="/2016/07/02/hadoop-hadoop-ha/" title="HDFS High Availability" itemprop="url">
   
     <h1 itemprop="name">HDFS High Availability</h1>
@@ -179,12 +179,13 @@ $ export HA</p>
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/06/25/linux-ssh/" title="ssh" itemprop="url">
+    <a href="/2016/06/25/linux-ssh-remote-cmds/" title="Executing commands on remote machine using SSH" itemprop="url">
   
-    <h1 itemprop="name">ssh</h1>
+    <h1 itemprop="name">Executing commands on remote machine using SSH</h1>
     
      
-           <p itemprop="description" >SSH (Secure Shell) is a UNIX-based command interface and protocol for securely getting access to a remote computer. SSH is actually a suite </p>
+           <p itemprop="description" >如果在远程执行 sudo 的过程中报错提示：sudo: no tty present and no askpass program specified
+这是因为：sudo will only run a program as a different user if one of </p>
         
     
     <time datetime="2016-06-25T10:49:48.000Z" itemprop="datePublished">2016-06-25</time>
@@ -199,13 +200,12 @@ $ export HA</p>
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/06/25/linux-ssh-remote-cmds/" title="Executing commands on remote machine using SSH" itemprop="url">
+    <a href="/2016/06/25/linux-ssh/" title="ssh" itemprop="url">
   
-    <h1 itemprop="name">Executing commands on remote machine using SSH</h1>
+    <h1 itemprop="name">ssh</h1>
     
      
-           <p itemprop="description" >如果在远程执行 sudo 的过程中报错提示：sudo: no tty present and no askpass program specified
-这是因为：sudo will only run a program as a different user if one of </p>
+           <p itemprop="description" >SSH (Secure Shell) is a UNIX-based command interface and protocol for securely getting access to a remote computer. SSH is actually a suite </p>
         
     
     <time datetime="2016-06-25T10:49:48.000Z" itemprop="datePublished">2016-06-25</time>
@@ -243,13 +243,13 @@ NAT 是通过 VirtualBox 内置的 NAT Engine 把 Guest OS 中</p>
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/06/09/hadoop-hadoop-configurations/" title="Hadoop Configuration" itemprop="url">
+    <a href="/2016/06/09/hadoop-reduce-tasks/" title="Hadoop reduce task" itemprop="url">
   
-    <h1 itemprop="name">Hadoop Configuration</h1>
+    <h1 itemprop="name">Hadoop reduce task</h1>
     
      
-           <p itemprop="description" >Hadoop configurations
-Once we have installed hadoop cluster we need to set up its configuration before it can work properly.One of the commo</p>
+           <p itemprop="description" >By default, there is only one reduce task, this means it will output part-00000 including all keys.
+In face of huge amount of data, the redu</p>
         
     
     <time datetime="2016-06-09T12:43:48.000Z" itemprop="datePublished">2016-06-09</time>
@@ -264,13 +264,13 @@ Once we have installed hadoop cluster we need to set up its configuration before
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/06/09/hadoop-reduce-tasks/" title="Hadoop reduce task" itemprop="url">
+    <a href="/2016/06/09/hadoop-hadoop-configurations/" title="Hadoop Configuration" itemprop="url">
   
-    <h1 itemprop="name">Hadoop reduce task</h1>
+    <h1 itemprop="name">Hadoop Configuration</h1>
     
      
-           <p itemprop="description" >By default, there is only one reduce task, this means it will output part-00000 including all keys.
-In face of huge amount of data, the redu</p>
+           <p itemprop="description" >Hadoop configurations
+Once we have installed hadoop cluster we need to set up its configuration before it can work properly.One of the commo</p>
         
     
     <time datetime="2016-06-09T12:43:48.000Z" itemprop="datePublished">2016-06-09</time>
@@ -310,6 +310,29 @@ Stop the foreground process</p>
         
     
     <time datetime="2016-06-06T12:58:18.000Z" itemprop="datePublished">2016-06-06</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2016/06/06/linux-awk/" title="Awk Programming" itemprop="url">
+  
+    <h1 itemprop="name">Awk Programming</h1>
+    
+     
+           <p itemprop="description" >Awk is very powerful in processing delimiter-separated text in Linux.
+Typical Uses of AWKAwk can be used in many different ways, such as:
+
+T</p>
+        
+    
+    <time datetime="2016-06-06T12:43:48.000Z" itemprop="datePublished">2016-06-06</time>
   </a>
 </section>
 
@@ -362,29 +385,6 @@ Cursor MovementCtrl + a        Move cursor to start of the lineCtrl + e        M
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/06/06/linux-awk/" title="Awk Programming" itemprop="url">
-  
-    <h1 itemprop="name">Awk Programming</h1>
-    
-     
-           <p itemprop="description" >Awk is very powerful in processing delimiter-separated text in Linux.
-Typical Uses of AWKAwk can be used in many different ways, such as:
-
-T</p>
-        
-    
-    <time datetime="2016-06-06T12:43:48.000Z" itemprop="datePublished">2016-06-06</time>
-  </a>
-</section>
-
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
     <a href="/2016/06/05/os-cpu-atomic-contention-2/" title="原子操作和竞争" itemprop="url">
   
     <h1 itemprop="name">原子操作和竞争</h1>
@@ -395,27 +395,6 @@ T</p>
         
     
     <time datetime="2016-06-05T14:18:24.000Z" itemprop="datePublished">2016-06-05</time>
-  </a>
-</section>
-
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
-    <a href="/2016/06/05/linux-sed/" title="sed and regular expression" itemprop="url">
-  
-    <h1 itemprop="name">sed and regular expression</h1>
-    
-     
-           <p itemprop="description" >IntroductionSED is a stream editing command in Linux, it is very powerful in text processing under Linux environment. 
-SED can be used in ma</p>
-        
-    
-    <time datetime="2016-06-05T13:11:48.000Z" itemprop="datePublished">2016-06-05</time>
   </a>
 </section>
 
@@ -509,6 +488,27 @@ CREATE - to create object</p>
   
 <section class="post" itemscope itemprop="blogitem">
   
+    <a href="/2016/06/05/linux-sed/" title="sed and regular expression" itemprop="url">
+  
+    <h1 itemprop="name">sed and regular expression</h1>
+    
+     
+           <p itemprop="description" >IntroductionSED is a stream editing command in Linux, it is very powerful in text processing under Linux environment. 
+SED can be used in ma</p>
+        
+    
+    <time datetime="2016-06-05T13:11:48.000Z" itemprop="datePublished">2016-06-05</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
     <a href="/2016/05/27/vbox-vbox-access-server-in-guestos/" title="Access the web server resides in Guest OS" itemprop="url">
   
     <h1 itemprop="name">Access the web server resides in Guest OS</h1>
@@ -570,12 +570,12 @@ As we known</p>
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/05/22/distributed-system-consensus/" title="Consensus - Leader Election Algorithms" itemprop="url">
+    <a href="/2016/05/22/distributed-system-multi-raft/" title="Multi Raft" itemprop="url">
   
-    <h1 itemprop="name">Consensus - Leader Election Algorithms</h1>
+    <h1 itemprop="name">Multi Raft</h1>
     
      
-           <p itemprop="description" >在分布式系统中，需要在多个节点之间保持数据的一致性，通常需要有一个协调者，这个协调者（Coodinator）作为整个集群的出口单独对外提供服务。通常，我们需要在集群中的所有节点中选出这么一个节点，作为所有节点的 Leader 来承担这个工作。Leader 只能有一个，其他节点为 </p>
+           <p itemprop="description" >As the number of cluster node increasing, single raft will suffer performance penalty as the more nodes participate in the leader election a</p>
         
     
     <time datetime="2016-05-22T12:16:25.000Z" itemprop="datePublished">2016-05-22</time>
