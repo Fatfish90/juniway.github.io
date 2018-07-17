@@ -76,6 +76,26 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
+    <a href="/2015/10/25/network-programming-listen-connect-accept/" title="connect()、listen() 和 accept() 三者之间的关系" itemprop="url">
+  
+    <h1 itemprop="name">connect()、listen() 和 accept() 三者之间的关系</h1>
+    
+     
+           <p itemprop="description" >基于 TCP 的网络编程开发分为服务器端和客户端两部分，常见的核心步骤和流程如下：connect()函数对于客户端的 connect() 函数，该函数的功能为客户端主动连接服务器，建立连接是通过三次握手，而这个连接的过程是由内核完成，不是这个函数完成的，这个函数的作用仅仅是通知 </p>
+        
+    
+    <time datetime="2015-10-25T12:12:07.000Z" itemprop="datePublished">2015-10-25</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
     <a href="/2015/10/11/vim-vimrc-setting/" title="vimrc settings" itemprop="url">
   
     <h1 itemprop="name">vimrc settings</h1>
@@ -159,15 +179,14 @@ set nocp该命令指定让 VIM 工作在不兼容模式下。在 VIM 之前，�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2015/07/29/tools-cmake-advanced/" title="CMake Advanced" itemprop="url">
+    <a href="/2015/07/29/tools-cmake-module/" title="Write custom CMake modules" itemprop="url">
   
-    <h1 itemprop="name">CMake Advanced</h1>
+    <h1 itemprop="name">Write custom CMake modules</h1>
     
      
-           <p itemprop="description" >本文介绍 CMake 的一些高级配置方式
-执行 cmake --help-variable VARIABLE_NAME 可以查看某个 CMake 变量的含义。
-自定义变量
-主要有隐式定义和显式定义两种。隐式定义的一个例子是 PROJECT 指令，它会隐式的定义 &amp;lt;proje</p>
+           <p itemprop="description" >注：本文中的大部分内容均参考至 CMake Practice 一书。
+
+CMake 中默认的模块文件通常会位于 /usr/share/cmake-3.7.1/Module 目录下，如果我们需要为工程项目自定义 CMake 的模块文件，通常在工程根目录下新建一个名称为 cmake </p>
         
     
     <time datetime="2015-07-29T12:33:48.000Z" itemprop="datePublished">2015-07-29</time>
@@ -182,14 +201,15 @@ set nocp该命令指定让 VIM 工作在不兼容模式下。在 VIM 之前，�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2015/07/29/tools-cmake-module/" title="Write custom CMake modules" itemprop="url">
+    <a href="/2015/07/29/tools-cmake-advanced/" title="CMake Advanced" itemprop="url">
   
-    <h1 itemprop="name">Write custom CMake modules</h1>
+    <h1 itemprop="name">CMake Advanced</h1>
     
      
-           <p itemprop="description" >注：本文中的大部分内容均参考至 CMake Practice 一书。
-
-CMake 中默认的模块文件通常会位于 /usr/share/cmake-3.7.1/Module 目录下，如果我们需要为工程项目自定义 CMake 的模块文件，通常在工程根目录下新建一个名称为 cmake </p>
+           <p itemprop="description" >本文介绍 CMake 的一些高级配置方式
+执行 cmake --help-variable VARIABLE_NAME 可以查看某个 CMake 变量的含义。
+自定义变量
+主要有隐式定义和显式定义两种。隐式定义的一个例子是 PROJECT 指令，它会隐式的定义 &amp;lt;proje</p>
         
     
     <time datetime="2015-07-29T12:33:48.000Z" itemprop="datePublished">2015-07-29</time>
@@ -245,27 +265,6 @@ CMake 中默认的模块文件通常会位于 /usr/share/cmake-3.7.1/Module 目�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2015/06/18/os-cpu-cache-consistency-1/" title="缓存一致性（Cache Coherency）" itemprop="url">
-  
-    <h1 itemprop="name">缓存一致性（Cache Coherency）</h1>
-    
-     
-           <p itemprop="description" >本文是 RAD Game Tools 程序员 Fabian “ryg” Giesen 在其博客上发表的《Cache coherency primer》一文的翻译。该系列共有两篇，本文系第一篇。
-我计划写一些关于多核场景下数据组织的文章。写了第一篇，但我很快意识到有大量的基础知识我</p>
-        
-    
-    <time datetime="2015-06-18T14:18:24.000Z" itemprop="datePublished">2015-06-18</time>
-  </a>
-</section>
-
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
     <a href="/2015/06/18/os-memory-allocation-contention/" title="Memory Allocation Contention" itemprop="url">
   
     <h1 itemprop="name">Memory Allocation Contention</h1>
@@ -307,16 +306,16 @@ CMake 中默认的模块文件通常会位于 /usr/share/cmake-3.7.1/Module 目�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2014/12/16/cpp-crtp/" title="CRTP, Curiously Recurring Template Pattern" itemprop="url">
+    <a href="/2015/06/18/os-cpu-cache-consistency-1/" title="缓存一致性（Cache Coherency）" itemprop="url">
   
-    <h1 itemprop="name">CRTP, Curiously Recurring Template Pattern</h1>
+    <h1 itemprop="name">缓存一致性（Cache Coherency）</h1>
     
      
-           <p itemprop="description" >一、简介
-什么是 CRTP？其英文全称是 Curiously Recurring Template Pattern，最早是由 James Coplien 在 1995 年提出的一个高级 C++ 编程技术，后来在 Stanley B. Lippman 写的 Cpp Gems 一书中</p>
+           <p itemprop="description" >本文是 RAD Game Tools 程序员 Fabian “ryg” Giesen 在其博客上发表的《Cache coherency primer》一文的翻译。该系列共有两篇，本文系第一篇。
+我计划写一些关于多核场景下数据组织的文章。写了第一篇，但我很快意识到有大量的基础知识我</p>
         
     
-    <time datetime="2014-12-16T03:30:33.000Z" itemprop="datePublished">2014-12-16</time>
+    <time datetime="2015-06-18T14:18:24.000Z" itemprop="datePublished">2015-06-18</time>
   </a>
 </section>
 
@@ -328,16 +327,16 @@ CMake 中默认的模块文件通常会位于 /usr/share/cmake-3.7.1/Module 目�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2014/09/23/network-programming-diff-select-poll-epoll/" title="Difference between select, poll and epoll" itemprop="url">
+    <a href="/2014/12/16/cpp-crtp/" title="CRTP, Curiously Recurring Template Pattern" itemprop="url">
   
-    <h1 itemprop="name">Difference between select, poll and epoll</h1>
+    <h1 itemprop="name">CRTP, Curiously Recurring Template Pattern</h1>
     
      
-           <p itemprop="description" >本文总结 select, poll, epoll 之间的区别
-select，poll，epoll 都是 IO 多路复用的机制。I/O多路复用就通过一种机制，可以监视多个描述符，一旦某个描述符就绪（一般是读就绪或者写就绪），能够通知程序进行相应的读写操作。但select，poll，</p>
+           <p itemprop="description" >一、简介
+什么是 CRTP？其英文全称是 Curiously Recurring Template Pattern，最早是由 James Coplien 在 1995 年提出的一个高级 C++ 编程技术，后来在 Stanley B. Lippman 写的 Cpp Gems 一书中</p>
         
     
-    <time datetime="2014-09-23T03:30:33.000Z" itemprop="datePublished">2014-09-23</time>
+    <time datetime="2014-12-16T03:30:33.000Z" itemprop="datePublished">2014-12-16</time>
   </a>
 </section>
 
@@ -376,6 +375,27 @@ select，poll，epoll 都是 IO 多路复用的机制。I/O多路复用就通过
      
            <p itemprop="description" >基本概念IO多路复用是指内核一旦发现进程指定的一个或者多个IO条件准备读取，它就通知该进程。IO多路复用适用如下场合：
 （1）当客户处理多个描述字时（一般是交互式输入和网络套接口），必须使用I/O复用。（2）当一个客户同时处理多个套接口时，而这种情况是可能的，但很少出现。（3）如</p>
+        
+    
+    <time datetime="2014-09-23T03:30:33.000Z" itemprop="datePublished">2014-09-23</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2014/09/23/network-programming-diff-select-poll-epoll/" title="Difference between select, poll and epoll" itemprop="url">
+  
+    <h1 itemprop="name">Difference between select, poll and epoll</h1>
+    
+     
+           <p itemprop="description" >本文总结 select, poll, epoll 之间的区别
+select，poll，epoll 都是 IO 多路复用的机制。I/O多路复用就通过一种机制，可以监视多个描述符，一旦某个描述符就绪（一般是读就绪或者写就绪），能够通知程序进行相应的读写操作。但select，poll，</p>
         
     
     <time datetime="2014-09-23T03:30:33.000Z" itemprop="datePublished">2014-09-23</time>
@@ -599,30 +619,6 @@ Assume variable a holds “abc” and variable b holds “efg” the</p>
 
 
 
-  
-<section class="post" itemscope itemprop="blogitem">
-  
-    <a href="/2013/03/27/tools-makefile-notes/" title="Write Makefile in simple" itemprop="url">
-  
-    <h1 itemprop="name">Write Makefile in simple</h1>
-    
-     
-           <p itemprop="description" >Makefile 语法格式
-在 Makefile 中定义目标规则的通用语法是：
-target [target] : [dependents ....]
-    [ command ...]
-注意：command 前面需要用 tab 而不是空格来隔开。由于执行 make 时每条命令</p>
-        
-    
-    <time datetime="2013-03-27T11:51:48.000Z" itemprop="datePublished">2013-03-27</time>
-  </a>
-</section>
-
-
-
-
-
-
 
   <nav id="page-nav" class="clearfix unexpand">
     <a class="extend prev" rel="prev" href="/page/4/"><span></span>Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/6/">Next<span></span></a>
@@ -710,7 +706,7 @@ target [target] : [dependents ....]
 		  
 		
 		  
-			<li><a href="/categories/ipfs/" title="ipfs">ipfs<sup>1</sup></a></li>
+			<li><a href="/categories/ipfs/" title="ipfs">ipfs<sup>2</sup></a></li>
 		  
 		
 		  
@@ -722,7 +718,7 @@ target [target] : [dependents ....]
   
   <div class="archiveslist">
     <p class="asidetitle"><a href="/archives">Archives</a></p>
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">三月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">二月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">一月 2017</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">十一月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">九月 2016</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a><span class="archive-list-count">15</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">十月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">九月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/09/">九月 2013</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">八月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/07/">七月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/06/">六月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/03/">三月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/02/">二月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/01/">一月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/10/">十月 2012</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/09/">九月 2012</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/06/">六月 2012</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">三月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">二月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">一月 2017</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">十一月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">九月 2016</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a><span class="archive-list-count">15</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">十月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">九月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/09/">九月 2013</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">八月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/07/">七月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/06/">六月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/03/">三月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/02/">二月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/01/">一月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/10/">十月 2012</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/09/">九月 2012</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/06/">六月 2012</a><span class="archive-list-count">1</span></li></ul>
   </div>
 
 
